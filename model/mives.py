@@ -4,6 +4,7 @@ from .verse_structure import Verse_structure
 import re
 from .utils import *
 import string
+from .rhyme import Rhyme
 
 
 class Mives():
@@ -14,14 +15,22 @@ class Mives():
     def read(self, path):
         tree = ET.parse(path)
         root = tree.getroot()
-        all_sentences = {}
+        all_rhymes = []
+        all_sentences = []
         for sentences in root:
             last_syllable, sentence_info = self.get_sentence(sentences)
             if sentence_info:
-                if last_syllable not in all_sentences:
-                    all_sentences[last_syllable] = []
-                all_sentences[last_syllable].append(sentence_info)
+                if last_syllable not in all_rhymes:
+                    all_sentences.append(Rhyme(last_syllable))
+                    all_rhymes.append(last_syllable)
+                self.find(all_sentences, last_syllable).add(sentence_info)
+
         return all_sentences
+
+    def find(self, arr, rhyme):
+        for x in arr:
+            if x.rhyme == rhyme:
+                return x
 
     def get_last_syllable(self, sentence):
         sentence = remove_end_ponctuation(sentence)

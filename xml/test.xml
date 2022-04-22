@@ -1,0 +1,110 @@
+<list>
+  <exportacao.Sentenca>
+    <segmento>A entrada do sertão.</segmento>
+    <link>2</link>
+    <numeroDaFrase>0</numeroDaFrase>
+    <estruturaDeVesificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>6</numeroDeSilabas>
+        <posicaoDasTonicas>2 6</posicaoDasTonicas>
+        <sentecaEscandida>A en/tr#a/da/ do/ ser/t#ão.</sentecaEscandida>
+        <palavrasVerso>A entrada do sertão.</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>7</numeroDeSilabas>
+        <posicaoDasTonicas>3 7</posicaoDasTonicas>
+        <sentecaEscandida>A/ en/tr#a/da/ do/ ser/t#ão.</sentecaEscandida>
+        <palavrasVerso>A entrada do sertão.</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+    </estruturaDeVesificacao>
+  </exportacao.Sentenca>
+  <exportacao.Sentenca>
+    <segmento>Vence-o saudade do sertão.</segmento>
+    <link>256</link>
+    <numeroDaFrase>0</numeroDaFrase>
+    <estruturaDeVesificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>9</numeroDeSilabas>
+        <posicaoDasTonicas>1 5 9</posicaoDasTonicas>
+        <sentecaEscandida>V#en/ceo/ sa/u/d#a/de/ do/ ser/t#ão.</sentecaEscandida>
+        <palavrasVerso>Venceo saudade do sertão.</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>8</numeroDeSilabas>
+        <posicaoDasTonicas>1 4 8</posicaoDasTonicas>
+        <sentecaEscandida>V#en/ceo/ sau/d#a/de/ do/ ser/t#ão.</sentecaEscandida>
+        <palavrasVerso>Venceo saudade do sertão.</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>10</numeroDeSilabas>
+        <posicaoDasTonicas>1 6 10</posicaoDasTonicas>
+        <sentecaEscandida>V#en/ce/o/ sa/u/d#a/de/ do/ ser/t#ão.</sentecaEscandida>
+        <palavrasVerso>Venceo saudade do sertão.</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+    </estruturaDeVesificacao>
+  </exportacao.Sentenca>
+  <exportacao.Sentenca>
+    <segmento>Religião mestiça</segmento>
+    <link>257</link>
+    <numeroDaFrase>0</numeroDaFrase>
+    <estruturaDeVesificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>7</numeroDeSilabas>
+        <posicaoDasTonicas>4 7</posicaoDasTonicas>
+        <sentecaEscandida>Re/li/gi/#ã/o/ mes/t#i/ça</sentecaEscandida>
+        <palavrasVerso>Religião mestiça</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>6</numeroDeSilabas>
+        <posicaoDasTonicas>4 6</posicaoDasTonicas>
+        <sentecaEscandida>Re/li/gi/#ão/ mes/t#i/ça</sentecaEscandida>
+        <palavrasVerso>Religião mestiça</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+    </estruturaDeVesificacao>
+  </exportacao.Sentenca>
+  <exportacao.Sentenca>
+    <segmento>A sua religião é como ele — mestiça.</segmento>
+    <link>258</link>
+    <numeroDaFrase>0</numeroDaFrase>
+    <estruturaDeVesificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>12</numeroDeSilabas>
+        <posicaoDasTonicas>2 6 7 8 11</posicaoDasTonicas>
+        <sentecaEscandida>A/ s#ua/ re/li/gi/#ão é/ c#o/mo #e/le —/ mes/t#i/ça.</sentecaEscandida>
+        <palavrasVerso>A sua religião é como ele — mestiça.</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+    </estruturaDeVesificacao>
+  </exportacao.Sentenca>
+  <exportacao.Sentenca>
+    <segmento>Conhecia o sertão.</segmento>
+    <link>355</link>
+    <numeroDaFrase>0</numeroDaFrase>
+    <estruturaDeVesificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>6</numeroDeSilabas>
+        <posicaoDasTonicas>3 6</posicaoDasTonicas>
+        <sentecaEscandida>Co/nhe/c#ia/ o/ ser/t#ão.</sentecaEscandida>
+        <palavrasVerso>Conhecia o sertão.</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>7</numeroDeSilabas>
+        <posicaoDasTonicas>3 7</posicaoDasTonicas>
+        <sentecaEscandida>Co/nhe/c#i/a/ o/ ser/t#ão.</sentecaEscandida>
+        <palavrasVerso>Conhecia o sertão.</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+    </estruturaDeVesificacao>
+  </exportacao.Sentenca>
+  <exportacao.Sentenca>
+    <segmento>Casamataram-nos, então.</segmento>
+    <link>1084</link>
+    <numeroDaFrase>0</numeroDaFrase>
+    <estruturaDeVesificacao>
+      <exportacao.EstruturaVersificacao>
+        <numeroDeSilabas>8</numeroDeSilabas>
+        <posicaoDasTonicas>4 8</posicaoDasTonicas>
+        <sentecaEscandida>Ca/sa/ma/t#a/ram/nos,/ en/t#ão.</sentecaEscandida>
+        <palavrasVerso>Casamataramnos, então.</palavrasVerso>
+      </exportacao.EstruturaVersificacao>
+    </estruturaDeVesificacao>
+  </exportacao.Sentenca>
+</list>

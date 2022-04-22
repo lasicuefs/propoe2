@@ -6,10 +6,10 @@ from .poem_evaluation import Evaluation
 
 class Poem_builder():
 
-    def __init__(self, sentences, chosen_rhymes, rhyme, score_weight, seed):
+    def __init__(self, sentences, metrics, rhyme, score_weight, seed):
         self.sentences = sentences
         self.rhyme = rhyme
-        self.chosen_rhymes = chosen_rhymes
+        self.metrics = metrics
         self.poem = ""
         self.verse_list = {}
         self.score_weight = score_weight
@@ -35,14 +35,14 @@ class Poem_builder():
                 s = sentences[letter].pop(0)
                 self.poem = self.poem + s.sentence + "\n"
 
-    def random_sentence(self, letter, sentences):
-        number = random.randrange(
-            len(self.sentences[self.chosen_rhymes[letter]]))
-        s = self.sentences[self.chosen_rhymes[letter]][number]
+    def random_sentence(self, letter, sentences, metric_count):
+        pos_sentences = self.sentences[letter].metrics[self.metrics[metric_count]]
+        number = random.randrange(len(pos_sentences))
+        s = pos_sentences[number]
         if s.not_in(sentences[letter]):
             return s
         else:
-            return self.random_sentence(letter, sentences)
+            return self.random_sentence(letter, sentences, metric_count)
 
     def random_verse(self, sentence):
         number = random.randrange(len(sentence.verse_structures))
@@ -50,7 +50,7 @@ class Poem_builder():
 
     def initialize_sentences(self):
         sentences = {}
-        for letter in self.chosen_rhymes:
+        for letter in self.sentences:
             sentences[letter] = []
         return sentences
 
@@ -59,16 +59,21 @@ class Poem_builder():
         sentences = self.initialize_sentences()
         last_rhyme = {}
         new_strophe = True
+        metric_count = 0
         for letter in rhyme:
             if letter == " ":
                 new_strophe = True
             elif new_strophe:
-                current = self.random_sentence(letter, sentences)
+                current = self.random_sentence(letter, sentences, metric_count)
                 sentences[letter].append(current)
                 current_verse = self.random_verse(current)
                 fixed_verse = current_verse
                 last_rhyme[letter] = current_verse
+                if verbose:
+                    print(current_verse.scanned_sentence)
+                    print()
                 new_strophe = False
+                metric_count += 1
             else:
                 if letter in last_rhyme:
                     verse_rhyme = last_rhyme[letter]
@@ -76,19 +81,19 @@ class Poem_builder():
                     verse_rhyme = None
                 next_s, next_verse = self.find_sentence(
                     sentences, [current_verse, fixed_verse], letter,
-                    self.chosen_rhymes[letter],
-                    verse_rhyme, verbose)
+                    verse_rhyme, metric_count, verbose)
 
                 last_rhyme[letter] = next_verse
                 sentences[letter].append(next_s)
                 current = next_s
                 current_verse = next_verse
+                metric_count += 1
 
         return sentences
 
-    def find_sentence(self, sentences, verses, letter, rhyme, last_rhyme, verbose):
+    def find_sentence(self, sentences, verses, letter, last_rhyme, metric_count, verbose):
         max_score = -1
-        for sentence in self.sentences[rhyme]:
+        for sentence in self.sentences[letter].metrics[self.metrics[metric_count]]:
             if sentence.not_in(sentences[letter]):
                 for possible_verse in sentence.verse_structures:
                     # Use two verses as reference

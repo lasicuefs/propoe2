@@ -32,3 +32,10 @@ class Sentence ():
             if self.__eq__(sentence):
                 return False
         return True
+
+    def get_metric(self, m):
+        verses = []
+        for verse in self.verse_structures:
+            if verse.metric == m:
+                verses.append(verse)
+        return Sentence(self.sentence, self.link, self.sentence_number, verses)

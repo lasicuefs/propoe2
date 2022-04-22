@@ -3,35 +3,18 @@ import random
 
 
 class Filter():
-    def __init__(self, sentences, seed):
+    def __init__(self, sentences, metric, seed):
         self.sentences = sentences
-        self.rhyme_count = self.rhyme_counter()
+        self.metric = metric
         self.rhyme_numbers = []
         random.seed(seed)
 
-    def rhyme_counter(self):
-        rhyme_count = {}
-        for key in self.sentences.keys():
-            set_sentences = self.remove_duplicates(self.sentences[key])
-            length = len(set_sentences)
-            if length not in rhyme_count:
-                rhyme_count[length] = []
-            rhyme_count[length].append(key)
-        return rhyme_count
-
-    def remove_duplicates(self, sentences):
-        uniq_sentences = []
-        for sentence in sentences:
-            if sentence.not_in(uniq_sentences):
-                uniq_sentences.append(sentence)
-        return uniq_sentences
-
-    def get_rhymes(self, minimun):
-        rhymes = []
-        for key in self.rhyme_count.keys():
-            if int(key) > minimun:
-                rhymes.extend(self.rhyme_count[key])
-        return rhymes
+    def get_rhymes(self, rhyme):
+        rhymes = self.rhyme_filter(rhyme)
+        sentences = {}
+        for letter in rhymes:
+            sentences[letter] = self.random_rhyme(rhymes[letter])
+        return sentences
 
     def random_rhyme(self, rhymes):
         number = random.randrange(len(rhymes))
@@ -43,13 +26,27 @@ class Filter():
 
     def rhyme_filter(self, rhyme):
         rhyme = self.remove_space(rhyme)
-        rhymes_struct = Counter(rhyme)
+        rhyme_counter = self.rhyme_by_metric(rhyme)
         filtered_rhymes = {}
-        for letter in rhymes_struct:
-            rhymes = self.get_rhymes(rhymes_struct[letter])
-            r = self.random_rhyme(rhymes)
-            filtered_rhymes[letter] = r
+        for letter in rhyme_counter:
+            sentences = self.sentences.copy()
+            metric_counter = Counter(rhyme_counter[letter])
+            for m in metric_counter:
+                aux_sentences = []
+                for rhyme in sentences:
+                    if rhyme.size(m) > metric_counter[m]:
+                        aux_sentences.append(rhyme)
+                sentences = aux_sentences.copy()
+            filtered_rhymes[letter] = sentences
         return filtered_rhymes
+
+    def rhyme_by_metric(self, rhyme):
+        letters = {}
+        for i, r in enumerate(rhyme):
+            if r not in letters:
+                letters[r] = []
+            letters[r].append(self.metric[i])
+        return letters
 
     def remove_space(self, rhyme):
         return rhyme.replace(" ", "")

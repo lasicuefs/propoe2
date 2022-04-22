@@ -6,8 +6,9 @@ from configuration.conf import *
 seed = None
 
 mives = Mives(mives_xml)
-chosen_rhymes = Filter(mives.sentences, seed).rhyme_filter(padrao_ritmico)
-builder = Poem_builder(mives.sentences, chosen_rhymes,
+sentences = Filter(mives.sentences, metrificacao,
+                   seed).get_rhymes(padrao_ritmico)
+builder = Poem_builder(sentences, metrificacao,
                        padrao_ritmico, pesos_avaliacao, seed)
 builder.build(verbose=True)
 builder.result()

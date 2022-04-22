@@ -4,7 +4,7 @@ mives_xml = "xml/sentencas.xml"  # Caminho para o XML do MIVES
 
 caminho_poema = "poemas/poema.txt"  # Se None, não salva poema
 
-metrificacao = [10, 10, 10, 10, 10, 10, 10, 10]  # Metrica por verso
+metrificacao = [10, 10, 10, 10, 9, 9, 10, 10]  # Metrica por verso
 
 # Peso entre 0 e 1.
 pesos_avaliacao = {
