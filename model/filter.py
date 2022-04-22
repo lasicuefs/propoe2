@@ -3,18 +3,28 @@ import random
 
 
 class Filter():
-    def __init__(self, sentences):
+    def __init__(self, sentences, seed):
         self.sentences = sentences
         self.rhyme_count = self.rhyme_counter()
+        self.rhyme_numbers = []
+        random.seed(seed)
 
     def rhyme_counter(self):
         rhyme_count = {}
         for key in self.sentences.keys():
-            length = len(set(self.sentences[key]))
+            set_sentences = self.remove_duplicates(self.sentences[key])
+            length = len(set_sentences)
             if length not in rhyme_count:
                 rhyme_count[length] = []
             rhyme_count[length].append(key)
         return rhyme_count
+
+    def remove_duplicates(self, sentences):
+        uniq_sentences = []
+        for sentence in sentences:
+            if sentence.not_in(uniq_sentences):
+                uniq_sentences.append(sentence)
+        return uniq_sentences
 
     def get_rhymes(self, minimun):
         rhymes = []
@@ -25,7 +35,11 @@ class Filter():
 
     def random_rhyme(self, rhymes):
         number = random.randrange(len(rhymes))
-        return rhymes[number]
+        if number not in self.rhyme_numbers:
+            self.rhyme_numbers.append(number)
+            return rhymes[number]
+        else:
+            return self.random_rhyme(rhymes)
 
     def rhyme_filter(self, rhyme):
         rhyme = self.remove_space(rhyme)

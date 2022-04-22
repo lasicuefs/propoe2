@@ -1,22 +1,23 @@
 import re
+from .utils import *
 
 
 class Sentence ():
 
     def __init__(self, sentence, link, sentence_number, verse_structures):
-        self.sentence = self.remove_end_ponctuation(sentence)
+        self.sentence = sentence
+        self.sentence_clean = remove_end_ponctuation(sentence)
         self.link = link
         self.sentence_number = sentence_number
         self.verse_structures = verse_structures
 
-    def remove_end_ponctuation(self, sentence):
-        return re.sub('^[^a-zA-Z]*|[^a-zA-Z]*$', '', sentence)
-
     def __eq__(self, other):
-        return self.sentence == other.sentence
+        sentence = sentence_preprocess(self.sentence_clean)
+        other = sentence_preprocess(other.sentence_clean)
+        return sentence.split()[-1].strip() == other.split()[-1].strip()
 
     def __hash__(self):
-        return hash(('sentence', self.sentence))
+        return hash(('sentence', self.sentence_clean))
 
     def __repr__(self):
         verses_repr = "\n".join([verse.__repr__()
@@ -27,12 +28,7 @@ class Sentence ():
                 "\n Verses: " + verses_repr)
 
     def not_in(self, sentences):
-        sentence = self.sentence.lower()
-        sentence = re.sub(r'[^\w\s]', '', sentence)
-
-        for b_sentence in sentences:
-            b_sentence = b_sentence.sentence.lower()
-            b_sentence = re.sub(r'[^\w\s]', '', b_sentence)
-            if b_sentence == sentence:
+        for sentence in sentences:
+            if self.__eq__(sentence):
                 return False
         return True

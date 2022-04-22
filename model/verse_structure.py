@@ -1,14 +1,17 @@
 import re
+from .utils import *
 
 
 class Verse_structure():
 
-    def __init__(self, syllable_number, stress_position, scanned_sentence):
+    def __init__(self, sentence, syllable_number, stress_position, scanned_sentence):
         self.syllable_number = syllable_number
         self.stress_position = stress_position.split()
         self.scanned_sentence = scanned_sentence
-        self.stress_syllables = self.stress_syllable()
+        self.stress_syllables, self.pos_stress_dict = self.stress_syllable()
         self.accent = self.accentuation()
+        self.syllables = self.get_syllables()
+        self.sentence = sentence
 
     def __repr__(self):
         return ("\n Syllable number: " + str(self.syllable_number) +
@@ -17,18 +20,27 @@ class Verse_structure():
                 "\n Stress syllables: " + str(self.stress_syllables) +
                 "\n Accentuation: " + str(self.accent))
 
+    def get_syllables(self):
+        sentence = scanned_sentence_preprocess(self.scanned_sentence)
+        return [s.strip() for s in sentence.split("/")]
+
+    def get_last_word(self):
+        sentence = remove_end_ponctuation(self.sentence)
+        word = sentence.split(" ")[-1]
+        return word
+
     def stress_syllable(self):
         syllables = []
+        pos_syllables = {}
         splited_sentence = self.scanned_sentence.split('/')
         for pos in self.stress_position:
-            syllables.append(splited_sentence[int(pos) - 1])
-        return syllables
-
-    def remove_end_ponctuation(self, sentence):
-        return re.sub('^[^a-zA-Z]*|[^a-zA-Z]*$', '', sentence)
+            s = splited_sentence[int(pos) - 1]
+            syllables.append(s.strip())
+            pos_syllables[pos] = s.strip()
+        return syllables, pos_syllables
 
     def accentuation(self):
-        s = self.remove_end_ponctuation(self.scanned_sentence)
+        s = remove_end_ponctuation(self.scanned_sentence)
         last_word = s.split()[-1]
         syllables = last_word.split('/')
         for i in range(1, len(syllables) + 1):
