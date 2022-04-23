@@ -11,7 +11,7 @@ pesos_avaliacao = {
     "Rima consoante": 1,
     "Acentuacao": 1,
     "Posicao tonica": 1,
-    # "Rima toante": 1,
+    "Rima toante": 1,
     "Rima interna": 1,
     "Estrutura ritmica": 1
 }

@@ -20,12 +20,44 @@ class Rhyme():
 
     def remove_duplicates(self, sentences):
         uniq_sentences = []
+        iteration = len(sentences)
+        for _ in range(iteration):
+            sentence = sentences.pop()
+            if sentence.not_in(sentences):
+                uniq_sentences.append(sentence)
+        return uniq_sentences
+
+    def unique(self, sentences):
+        uniq_sentences = []
         for sentence in sentences:
             if sentence.not_in(uniq_sentences):
                 uniq_sentences.append(sentence)
         return uniq_sentences
 
-    def size(self, m):
-        if m in self.metrics:
-            return len(self.remove_duplicates(self.metrics[m]))
-        return 0
+    def size(self, counter):
+        max_value = sum(counter.values())
+        check = True
+        counter2 = {}
+        for m in counter:
+            if m in self.metrics:
+                if len(self.unique(self.metrics[m])) < max_value:
+                    check = False
+                    counter2[m] = max_value - len(self.unique(self.metrics[m]))
+            else:
+                return False
+
+        if not check:
+            metrics = []
+            for m in counter2:
+                metrics.extend(self.metrics[m])
+            metrics = self.remove_duplicates(metrics)
+            for m in counter2:
+                result = 0
+                for metric in metrics:
+                    if metric.verse_structures[0].metric == m:
+                        result += 1
+                if result <= counter2[m]:
+                    return False
+            return True
+        else:
+            return True

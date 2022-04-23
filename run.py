@@ -10,6 +10,6 @@ sentences = Filter(mives.sentences, metrificacao,
                    seed).get_rhymes(padrao_ritmico)
 builder = Poem_builder(sentences, metrificacao,
                        padrao_ritmico, pesos_avaliacao, seed)
-builder.build(verbose=True)
+builder.build(verbose=False)
 builder.result()
 builder.save(caminho_poema)

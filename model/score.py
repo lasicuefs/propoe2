@@ -8,6 +8,7 @@ class Score():
         self.rhyme_structure_score = 0
         self.score_result = 0
         self.rhyme_intern_score = 0
+        self.toante_rhyme_score = 0
 
     def __repr__(self):
 
@@ -18,6 +19,7 @@ class Score():
                 "\n - Silabas Tônicas: " + str(round(self.stress_score, 2)) +
                 "\n - Acento: " + str(round(self.accent_score, 2)) +
                 "\n - Rima Interna: " + str(round(self.intern_rhyme_score, 2)) +
+                "\n - Rima Toante: " + str(round(self.toante_rhyme_score, 2)) +
                 "\n Score Resultante: " + str(round(self.score_result, 2)))
 
     def jacard(self, a, b):
@@ -71,6 +73,10 @@ class Score():
                 count += 1
         return count/size
 
+    def toante_rhyme(self, a, b):
+        a.get_last_stress()
+        b.get_last_stress()
+
     def score(self, a, b, verse, weight):
         self.rhyme_structure_score += self.same_stress_pos(a, b)
         self.intern_rhyme_score = self.intern_rhyme(b)
@@ -78,6 +84,7 @@ class Score():
         ps = self.same_pos_stress_syllable(a, b)
         self.stress_score += s + ps  # Sum to one max
         if verse:
+            self.toante_rhyme(a, verse)
             self.accent_score += self.same_accent(a, verse)
             self.consonant_rhyme_score += self.consonant_rhyme(a, verse)
 

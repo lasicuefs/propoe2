@@ -31,13 +31,11 @@ class Filter():
         for letter in rhyme_counter:
             sentences = self.sentences.copy()
             metric_counter = Counter(rhyme_counter[letter])
-            for m in metric_counter:
-                aux_sentences = []
-                for rhyme in sentences:
-                    if rhyme.size(m) > metric_counter[m]:
-                        aux_sentences.append(rhyme)
-                sentences = aux_sentences.copy()
-            filtered_rhymes[letter] = sentences
+            aux_sentences = []
+            for rhyme in sentences:
+                if rhyme.size(metric_counter):
+                    aux_sentences.append(rhyme)
+            filtered_rhymes[letter] = aux_sentences
         return filtered_rhymes
 
     def rhyme_by_metric(self, rhyme):
