@@ -8,6 +8,7 @@ class Evaluation():
         self.score_result = 0
         self.count = 0
         self.intern_rhyme_score = 0
+        self.toante_rhyme_score = 0
 
     def add(self, score):
         self.consonant_rhyme_score += score.consonant_rhyme_score
@@ -16,6 +17,7 @@ class Evaluation():
         self.rhyme_structure_score += score.rhyme_structure_score
         self.score_result += score.score_result
         self.intern_rhyme_score += score.intern_rhyme_score
+        self.toante_rhyme_score += score.toante_rhyme_score
         self.count += 2
 
     def __repr__(self):
@@ -26,4 +28,5 @@ class Evaluation():
                 "\n - Silabas Tônicas: " + str(round(self.stress_score/self.count, 2)) +
                 "\n - Acento: " + str(round(self.accent_score/self.count, 2)) +
                 "\n - Rima Interna: " + str(round(self.intern_rhyme_score/(self.count/2), 2)) +
+                "\n - Rima Toante: " + str(round(self.toante_rhyme_score/self.count, 2)) +
                 "\n Score Resultante: " + str(round(self.score_result/self.count, 2)))

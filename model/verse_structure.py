@@ -25,13 +25,12 @@ class Verse_structure():
         return [s.strip() for s in sentence.split("/")]
 
     def get_last_word(self):
-        sentence = remove_end_ponctuation(self.sentence)
+        sentence = sentence_preprocess(self.sentence)
         word = sentence.split(" ")[-1]
         return word
 
     def get_last_stress(self):
-        print(self.scanned_sentence)
-        print(self.stress_syllables[-1])
+        return self.stress_syllables[-1]
 
     def stress_syllable(self):
         syllables = []

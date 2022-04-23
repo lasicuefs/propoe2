@@ -1,3 +1,6 @@
+from .utils import consonant_removal
+
+
 class Score():
 
     def __init__(self, verse):
@@ -60,8 +63,8 @@ class Score():
         return a.accent == b.accent
 
     def consonant_rhyme(self, a, b):
-        a_word = a.get_last_word().lower()
-        b_word = b.get_last_word().lower()
+        a_word = a.get_last_word().strip()
+        b_word = b.get_last_word().strip()
         size = 1
         count = 0
         if len(a_word) > len(b_word):
@@ -74,8 +77,9 @@ class Score():
         return count/size
 
     def toante_rhyme(self, a, b):
-        a.get_last_stress()
-        b.get_last_stress()
+        a_stress = consonant_removal(a.get_last_stress())
+        b_stress = consonant_removal(b.get_last_stress())
+        return a_stress == b_stress
 
     def score(self, a, b, verse, weight):
         self.rhyme_structure_score += self.same_stress_pos(a, b)
@@ -84,12 +88,13 @@ class Score():
         ps = self.same_pos_stress_syllable(a, b)
         self.stress_score += s + ps  # Sum to one max
         if verse:
-            self.toante_rhyme(a, verse)
-            self.accent_score += self.same_accent(a, verse)
-            self.consonant_rhyme_score += self.consonant_rhyme(a, verse)
+            self.accent_score += self.same_accent(b, verse)
+            self.consonant_rhyme_score += self.consonant_rhyme(b, verse)
+            self.toante_rhyme_score += self.toante_rhyme(b, verse)
 
         self.score_result = self.rhyme_structure_score * weight["Estrutura ritmica"] + \
             self.stress_score * weight["Posicao tonica"] + \
             self.accent_score * weight["Acentuacao"] + \
             self.consonant_rhyme_score * weight["Rima consoante"] + \
-            self.intern_rhyme_score * weight["Rima interna"]
+            self.intern_rhyme_score * weight["Rima interna"] + \
+            self.toante_rhyme_score * weight["Rima toante"]
