@@ -7,7 +7,7 @@ seed = None
 
 mives = Mives(mives_xml)
 sentences = Filter(mives.sentences, metrificacao,
-                   seed).get_rhymes(padrao_ritmico)
+                   padrao_ritmico, seed).get_rhymes()
 builder = Poem_builder(sentences, metrificacao,
                        padrao_ritmico, pesos_avaliacao, seed)
 builder.build(verbose=True)

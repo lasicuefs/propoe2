@@ -11,6 +11,8 @@ class Evaluation():
         self.toante_rhyme_score = 0
 
     def add(self, score):
+        """ Sum scores of every verse.
+        """
         self.consonant_rhyme_score += score.consonant_rhyme_score
         self.accent_score += score.accent_score
         self.stress_score += score.stress_score

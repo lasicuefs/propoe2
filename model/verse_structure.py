@@ -1,5 +1,4 @@
-import re
-from .utils import *
+from .utils import scanned_sentence_preprocess, sentence_preprocess, remove_end_ponctuation
 
 
 class Verse_structure():
@@ -8,10 +7,11 @@ class Verse_structure():
         self.metric = int(syllable_number)
         self.stress_position = stress_position.split()
         self.scanned_sentence = scanned_sentence
-        self.stress_syllables, self.pos_stress_dict = self.stress_syllable()
         self.accent = self.accentuation()
         self.syllables = self.get_syllables()
         self.sentence = sentence
+
+        self.stress_syllables, self.pos_stress_dict = self.stress_syllable()
 
     def __repr__(self):
         return ("\n Syllable number: " + str(self.metric) +
@@ -26,13 +26,18 @@ class Verse_structure():
 
     def get_last_word(self):
         sentence = sentence_preprocess(self.sentence)
-        word = sentence.split(" ")[-1]
+        word = sentence.split(" ")[-1].strip()
         return word
 
     def get_last_stress(self):
-        return self.stress_syllables[-1]
+        return self.stress_syllables[-1].strip()
 
     def stress_syllable(self):
+        """ 
+        Return:
+          syllables: List of stressed syllables.
+          pos_syllables: Dict that maps stress position to the syllable.
+        """
         syllables = []
         pos_syllables = {}
         splited_sentence = self.scanned_sentence.split('/')
@@ -43,6 +48,8 @@ class Verse_structure():
         return syllables, pos_syllables
 
     def accentuation(self):
+        """ Return accentutation of the sentence.
+        """
         s = remove_end_ponctuation(self.scanned_sentence)
         last_word = s.split()[-1]
         syllables = last_word.split('/')
