@@ -20,15 +20,14 @@ class Evaluation():
         self.score_result += score.score_result
         self.intern_rhyme_score += score.intern_rhyme_score
         self.toante_rhyme_score += score.toante_rhyme_score
-        self.count += 2
 
     def __repr__(self):
 
         return ("Resultado:" +
-                "\n - Rima Consoante: " + str(round(self.consonant_rhyme_score/self.count, 2)) +
-                "\n - Estrutura Ritmica: " + str(round(self.rhyme_structure_score/self.count, 2)) +
-                "\n - Silabas Tônicas: " + str(round(self.stress_score/self.count, 2)) +
-                "\n - Acento: " + str(round(self.accent_score/self.count, 2)) +
-                "\n - Rima Interna: " + str(round(self.intern_rhyme_score/(self.count/2), 2)) +
-                "\n - Rima Toante: " + str(round(self.toante_rhyme_score/self.count, 2)) +
-                "\n Score Resultante: " + str(round(self.score_result/self.count, 2)))
+                "\n - Rima Consoante: " + str(round(self.consonant_rhyme_score, 2)) +
+                "\n - Estrutura Ritmica: " + str(round(self.rhyme_structure_score, 2)) +
+                "\n - Silabas Tônicas: " + str(round(self.stress_score, 2)) +
+                "\n - Acento: " + str(round(self.accent_score, 2)) +
+                "\n - Rima Interna: " + str(round(self.intern_rhyme_score, 2)) +
+                "\n - Rima Toante: " + str(round(self.toante_rhyme_score, 2)) +
+                "\n Score Resultante: " + str(round(self.score_result, 2)))

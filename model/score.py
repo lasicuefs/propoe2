@@ -91,16 +91,16 @@ class Score():
 
     def score(self, reference, possible_verse, rhyme_verse, weight):
         self.rhyme_structure_score += self.same_stress_pos(
-            reference, possible_verse)
+            reference, possible_verse)/2
         self.intern_rhyme_score = self.intern_rhyme(possible_verse)
         s = self.same_stress_syllable(reference, possible_verse)
         ps = self.same_pos_stress_syllable(reference, possible_verse)
-        self.stress_score += s + ps  # Sum to one max
+        self.stress_score += (s + ps)/2  # Sum to one max
         if rhyme_verse:
-            self.accent_score += self.same_accent(possible_verse, rhyme_verse)
-            self.consonant_rhyme_score += self.consonant_rhyme(
+            self.accent_score = self.same_accent(possible_verse, rhyme_verse)
+            self.consonant_rhyme_score = self.consonant_rhyme(
                 possible_verse, rhyme_verse)
-            self.toante_rhyme_score += self.toante_rhyme(
+            self.toante_rhyme_score = self.toante_rhyme(
                 possible_verse, rhyme_verse)
 
         self.score_result = self.rhyme_structure_score * weight["Estrutura ritmica"] + \
