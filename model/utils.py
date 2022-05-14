@@ -15,12 +15,22 @@ def remove_space(sentence):
     return sentence.replace(" ", "")
 
 
-def consonant_removal(sentence):
-    """ Lower case sentence string and remove everything that is not vowel.
+def left_consonant_removal(sentence):
+    """ Lower case sentence string and remove everything that is not vowel from the left
+            side of the sentence.
     """
     sentence = sentence.lower()
     sentence = re.sub(
         r'[^aeiouáàâãéèêíïóôõöú]', '', sentence)
+    return sentence.strip()
+
+
+def consonant_removal(sentence):
+    """ Lower case sentence string and remove everything that is not vowel.
+    """
+    sentence = sentence.lower()
+    sentence = re.match(
+        r'[aeiouáàâãéèêíïóôõöú][a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ]*$', sentence)
     return sentence.strip()
 
 

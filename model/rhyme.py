@@ -74,37 +74,36 @@ class Rhyme():
         parameter for each metric.
 
         Two cases return True:
-        1. Object has more Sentence objects (removing repeted Sentence) from each metric
-           needed for verse than letters needed from rhyme patter.
-        2. Object has enouth unique Sentece objects for each metric in the rhyme pattern.
+        1. Object has more Sentence objects (removing repeted Sentence) than total amount
+           of verses needed for rhyme pattern.
+        2. Object has enough unique Sentece objects for each metric in the rhyme pattern.
 
         Parameters:
           counter: Dict mapping metric with its needed amount for the poem.
             EX: {10: 2, 9: 2}
         """
 
-        counter2 = self.check_sentences(counter)
-        if counter2 == "no metric":
-            return False
-
-        # If there are Sentences needed for rhyme pattern and metric.
-        if counter2:
-            metrics = self.get_unique_sentences(counter2)
-            # Check unique Sentence objects from metrics
-            for m in counter2:
-                result = 0
-                for metric in metrics:
-                    if metric.verse_structures[0].metric == m:
-                        result += 1
-                # If not enough Sentences to make the poem.
-                if result <= counter2[m]:
-                    return False
+        if(self.check_sentences(counter)):
             return True
         else:
-            return True
+            metrics = self.get_unique_sentences(counter)
+            if metrics:
+                for m in counter:
+                    if m in self.metrics:
+                        result = 0
+                        for metric in metrics:
+                            if metric.verse_structures[0].metric == m:
+                                result += 1
+                        if result <= counter[m]:
+                            return False
+                    else:
+                        return False
+                return True
+            else:
+                return False
 
     def get_unique_sentences(self, counter):
-        """ Merge List of Sentences with metrics in counter and return onlt the ones that
+        """ Merge List of Sentences with metrics in counter and return only the ones that
         appears once.
 
         Parameters:
@@ -113,7 +112,8 @@ class Rhyme():
         """
         metrics = []
         for m in counter:
-            metrics.extend(self.metrics[m])
+            if m in self.metrics:
+                metrics.extend(self.metrics[m])
         # Get Sentence objects that only appears once
         metrics = self.remove_duplicates(metrics)
         return metrics
@@ -125,22 +125,14 @@ class Rhyme():
         Parameters:
           counter: Dict mapping metric with its needed amount for the poem.
             EX: {10: 2, 9: 2}
-
-        Return:
-          EITHER:
-            "no metric": String to say that there is not metric.
-          OR:
-            counter2: Dict that maps metric to the needed amount of unique Sentence 
-                      object for each metric for the verses in the rhyme pattern.
         """
         max_value = sum(counter.values())
-        counter2 = {}
 
         for m in counter:
             # If this Rhyme does not have a Sentence with this metric, return False
             if m in self.metrics:
-                if len(self.unique(self.metrics[m])) < max_value:
-                    counter2[m] = max_value - len(self.unique(self.metrics[m]))
+                if len(self.unique(self.metrics[m])) > max_value:
+                    return True
             else:
-                return "no metric"
-        return counter2
+                return False
+        return False

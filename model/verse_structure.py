@@ -1,4 +1,5 @@
 from .utils import scanned_sentence_preprocess, sentence_preprocess, remove_end_ponctuation
+from .utils import left_consonant_removal
 
 
 class Verse_structure():
@@ -31,6 +32,14 @@ class Verse_structure():
 
     def get_last_stress(self):
         return self.stress_syllables[-1].strip()
+
+    def get_last_syllables(self):
+        after = self.syllables[int(self.stress_position[-1]):]
+        stress = self.scanned_sentence.split(
+            "/")[int(self.stress_position[-1]) - 1]
+        stress = stress.split("#")[-1]
+        after.insert(0, stress)
+        return remove_end_ponctuation("".join(after))
 
     def stress_syllable(self):
         """ 

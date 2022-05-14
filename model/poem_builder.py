@@ -30,13 +30,14 @@ class Poem_builder():
         text_file.write(self.poem)
         text_file.close()
 
-    def build(self, verbose=False):
+    def build(self, verbose=False, debug=False):
         """ Build poem. Get best sentences and add it in the string self.poem.
 
         Parameter:
           verbose: If True, prints the score os every sentence in the poem.
+          debug: If True, it will print every decision of the system.
         """
-        sentences = self.get_poem_sentences(verbose)
+        sentences = self.get_poem_sentences(verbose, debug)
         for letter in self.rhyme:
             if letter == " ":
                 self.poem = self.poem + "\n"
@@ -65,7 +66,7 @@ class Poem_builder():
             sentences[letter] = []
         return sentences
 
-    def get_poem_sentences(self, verbose):
+    def get_poem_sentences(self, verbose, debug):
         """ Return a list of Sentence objects in order to build a poem.
         """
         rhyme = self.rhyme
@@ -100,7 +101,7 @@ class Poem_builder():
                     verse_rhyme = None
                 next_s, next_verse = self.find_sentence(
                     sentences, [current_verse, fixed_verse], letter,
-                    verse_rhyme, metric_count, verbose)
+                    verse_rhyme, metric_count, verbose, debug)
 
                 last_rhyme[letter] = next_verse
                 sentences[letter].append(next_s)
@@ -110,7 +111,7 @@ class Poem_builder():
 
         return sentences
 
-    def find_sentence(self, sentences, verses, letter, last_rhyme, metric_count, verbose):
+    def find_sentence(self, sentences, verses, letter, last_rhyme, metric_count, verbose, debug):
         """ Return best Sentence object given a score.
 
         Parameters:
@@ -130,7 +131,7 @@ class Poem_builder():
         for sentence in self.sentences[letter].metrics[self.metrics[metric_count]]:
             if sentence.not_in(sentences[letter]):
                 for possible_verse in sentence.verse_structures:
-                    score = Score(possible_verse.scanned_sentence)
+                    score = Score(possible_verse.scanned_sentence, debug)
                     for verse in verses:
                         score.score(verse, possible_verse,
                                     last_rhyme, self.score_weight)
