@@ -82,7 +82,7 @@ class Score():
         self.debug_repr["Rima Interna"] = ""
         syllables = a.get_syllables()
         self.debug_repr["Rima Interna"] += "\nSílabas: " + str(syllables) + \
-            "\nSílabas únicas: " + str(syllables) + \
+            "\nSílabas únicas: " + str(set(syllables)) + \
             "\nQuantidade de sílabas: " + str(len(syllables)) + \
             "\nQuantidade de sílabas únicas: " + str(len(set(syllables)))
         return 1 - (len(set(syllables))/len(syllables))
