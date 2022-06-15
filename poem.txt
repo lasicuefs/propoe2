@@ -1,0 +1,6225 @@
+Su/c#e/dem/se/ m#e/ses/ e #a/nos/ ar/d#en/tes.
+
+------------------
+Verso: Hi/p#ó/te/ses/ s#o/bre/ a/ s#u/a/ g#ê/ne/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.3
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'7', '5', '2', '10', '8'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['p#ó', 's#o', 's#u', 'g#ê']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: g#ê, posição = 10
+Referência: m#e, posição = 5
+Segmento: s#o, posição = 5
+Referência: c#e, posição = 2
+Segmento: p#ó, posição = 2
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.083
+Sílabas: ['hi', 'pó', 'te', 'ses', 'so', 'bre', 'a', 'su', 'a', 'gê', 'ne', 'se']
+Sílabas únicas: {'se', 'ses', 'te', 'pó', 'a', 'gê', 'hi', 'su', 'bre', 'ne', 'so'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.128
+Soma dos critérios: 0.38
+Score máximo: 3
+
+Verso: Hi/p#ó/te/ses/ s#o/bre/ a/ s#u/a/ g#ê/ne/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.6
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'7', '5', '2', '10', '8'}
+Jaccard: 0.6
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'7', '5', '2', '10', '8'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['p#ó', 's#o', 's#u', 'g#ê']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: g#ê, posição = 10
+Referência: m#e, posição = 5
+Segmento: s#o, posição = 5
+Referência: c#e, posição = 2
+Segmento: p#ó, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['p#ó', 's#o', 's#u', 'g#ê']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: g#ê, posição = 10
+Referência: m#e, posição = 5
+Segmento: s#o, posição = 5
+Referência: c#e, posição = 2
+Segmento: p#ó, posição = 2
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.083
+Sílabas: ['hi', 'pó', 'te', 'ses', 'so', 'bre', 'a', 'su', 'a', 'gê', 'ne', 'se']
+Sílabas únicas: {'se', 'ses', 'te', 'pó', 'a', 'gê', 'hi', 'su', 'bre', 'ne', 'so'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.228
+Soma dos critérios: 0.68
+Score máximo: 3
+
+------------------
+Verso: é #u/ma/ mu/ta/ç#ã/o/ de a/po/te/#o/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '5'}
+União: {'10', '2', '7', '1', '5'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: d#en, posição = 10
+Segmento: #o, posição = 10
+Referência: m#e, posição = 5
+Segmento: ç#ã, posição = 5
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.091
+Sílabas: ['é u', 'ma', 'mu', 'ta', 'çã', 'o', 'de a', 'po', 'te', 'o', 'se']
+Sílabas únicas: {'se', 'ma', 'mu', 'é u', 'ta', 'o', 'po', 'de a', 'çã', 'te'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.097
+Soma dos critérios: 0.29
+Score máximo: 3
+
+Verso: é #u/ma/ mu/ta/ç#ã/o/ de a/po/te/#o/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '5'}
+União: {'10', '2', '7', '1', '5'}
+Jaccard: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '5'}
+União: {'10', '2', '7', '1', '5'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: d#en, posição = 10
+Segmento: #o, posição = 10
+Referência: m#e, posição = 5
+Segmento: ç#ã, posição = 5
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: d#en, posição = 10
+Segmento: #o, posição = 10
+Referência: m#e, posição = 5
+Segmento: ç#ã, posição = 5
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.091
+Sílabas: ['é u', 'ma', 'mu', 'ta', 'çã', 'o', 'de a', 'po', 'te', 'o', 'se']
+Sílabas únicas: {'se', 'ma', 'mu', 'é u', 'ta', 'o', 'po', 'de a', 'çã', 'te'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.164
+Soma dos critérios: 0.49
+Score máximo: 3
+
+------------------
+Verso: O/ va/qu#ei/ro/ do/ N#or/te é a/ s#ua/ an/t#í/te/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.071
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'7', '5', '6', '3', '2', '10', '8'}
+Jaccard: 0.14285714285714285
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10'}
+Referência: d#en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['o', 'va', 'quei', 'ro', 'do', 'nor', 'te é a', 'sua', 'an', 'tí', 'te', 'se']
+Sílabas únicas: {'se', 'ro', 'do', 'sua', 'o', 'an', 'tí', 'quei', 'te é a', 'nor', 'va', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.024
+Soma dos critérios: 0.07
+Score máximo: 3
+
+Verso: O/ va/qu#ei/ro/ do/ N#or/te é a/ s#ua/ an/t#í/te/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.143
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'7', '5', '6', '3', '2', '10', '8'}
+Jaccard: 0.14285714285714285
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'7', '5', '6', '3', '2', '10', '8'}
+Jaccard: 0.14285714285714285
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10'}
+Referência: d#en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10'}
+Referência: d#en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['o', 'va', 'quei', 'ro', 'do', 'nor', 'te é a', 'sua', 'an', 'tí', 'te', 'se']
+Sílabas únicas: {'se', 'ro', 'do', 'sua', 'o', 'an', 'tí', 'quei', 'te é a', 'nor', 'va', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.048
+Soma dos critérios: 0.14
+Score máximo: 3
+
+------------------
+Verso: é/ #u/ma/ di/#á/te/se/ e é #u/ma/ s#ín/te/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.3
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'7', '5', '2', '10', '8'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['#u', '#á', 'e é #u', 's#ín']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: s#ín, posição = 10
+Referência: m#e, posição = 5
+Segmento: #á, posição = 5
+Referência: c#e, posição = 2
+Segmento: #u, posição = 2
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.25
+Sílabas: ['é', 'u', 'ma', 'di', 'á', 'te', 'se', 'e é u', 'ma', 'sín', 'te', 'se']
+Sílabas únicas: {'se', 'ma', 'é', 'á', 'u', 'sín', 'e é u', 'di', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 9
+ - Score Resultante: 0.183
+Soma dos critérios: 0.55
+Score máximo: 3
+
+Verso: é/ #u/ma/ di/#á/te/se/ e é #u/ma/ s#ín/te/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.6
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'7', '5', '2', '10', '8'}
+Jaccard: 0.6
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'7', '5', '2', '10', '8'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['#u', '#á', 'e é #u', 's#ín']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: s#ín, posição = 10
+Referência: m#e, posição = 5
+Segmento: #á, posição = 5
+Referência: c#e, posição = 2
+Segmento: #u, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['#u', '#á', 'e é #u', 's#ín']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: s#ín, posição = 10
+Referência: m#e, posição = 5
+Segmento: #á, posição = 5
+Referência: c#e, posição = 2
+Segmento: #u, posição = 2
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.25
+Sílabas: ['é', 'u', 'ma', 'di', 'á', 'te', 'se', 'e é u', 'ma', 'sín', 'te', 'se']
+Sílabas únicas: {'se', 'ma', 'é', 'á', 'u', 'sín', 'e é u', 'di', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 9
+ - Score Resultante: 0.283
+Soma dos critérios: 0.85
+Score máximo: 3
+
+------------------
+Verso: O/ con/tem/pla/t#i/vo,/ en/t#ão,/ le/v#an/ta/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10', '5'}
+União: {'10', '2', '7', '5', '8'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: d#en, posição = 10
+Segmento: v#an, posição = 10
+Referência: m#e, posição = 5
+Segmento: t#i, posição = 5
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['o', 'con', 'tem', 'pla', 'ti', 'vo', 'en', 'tão', 'le', 'van', 'ta', 'se']
+Sílabas únicas: {'se', 'en', 'vo', 'ta', 'con', 'o', 'ti', 'pla', 'van', 'le', 'tão', 'tem'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.067
+Soma dos critérios: 0.2
+Score máximo: 3
+
+Verso: O/ con/tem/pla/t#i/vo,/ en/t#ão,/ le/v#an/ta/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10', '5'}
+União: {'10', '2', '7', '5', '8'}
+Jaccard: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10', '5'}
+União: {'10', '2', '7', '5', '8'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: d#en, posição = 10
+Segmento: v#an, posição = 10
+Referência: m#e, posição = 5
+Segmento: t#i, posição = 5
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: d#en, posição = 10
+Segmento: v#an, posição = 10
+Referência: m#e, posição = 5
+Segmento: t#i, posição = 5
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['o', 'con', 'tem', 'pla', 'ti', 'vo', 'en', 'tão', 'le', 'van', 'ta', 'se']
+Sílabas únicas: {'se', 'en', 'vo', 'ta', 'con', 'o', 'ti', 'pla', 'van', 'le', 'tão', 'tem'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.133
+Soma dos critérios: 0.4
+Score máximo: 3
+
+------------------
+Verso: F#ar/ se #i/a/ o ex/po/#en/te/ da/ ne/vr#o/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '2'}
+União: {'7', '5', '6', '2', '10', '1'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '2'}
+Referência: d#en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: c#e, posição = 2
+Segmento: se #i, posição = 2
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['far', 'se i', 'a', 'o ex', 'po', 'en', 'te', 'da', 'ne', 'vro', 'se']
+Sílabas únicas: {'vro', 'se', 'en', 'te', 'po', 'o ex', 'se i', 'da', 'far', 'ne', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.056
+Soma dos critérios: 0.17
+Score máximo: 3
+
+Verso: F#ar/ se #i/a/ o ex/po/#en/te/ da/ ne/vr#o/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.333
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '2'}
+União: {'7', '5', '6', '2', '10', '1'}
+Jaccard: 0.3333333333333333
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '2'}
+União: {'7', '5', '6', '2', '10', '1'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '2'}
+Referência: d#en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: c#e, posição = 2
+Segmento: se #i, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '2'}
+Referência: d#en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: c#e, posição = 2
+Segmento: se #i, posição = 2
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['far', 'se i', 'a', 'o ex', 'po', 'en', 'te', 'da', 'ne', 'vro', 'se']
+Sílabas únicas: {'vro', 'se', 'en', 'te', 'po', 'o ex', 'se i', 'da', 'far', 'ne', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.111
+Soma dos critérios: 0.33
+Score máximo: 3
+
+------------------
+Verso: Os/ ad/ver/s#á/rios/ a/co/to/ve/l#a/vam/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.1
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'4', '10', '2', '7', '5'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: d#en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['os', 'ad', 'ver', 'sá', 'rios', 'a', 'co', 'to', 've', 'la', 'vam', 'se']
+Sílabas únicas: {'se', 've', 'la', 'ad', 'ver', 'rios', 'sá', 'co', 'os', 'vam', 'a', 'to'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.033
+Soma dos critérios: 0.1
+Score máximo: 3
+
+Verso: Os/ ad/ver/s#á/rios/ a/co/to/ve/l#a/vam/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'4', '10', '2', '7', '5'}
+Jaccard: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'4', '10', '2', '7', '5'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: d#en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: d#en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['os', 'ad', 'ver', 'sá', 'rios', 'a', 'co', 'to', 've', 'la', 'vam', 'se']
+Sílabas únicas: {'se', 've', 'la', 'ad', 'ver', 'rios', 'sá', 'co', 'os', 'vam', 'a', 'to'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.067
+Soma dos critérios: 0.2
+Score máximo: 3
+
+------------ESCOLHIDO----------------
+Quantidade de versos: 7
+Verso: é/ #u/ma/ di/#á/te/se/ e é #u/ma/ s#ín/te/se.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.6
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'7', '5', '2', '10', '8'}
+Jaccard: 0.6
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'7', '5', '2', '10', '8'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['#u', '#á', 'e é #u', 's#ín']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: s#ín, posição = 10
+Referência: m#e, posição = 5
+Segmento: #á, posição = 5
+Referência: c#e, posição = 2
+Segmento: #u, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['#u', '#á', 'e é #u', 's#ín']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: s#ín, posição = 10
+Referência: m#e, posição = 5
+Segmento: #á, posição = 5
+Referência: c#e, posição = 2
+Segmento: #u, posição = 2
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.25
+Sílabas: ['é', 'u', 'ma', 'di', 'á', 'te', 'se', 'e é u', 'ma', 'sín', 'te', 'se']
+Sílabas únicas: {'se', 'ma', 'é', 'á', 'u', 'sín', 'e é u', 'di', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 9
+ - Score Resultante: 0.283
+Soma dos critérios: 0.85
+Score máximo: 3
+
+------------------
+Verso: #Es/te/ é/ um/ r#i/o/ Sem/ a/flu/#en/tes.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: entes
+Segmento: entes
+entes = entes
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '8', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '5'}
+União: {'2', '10', '1', '5', '8'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#u', '#á', 'e é #u', 's#ín']
+Segmento: ['#Es', 'r#i', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: s#ín, posição = 10
+Segmento: #en, posição = 10
+Referência: #á, posição = 5
+Segmento: r#i, posição = 5
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['es', 'te', 'é', 'um', 'ri', 'o', 'sem', 'a', 'flu', 'en', 'tes']
+Sílabas únicas: {'flu', 'en', 'é', 'te', 'ri', 'um', 'a', 'o', 'sem', 'tes', 'es'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.44
+Soma dos critérios: 2.2
+Score máximo: 5
+
+Verso: #Es/te/ é/ um/ r#i/o/ Sem/ a/flu/#en/tes.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: entes
+Segmento: entes
+entes = entes
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '8', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '5'}
+União: {'2', '10', '1', '5', '8'}
+Jaccard: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '5'}
+União: {'10', '2', '7', '1', '5'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#u', '#á', 'e é #u', 's#ín']
+Segmento: ['#Es', 'r#i', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: s#ín, posição = 10
+Segmento: #en, posição = 10
+Referência: #á, posição = 5
+Segmento: r#i, posição = 5
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['#Es', 'r#i', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: d#en, posição = 10
+Segmento: #en, posição = 10
+Referência: m#e, posição = 5
+Segmento: r#i, posição = 5
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['es', 'te', 'é', 'um', 'ri', 'o', 'sem', 'a', 'flu', 'en', 'tes']
+Sílabas únicas: {'flu', 'en', 'é', 'te', 'ri', 'um', 'a', 'o', 'sem', 'tes', 'es'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.48
+Soma dos critérios: 2.4
+Score máximo: 5
+
+------------------
+Verso: Vi/v#ia/se à a/ven/t#u/ra,/ de ex/pe/di/#en/tes.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: entes
+Segmento: entes
+entes = entes
+ - Estrutura Ritmica: 0.375
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '8', '10']
+Segmento: ['2', '5', '10']
+Intercessão: {'10', '5', '2'}
+União: {'2', '10', '5', '8'}
+Jaccard: 0.75
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#u', '#á', 'e é #u', 's#ín']
+Segmento: ['v#ia', 't#u', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5', '2'}
+Referência: s#ín, posição = 10
+Segmento: #en, posição = 10
+Referência: #á, posição = 5
+Segmento: t#u, posição = 5
+Referência: #u, posição = 2
+Segmento: v#ia, posição = 2
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['vi', 'via', 'se à a', 'ven', 'tu', 'ra', 'de ex', 'pe', 'di', 'en', 'tes']
+Sílabas únicas: {'ven', 'ra', 'pe', 'se à a', 'en', 'tes', 'de ex', 'tu', 'vi', 'di', 'via'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.475
+Soma dos critérios: 2.38
+Score máximo: 5
+
+Verso: Vi/v#ia/se à a/ven/t#u/ra,/ de ex/pe/di/#en/tes.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: entes
+Segmento: entes
+entes = entes
+ - Estrutura Ritmica: 0.75
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '8', '10']
+Segmento: ['2', '5', '10']
+Intercessão: {'10', '5', '2'}
+União: {'2', '10', '5', '8'}
+Jaccard: 0.75
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '10']
+Intercessão: {'10', '5', '2'}
+União: {'10', '2', '7', '5'}
+Jaccard: 0.75
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#u', '#á', 'e é #u', 's#ín']
+Segmento: ['v#ia', 't#u', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5', '2'}
+Referência: s#ín, posição = 10
+Segmento: #en, posição = 10
+Referência: #á, posição = 5
+Segmento: t#u, posição = 5
+Referência: #u, posição = 2
+Segmento: v#ia, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['v#ia', 't#u', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: #en, posição = 10
+Referência: m#e, posição = 5
+Segmento: t#u, posição = 5
+Referência: c#e, posição = 2
+Segmento: v#ia, posição = 2
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['vi', 'via', 'se à a', 'ven', 'tu', 'ra', 'de ex', 'pe', 'di', 'en', 'tes']
+Sílabas únicas: {'ven', 'ra', 'pe', 'se à a', 'en', 'tes', 'de ex', 'tu', 'vi', 'di', 'via'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.55
+Soma dos critérios: 2.75
+Score máximo: 5
+
+------------------
+Verso: Des/c#e/ram/ r#ui/do/sa/men/te As/ ver/t#en/tes.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: entes
+Segmento: entes
+entes = entes
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '8', '10']
+Segmento: ['2', '4', '10']
+Intercessão: {'10', '2'}
+União: {'4', '2', '10', '5', '8'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#u', '#á', 'e é #u', 's#ín']
+Segmento: ['c#e', 'r#ui', 't#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '2'}
+Referência: s#ín, posição = 10
+Segmento: t#en, posição = 10
+Referência: #u, posição = 2
+Segmento: c#e, posição = 2
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['des', 'ce', 'ram', 'rui', 'do', 'sa', 'men', 'te as', 'ver', 'ten', 'tes']
+Sílabas únicas: {'ten', 'sa', 'ce', 'do', 'men', 'ver', 'te as', 'ram', 'des', 'tes', 'rui'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.44
+Soma dos critérios: 2.2
+Score máximo: 5
+
+Verso: Des/c#e/ram/ r#ui/do/sa/men/te As/ ver/t#en/tes.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: entes
+Segmento: entes
+entes = entes
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '8', '10']
+Segmento: ['2', '4', '10']
+Intercessão: {'10', '2'}
+União: {'4', '2', '10', '5', '8'}
+Jaccard: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '4', '10']
+Intercessão: {'10', '2'}
+União: {'4', '10', '2', '7', '5'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.167
+Sílabas acentuadas:
+Referência: ['#u', '#á', 'e é #u', 's#ín']
+Segmento: ['c#e', 'r#ui', 't#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '2'}
+Referência: s#ín, posição = 10
+Segmento: t#en, posição = 10
+Referência: #u, posição = 2
+Segmento: c#e, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['c#e', 'r#ui', 't#en']
+Resultado: 0.3333333333333333
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '2'}
+Referência: d#en, posição = 10
+Segmento: t#en, posição = 10
+Referência: c#e, posição = 2
+Segmento: c#e, posição = 2
+ Resultado: 0.3333333333333333
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['des', 'ce', 'ram', 'rui', 'do', 'sa', 'men', 'te as', 'ver', 'ten', 'tes']
+Sílabas únicas: {'ten', 'sa', 'ce', 'do', 'men', 'ver', 'te as', 'ram', 'des', 'tes', 'rui'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.513
+Soma dos critérios: 2.57
+Score máximo: 5
+
+------------------
+Verso: Du/pli/c#a/vam/ As/ f#or/ças/ a/ssal/t#an/tes.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: antes
+Segmento: entes
+a != e
+ - Estrutura Ritmica: 0.083
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '8', '10']
+Segmento: ['3', '6', '10']
+Intercessão: {'10'}
+União: {'3', '6', '2', '10', '5', '8'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#u', '#á', 'e é #u', 's#ín']
+Segmento: ['c#a', 'f#or', 't#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: s#ín, posição = 10
+Segmento: t#an, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['du', 'pli', 'ca', 'vam', 'as', 'for', 'ças', 'a', 'ssal', 'tan', 'tes']
+Sílabas únicas: {'pli', 'for', 'tan', 'ças', 'ssal', 'a', 'vam', 'du', 'as', 'tes', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.217
+Soma dos critérios: 1.08
+Score máximo: 5
+
+Verso: Du/pli/c#a/vam/ As/ f#or/ças/ a/ssal/t#an/tes.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: antes
+Segmento: entes
+a != e
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '8', '10']
+Segmento: ['3', '6', '10']
+Intercessão: {'10'}
+União: {'3', '6', '2', '10', '5', '8'}
+Jaccard: 0.16666666666666666
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['3', '6', '10']
+Intercessão: {'10'}
+União: {'3', '10', '2', '7', '5', '6'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#u', '#á', 'e é #u', 's#ín']
+Segmento: ['c#a', 'f#or', 't#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: s#ín, posição = 10
+Segmento: t#an, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['c#a', 'f#or', 't#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: d#en, posição = 10
+Segmento: t#an, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['du', 'pli', 'ca', 'vam', 'as', 'for', 'ças', 'a', 'ssal', 'tan', 'tes']
+Sílabas únicas: {'pli', 'for', 'tan', 'ças', 'ssal', 'a', 'vam', 'du', 'as', 'tes', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.233
+Soma dos critérios: 1.17
+Score máximo: 5
+
+------------ESCOLHIDO----------------
+Quantidade de versos: 4
+Verso: Vi/v#ia/se à a/ven/t#u/ra,/ de ex/pe/di/#en/tes.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: entes
+Segmento: entes
+entes = entes
+ - Estrutura Ritmica: 0.75
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '8', '10']
+Segmento: ['2', '5', '10']
+Intercessão: {'10', '5', '2'}
+União: {'2', '10', '5', '8'}
+Jaccard: 0.75
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '10']
+Intercessão: {'10', '5', '2'}
+União: {'10', '2', '7', '5'}
+Jaccard: 0.75
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#u', '#á', 'e é #u', 's#ín']
+Segmento: ['v#ia', 't#u', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5', '2'}
+Referência: s#ín, posição = 10
+Segmento: #en, posição = 10
+Referência: #á, posição = 5
+Segmento: t#u, posição = 5
+Referência: #u, posição = 2
+Segmento: v#ia, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['v#ia', 't#u', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: #en, posição = 10
+Referência: m#e, posição = 5
+Segmento: t#u, posição = 5
+Referência: c#e, posição = 2
+Segmento: v#ia, posição = 2
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['vi', 'via', 'se à a', 'ven', 'tu', 'ra', 'de ex', 'pe', 'di', 'en', 'tes']
+Sílabas únicas: {'ven', 'ra', 'pe', 'se à a', 'en', 'tes', 'de ex', 'tu', 'vi', 'di', 'via'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.55
+Soma dos critérios: 2.75
+Score máximo: 5
+
+------------------
+Verso: Hi/p#ó/te/ses/ s#o/bre/ a/ s#u/a/ g#ê/ne/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ênese
+Segmento: íntese
+ê != í
+ - Estrutura Ritmica: 0.375
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'2', '10', '5', '8'}
+Jaccard: 0.75
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['p#ó', 's#o', 's#u', 'g#ê']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5', '2'}
+Referência: #en, posição = 10
+Segmento: g#ê, posição = 10
+Referência: t#u, posição = 5
+Segmento: s#o, posição = 5
+Referência: v#ia, posição = 2
+Segmento: p#ó, posição = 2
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.083
+Sílabas: ['hi', 'pó', 'te', 'ses', 'so', 'bre', 'a', 'su', 'a', 'gê', 'ne', 'se']
+Sílabas únicas: {'se', 'ses', 'te', 'pó', 'a', 'gê', 'hi', 'su', 'bre', 'ne', 'so'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.292
+Soma dos critérios: 1.46
+Score máximo: 5
+
+Verso: Hi/p#ó/te/ses/ s#o/bre/ a/ s#u/a/ g#ê/ne/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ênese
+Segmento: íntese
+ê != í
+ - Estrutura Ritmica: 0.675
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'2', '10', '5', '8'}
+Jaccard: 0.75
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'7', '5', '2', '10', '8'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['p#ó', 's#o', 's#u', 'g#ê']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5', '2'}
+Referência: #en, posição = 10
+Segmento: g#ê, posição = 10
+Referência: t#u, posição = 5
+Segmento: s#o, posição = 5
+Referência: v#ia, posição = 2
+Segmento: p#ó, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['p#ó', 's#o', 's#u', 'g#ê']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: g#ê, posição = 10
+Referência: m#e, posição = 5
+Segmento: s#o, posição = 5
+Referência: c#e, posição = 2
+Segmento: p#ó, posição = 2
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.083
+Sílabas: ['hi', 'pó', 'te', 'ses', 'so', 'bre', 'a', 'su', 'a', 'gê', 'ne', 'se']
+Sílabas únicas: {'se', 'ses', 'te', 'pó', 'a', 'gê', 'hi', 'su', 'bre', 'ne', 'so'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.352
+Soma dos critérios: 1.76
+Score máximo: 5
+
+------------------
+Verso: é #u/ma/ mu/ta/ç#ã/o/ de a/po/te/#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: íntese
+o != í
+ - Estrutura Ritmica: 0.25
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '5'}
+União: {'2', '10', '1', '5'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: #en, posição = 10
+Segmento: #o, posição = 10
+Referência: t#u, posição = 5
+Segmento: ç#ã, posição = 5
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.091
+Sílabas: ['é u', 'ma', 'mu', 'ta', 'çã', 'o', 'de a', 'po', 'te', 'o', 'se']
+Sílabas únicas: {'se', 'ma', 'mu', 'é u', 'ta', 'o', 'po', 'de a', 'çã', 'te'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.068
+Soma dos critérios: 0.34
+Score máximo: 5
+
+Verso: é #u/ma/ mu/ta/ç#ã/o/ de a/po/te/#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: íntese
+o != í
+ - Estrutura Ritmica: 0.45
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '5'}
+União: {'2', '10', '1', '5'}
+Jaccard: 0.5
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '5'}
+União: {'10', '2', '7', '1', '5'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: #en, posição = 10
+Segmento: #o, posição = 10
+Referência: t#u, posição = 5
+Segmento: ç#ã, posição = 5
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: d#en, posição = 10
+Segmento: #o, posição = 10
+Referência: m#e, posição = 5
+Segmento: ç#ã, posição = 5
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.091
+Sílabas: ['é u', 'ma', 'mu', 'ta', 'çã', 'o', 'de a', 'po', 'te', 'o', 'se']
+Sílabas únicas: {'se', 'ma', 'mu', 'é u', 'ta', 'o', 'po', 'de a', 'çã', 'te'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.108
+Soma dos critérios: 0.54
+Score máximo: 5
+
+------------------
+Verso: O/ va/qu#ei/ro/ do/ N#or/te é a/ s#ua/ an/t#í/te/se.
+ Scores:
+ - Rima Consoante: 0.5
+Letras após vogal acentuada: 
+Referência: ítese
+Segmento: íntese
+í = í
+ - Estrutura Ritmica: 0.083
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'3', '6', '2', '10', '5', '8'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: #en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'va', 'quei', 'ro', 'do', 'nor', 'te é a', 'sua', 'an', 'tí', 'te', 'se']
+Sílabas únicas: {'se', 'ro', 'do', 'sua', 'o', 'an', 'tí', 'quei', 'te é a', 'nor', 'va', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.317
+Soma dos critérios: 1.58
+Score máximo: 5
+
+Verso: O/ va/qu#ei/ro/ do/ N#or/te é a/ s#ua/ an/t#í/te/se.
+ Scores:
+ - Rima Consoante: 0.5
+Letras após vogal acentuada: 
+Referência: ítese
+Segmento: íntese
+í = í
+ - Estrutura Ritmica: 0.155
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'3', '6', '2', '10', '5', '8'}
+Jaccard: 0.16666666666666666
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'7', '5', '6', '3', '2', '10', '8'}
+Jaccard: 0.14285714285714285
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: #en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10'}
+Referência: d#en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'va', 'quei', 'ro', 'do', 'nor', 'te é a', 'sua', 'an', 'tí', 'te', 'se']
+Sílabas únicas: {'se', 'ro', 'do', 'sua', 'o', 'an', 'tí', 'quei', 'te é a', 'nor', 'va', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.331
+Soma dos critérios: 1.65
+Score máximo: 5
+
+------------------
+Verso: O/ con/tem/pla/t#i/vo,/ en/t#ão,/ le/v#an/ta/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: antase
+Segmento: íntese
+a != í
+ - Estrutura Ritmica: 0.25
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10', '5'}
+União: {'2', '10', '5', '8'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: #en, posição = 10
+Segmento: v#an, posição = 10
+Referência: t#u, posição = 5
+Segmento: t#i, posição = 5
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'con', 'tem', 'pla', 'ti', 'vo', 'en', 'tão', 'le', 'van', 'ta', 'se']
+Sílabas únicas: {'se', 'en', 'vo', 'ta', 'con', 'o', 'ti', 'pla', 'van', 'le', 'tão', 'tem'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.25
+Soma dos critérios: 1.25
+Score máximo: 5
+
+Verso: O/ con/tem/pla/t#i/vo,/ en/t#ão,/ le/v#an/ta/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: antase
+Segmento: íntese
+a != í
+ - Estrutura Ritmica: 0.45
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10', '5'}
+União: {'2', '10', '5', '8'}
+Jaccard: 0.5
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10', '5'}
+União: {'10', '2', '7', '5', '8'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: #en, posição = 10
+Segmento: v#an, posição = 10
+Referência: t#u, posição = 5
+Segmento: t#i, posição = 5
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: d#en, posição = 10
+Segmento: v#an, posição = 10
+Referência: m#e, posição = 5
+Segmento: t#i, posição = 5
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'con', 'tem', 'pla', 'ti', 'vo', 'en', 'tão', 'le', 'van', 'ta', 'se']
+Sílabas únicas: {'se', 'en', 'vo', 'ta', 'con', 'o', 'ti', 'pla', 'van', 'le', 'tão', 'tem'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.29
+Soma dos critérios: 1.45
+Score máximo: 5
+
+------------------
+Verso: F#ar/ se #i/a/ o ex/po/#en/te/ da/ ne/vr#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: íntese
+o != í
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '2'}
+União: {'2', '10', '1', '5', '6'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.083
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.3333333333333333
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '2'}
+Referência: #en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: v#ia, posição = 2
+Segmento: se #i, posição = 2
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['far', 'se i', 'a', 'o ex', 'po', 'en', 'te', 'da', 'ne', 'vro', 'se']
+Sílabas únicas: {'vro', 'se', 'en', 'te', 'po', 'o ex', 'se i', 'da', 'far', 'ne', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.057
+Soma dos critérios: 0.28
+Score máximo: 5
+
+Verso: F#ar/ se #i/a/ o ex/po/#en/te/ da/ ne/vr#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: íntese
+o != í
+ - Estrutura Ritmica: 0.367
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '2'}
+União: {'2', '10', '1', '5', '6'}
+Jaccard: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '2'}
+União: {'7', '5', '6', '2', '10', '1'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.083
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.3333333333333333
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '2'}
+Referência: #en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: v#ia, posição = 2
+Segmento: se #i, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '2'}
+Referência: d#en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: c#e, posição = 2
+Segmento: se #i, posição = 2
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['far', 'se i', 'a', 'o ex', 'po', 'en', 'te', 'da', 'ne', 'vro', 'se']
+Sílabas únicas: {'vro', 'se', 'en', 'te', 'po', 'o ex', 'se i', 'da', 'far', 'ne', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.09
+Soma dos critérios: 0.45
+Score máximo: 5
+
+------------------
+Verso: Os/ ad/ver/s#á/rios/ a/co/to/ve/l#a/vam/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: avamse
+Segmento: íntese
+a != í
+ - Estrutura Ritmica: 0.125
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '5'}
+Jaccard: 0.25
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: #en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['os', 'ad', 'ver', 'sá', 'rios', 'a', 'co', 'to', 've', 'la', 'vam', 'se']
+Sílabas únicas: {'se', 've', 'la', 'ad', 'ver', 'rios', 'sá', 'co', 'os', 'vam', 'a', 'to'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.225
+Soma dos critérios: 1.12
+Score máximo: 5
+
+Verso: Os/ ad/ver/s#á/rios/ a/co/to/ve/l#a/vam/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: avamse
+Segmento: íntese
+a != í
+ - Estrutura Ritmica: 0.225
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '5'}
+Jaccard: 0.25
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'4', '10', '2', '7', '5'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: #en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: d#en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['os', 'ad', 'ver', 'sá', 'rios', 'a', 'co', 'to', 've', 'la', 'vam', 'se']
+Sílabas únicas: {'se', 've', 'la', 'ad', 'ver', 'rios', 'sá', 'co', 'os', 'vam', 'a', 'to'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.245
+Soma dos critérios: 1.23
+Score máximo: 5
+
+------------ESCOLHIDO----------------
+Quantidade de versos: 6
+Verso: Hi/p#ó/te/ses/ s#o/bre/ a/ s#u/a/ g#ê/ne/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ênese
+Segmento: íntese
+ê != í
+ - Estrutura Ritmica: 0.675
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'2', '10', '5', '8'}
+Jaccard: 0.75
+Posição das sílabas acentuadas:
+Referência: ['2', '5', '7', '10']
+Segmento: ['2', '5', '8', '10']
+Intercessão: {'10', '5', '2'}
+União: {'7', '5', '2', '10', '8'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['v#ia', 't#u', '#en']
+Segmento: ['p#ó', 's#o', 's#u', 'g#ê']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5', '2'}
+Referência: #en, posição = 10
+Segmento: g#ê, posição = 10
+Referência: t#u, posição = 5
+Segmento: s#o, posição = 5
+Referência: v#ia, posição = 2
+Segmento: p#ó, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'm#e', 'e #a', 'd#en']
+Segmento: ['p#ó', 's#o', 's#u', 'g#ê']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '5', '2'}
+Referência: d#en, posição = 10
+Segmento: g#ê, posição = 10
+Referência: m#e, posição = 5
+Segmento: s#o, posição = 5
+Referência: c#e, posição = 2
+Segmento: p#ó, posição = 2
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.083
+Sílabas: ['hi', 'pó', 'te', 'ses', 'so', 'bre', 'a', 'su', 'a', 'gê', 'ne', 'se']
+Sílabas únicas: {'se', 'ses', 'te', 'pó', 'a', 'gê', 'hi', 'su', 'bre', 'ne', 'so'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.352
+Soma dos critérios: 1.76
+Score máximo: 5
+
+Des/c#e/ram/ r#ui/do/sa/men/te As/ ver/t#en/tes.
+
+------------------
+Verso: é #u/ma/ mu/ta/ç#ã/o/ de a/po/te/#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: ênese
+o != ê
+ - Estrutura Ritmica: 0.1
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '1', '5'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: #o, posição = 10
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.091
+Sílabas: ['é u', 'ma', 'mu', 'ta', 'çã', 'o', 'de a', 'po', 'te', 'o', 'se']
+Sílabas únicas: {'se', 'ma', 'mu', 'é u', 'ta', 'o', 'po', 'de a', 'çã', 'te'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.038
+Soma dos critérios: 0.19
+Score máximo: 5
+
+Verso: é #u/ma/ mu/ta/ç#ã/o/ de a/po/te/#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: ênese
+o != ê
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '1', '5'}
+Jaccard: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '1', '5'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: #o, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: #o, posição = 10
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.091
+Sílabas: ['é u', 'ma', 'mu', 'ta', 'çã', 'o', 'de a', 'po', 'te', 'o', 'se']
+Sílabas únicas: {'se', 'ma', 'mu', 'é u', 'ta', 'o', 'po', 'de a', 'çã', 'te'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.058
+Soma dos critérios: 0.29
+Score máximo: 5
+
+------------------
+Verso: O/ va/qu#ei/ro/ do/ N#or/te é a/ s#ua/ an/t#í/te/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ítese
+Segmento: ênese
+í != ê
+ - Estrutura Ritmica: 0.083
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'4', '3', '6', '2', '10', '8'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'va', 'quei', 'ro', 'do', 'nor', 'te é a', 'sua', 'an', 'tí', 'te', 'se']
+Sílabas únicas: {'se', 'ro', 'do', 'sua', 'o', 'an', 'tí', 'quei', 'te é a', 'nor', 'va', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.217
+Soma dos critérios: 1.08
+Score máximo: 5
+
+Verso: O/ va/qu#ei/ro/ do/ N#or/te é a/ s#ua/ an/t#í/te/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ítese
+Segmento: ênese
+í != ê
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'4', '3', '6', '2', '10', '8'}
+Jaccard: 0.16666666666666666
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'4', '3', '6', '2', '10', '8'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'va', 'quei', 'ro', 'do', 'nor', 'te é a', 'sua', 'an', 'tí', 'te', 'se']
+Sílabas únicas: {'se', 'ro', 'do', 'sua', 'o', 'an', 'tí', 'quei', 'te é a', 'nor', 'va', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.233
+Soma dos critérios: 1.17
+Score máximo: 5
+
+------------------
+Verso: O/ con/tem/pla/t#i/vo,/ en/t#ão,/ le/v#an/ta/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: antase
+Segmento: ênese
+a != ê
+ - Estrutura Ritmica: 0.1
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '5', '8'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: v#an, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'con', 'tem', 'pla', 'ti', 'vo', 'en', 'tão', 'le', 'van', 'ta', 'se']
+Sílabas únicas: {'se', 'en', 'vo', 'ta', 'con', 'o', 'ti', 'pla', 'van', 'le', 'tão', 'tem'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.22
+Soma dos critérios: 1.1
+Score máximo: 5
+
+Verso: O/ con/tem/pla/t#i/vo,/ en/t#ão,/ le/v#an/ta/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: antase
+Segmento: ênese
+a != ê
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '5', '8'}
+Jaccard: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '5', '8'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: v#an, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: v#an, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'con', 'tem', 'pla', 'ti', 'vo', 'en', 'tão', 'le', 'van', 'ta', 'se']
+Sílabas únicas: {'se', 'en', 'vo', 'ta', 'con', 'o', 'ti', 'pla', 'van', 'le', 'tão', 'tem'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.24
+Soma dos critérios: 1.2
+Score máximo: 5
+
+------------------
+Verso: F#ar/ se #i/a/ o ex/po/#en/te/ da/ ne/vr#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: ênese
+o != ê
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '2'}
+União: {'4', '2', '10', '1', '6'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '2'}
+Referência: t#en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: c#e, posição = 2
+Segmento: se #i, posição = 2
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['far', 'se i', 'a', 'o ex', 'po', 'en', 'te', 'da', 'ne', 'vro', 'se']
+Sílabas únicas: {'vro', 'se', 'en', 'te', 'po', 'o ex', 'se i', 'da', 'far', 'ne', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.04
+Soma dos critérios: 0.2
+Score máximo: 5
+
+Verso: F#ar/ se #i/a/ o ex/po/#en/te/ da/ ne/vr#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: ênese
+o != ê
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '2'}
+União: {'4', '2', '10', '1', '6'}
+Jaccard: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '2'}
+União: {'4', '2', '10', '1', '6'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '2'}
+Referência: t#en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: c#e, posição = 2
+Segmento: se #i, posição = 2
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '2'}
+Referência: t#en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: c#e, posição = 2
+Segmento: se #i, posição = 2
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['far', 'se i', 'a', 'o ex', 'po', 'en', 'te', 'da', 'ne', 'vro', 'se']
+Sílabas únicas: {'vro', 'se', 'en', 'te', 'po', 'o ex', 'se i', 'da', 'far', 'ne', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.08
+Soma dos critérios: 0.4
+Score máximo: 5
+
+------------------
+Verso: Os/ ad/ver/s#á/rios/ a/co/to/ve/l#a/vam/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: avamse
+Segmento: ênese
+a != ê
+ - Estrutura Ritmica: 0.333
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['4', '10']
+Intercessão: {'4', '10'}
+União: {'4', '2', '10'}
+Jaccard: 0.6666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'4', '10'}
+Referência: r#ui, posição = 4
+Segmento: s#á, posição = 4
+Referência: t#en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['os', 'ad', 'ver', 'sá', 'rios', 'a', 'co', 'to', 've', 'la', 'vam', 'se']
+Sílabas únicas: {'se', 've', 'la', 'ad', 'ver', 'rios', 'sá', 'co', 'os', 'vam', 'a', 'to'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.267
+Soma dos critérios: 1.33
+Score máximo: 5
+
+Verso: Os/ ad/ver/s#á/rios/ a/co/to/ve/l#a/vam/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: avamse
+Segmento: ênese
+a != ê
+ - Estrutura Ritmica: 0.667
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['4', '10']
+Intercessão: {'4', '10'}
+União: {'4', '2', '10'}
+Jaccard: 0.6666666666666666
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['4', '10']
+Intercessão: {'4', '10'}
+União: {'4', '2', '10'}
+Jaccard: 0.6666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'4', '10'}
+Referência: r#ui, posição = 4
+Segmento: s#á, posição = 4
+Referência: t#en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'4', '10'}
+Referência: r#ui, posição = 4
+Segmento: s#á, posição = 4
+Referência: t#en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['os', 'ad', 'ver', 'sá', 'rios', 'a', 'co', 'to', 've', 'la', 'vam', 'se']
+Sílabas únicas: {'se', 've', 'la', 'ad', 'ver', 'rios', 'sá', 'co', 'os', 'vam', 'a', 'to'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.333
+Soma dos critérios: 1.67
+Score máximo: 5
+
+------------ESCOLHIDO----------------
+Quantidade de versos: 5
+Verso: Os/ ad/ver/s#á/rios/ a/co/to/ve/l#a/vam/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: avamse
+Segmento: ênese
+a != ê
+ - Estrutura Ritmica: 0.667
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['4', '10']
+Intercessão: {'4', '10'}
+União: {'4', '2', '10'}
+Jaccard: 0.6666666666666666
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['4', '10']
+Intercessão: {'4', '10'}
+União: {'4', '2', '10'}
+Jaccard: 0.6666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'4', '10'}
+Referência: r#ui, posição = 4
+Segmento: s#á, posição = 4
+Referência: t#en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['s#á', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'4', '10'}
+Referência: r#ui, posição = 4
+Segmento: s#á, posição = 4
+Referência: t#en, posição = 10
+Segmento: l#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['os', 'ad', 'ver', 'sá', 'rios', 'a', 'co', 'to', 've', 'la', 'vam', 'se']
+Sílabas únicas: {'se', 've', 'la', 'ad', 'ver', 'rios', 'sá', 'co', 'os', 'vam', 'a', 'to'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.333
+Soma dos critérios: 1.67
+Score máximo: 5
+
+------------------
+Verso: #Es/te/ é/ um/ r#i/o/ Sem/ a/flu/#en/tes.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: entes
+Segmento: entes
+entes = entes
+ - Estrutura Ritmica: 0.125
+Posição das sílabas acentuadas:
+Referência: ['4', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10'}
+União: {'4', '10', '1', '5'}
+Jaccard: 0.25
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['s#á', 'l#a']
+Segmento: ['#Es', 'r#i', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: l#a, posição = 10
+Segmento: #en, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['es', 'te', 'é', 'um', 'ri', 'o', 'sem', 'a', 'flu', 'en', 'tes']
+Sílabas únicas: {'flu', 'en', 'é', 'te', 'ri', 'um', 'a', 'o', 'sem', 'tes', 'es'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.425
+Soma dos critérios: 2.12
+Score máximo: 5
+
+Verso: #Es/te/ é/ um/ r#i/o/ Sem/ a/flu/#en/tes.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: entes
+Segmento: entes
+entes = entes
+ - Estrutura Ritmica: 0.225
+Posição das sílabas acentuadas:
+Referência: ['4', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10'}
+União: {'4', '10', '1', '5'}
+Jaccard: 0.25
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '1', '5'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['s#á', 'l#a']
+Segmento: ['#Es', 'r#i', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: l#a, posição = 10
+Segmento: #en, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['#Es', 'r#i', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: #en, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['es', 'te', 'é', 'um', 'ri', 'o', 'sem', 'a', 'flu', 'en', 'tes']
+Sílabas únicas: {'flu', 'en', 'é', 'te', 'ri', 'um', 'a', 'o', 'sem', 'tes', 'es'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.445
+Soma dos critérios: 2.23
+Score máximo: 5
+
+------------------
+Verso: Du/pli/c#a/vam/ As/ f#or/ças/ a/ssal/t#an/tes.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: antes
+Segmento: entes
+a != e
+ - Estrutura Ritmica: 0.125
+Posição das sílabas acentuadas:
+Referência: ['4', '10']
+Segmento: ['3', '6', '10']
+Intercessão: {'10'}
+União: {'4', '3', '10', '6'}
+Jaccard: 0.25
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['s#á', 'l#a']
+Segmento: ['c#a', 'f#or', 't#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: l#a, posição = 10
+Segmento: t#an, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['du', 'pli', 'ca', 'vam', 'as', 'for', 'ças', 'a', 'ssal', 'tan', 'tes']
+Sílabas únicas: {'pli', 'for', 'tan', 'ças', 'ssal', 'a', 'vam', 'du', 'as', 'tes', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.225
+Soma dos critérios: 1.12
+Score máximo: 5
+
+Verso: Du/pli/c#a/vam/ As/ f#or/ças/ a/ssal/t#an/tes.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: antes
+Segmento: entes
+a != e
+ - Estrutura Ritmica: 0.225
+Posição das sílabas acentuadas:
+Referência: ['4', '10']
+Segmento: ['3', '6', '10']
+Intercessão: {'10'}
+União: {'4', '3', '10', '6'}
+Jaccard: 0.25
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['3', '6', '10']
+Intercessão: {'10'}
+União: {'4', '3', '2', '10', '6'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['s#á', 'l#a']
+Segmento: ['c#a', 'f#or', 't#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: l#a, posição = 10
+Segmento: t#an, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['c#a', 'f#or', 't#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: t#an, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['du', 'pli', 'ca', 'vam', 'as', 'for', 'ças', 'a', 'ssal', 'tan', 'tes']
+Sílabas únicas: {'pli', 'for', 'tan', 'ças', 'ssal', 'a', 'vam', 'du', 'as', 'tes', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.245
+Soma dos critérios: 1.23
+Score máximo: 5
+
+------------ESCOLHIDO----------------
+Quantidade de versos: 2
+Verso: #Es/te/ é/ um/ r#i/o/ Sem/ a/flu/#en/tes.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: entes
+Segmento: entes
+entes = entes
+ - Estrutura Ritmica: 0.225
+Posição das sílabas acentuadas:
+Referência: ['4', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10'}
+União: {'4', '10', '1', '5'}
+Jaccard: 0.25
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '1', '5'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['s#á', 'l#a']
+Segmento: ['#Es', 'r#i', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: l#a, posição = 10
+Segmento: #en, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['#Es', 'r#i', '#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: #en, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['es', 'te', 'é', 'um', 'ri', 'o', 'sem', 'a', 'flu', 'en', 'tes']
+Sílabas únicas: {'flu', 'en', 'é', 'te', 'ri', 'um', 'a', 'o', 'sem', 'tes', 'es'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.445
+Soma dos critérios: 2.23
+Score máximo: 5
+
+------------------
+Verso: é #u/ma/ mu/ta/ç#ã/o/ de a/po/te/#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: avamse
+o != a
+ - Estrutura Ritmica: 0.5
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '1', '5'}
+União: {'10', '1', '5'}
+Jaccard: 1.0
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#Es', 'r#i', '#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '1', '5'}
+Referência: #en, posição = 10
+Segmento: #o, posição = 10
+Referência: #Es, posição = 1
+Segmento: é #u, posição = 1
+Referência: r#i, posição = 5
+Segmento: ç#ã, posição = 5
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.091
+Sílabas: ['é u', 'ma', 'mu', 'ta', 'çã', 'o', 'de a', 'po', 'te', 'o', 'se']
+Sílabas únicas: {'se', 'ma', 'mu', 'é u', 'ta', 'o', 'po', 'de a', 'çã', 'te'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.118
+Soma dos critérios: 0.59
+Score máximo: 5
+
+Verso: é #u/ma/ mu/ta/ç#ã/o/ de a/po/te/#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: avamse
+o != a
+ - Estrutura Ritmica: 0.6
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10', '1', '5'}
+União: {'10', '1', '5'}
+Jaccard: 1.0
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['1', '5', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '1', '5'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#Es', 'r#i', '#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '1', '5'}
+Referência: #en, posição = 10
+Segmento: #o, posição = 10
+Referência: #Es, posição = 1
+Segmento: é #u, posição = 1
+Referência: r#i, posição = 5
+Segmento: ç#ã, posição = 5
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['é #u', 'ç#ã', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: #o, posição = 10
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.091
+Sílabas: ['é u', 'ma', 'mu', 'ta', 'çã', 'o', 'de a', 'po', 'te', 'o', 'se']
+Sílabas únicas: {'se', 'ma', 'mu', 'é u', 'ta', 'o', 'po', 'de a', 'çã', 'te'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.138
+Soma dos critérios: 0.69
+Score máximo: 5
+
+------------------
+Verso: O/ va/qu#ei/ro/ do/ N#or/te é a/ s#ua/ an/t#í/te/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ítese
+Segmento: avamse
+í != a
+ - Estrutura Ritmica: 0.083
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'3', '6', '10', '1', '5', '8'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#Es', 'r#i', '#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: #en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'va', 'quei', 'ro', 'do', 'nor', 'te é a', 'sua', 'an', 'tí', 'te', 'se']
+Sílabas únicas: {'se', 'ro', 'do', 'sua', 'o', 'an', 'tí', 'quei', 'te é a', 'nor', 'va', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.217
+Soma dos critérios: 1.08
+Score máximo: 5
+
+Verso: O/ va/qu#ei/ro/ do/ N#or/te é a/ s#ua/ an/t#í/te/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ítese
+Segmento: avamse
+í != a
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'3', '6', '10', '1', '5', '8'}
+Jaccard: 0.16666666666666666
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['3', '6', '8', '10']
+Intercessão: {'10'}
+União: {'4', '3', '6', '2', '10', '8'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#Es', 'r#i', '#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: #en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['qu#ei', 'N#or', 's#ua', 't#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: t#í, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'va', 'quei', 'ro', 'do', 'nor', 'te é a', 'sua', 'an', 'tí', 'te', 'se']
+Sílabas únicas: {'se', 'ro', 'do', 'sua', 'o', 'an', 'tí', 'quei', 'te é a', 'nor', 'va', 'te'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.233
+Soma dos critérios: 1.17
+Score máximo: 5
+
+------------------
+Verso: O/ con/tem/pla/t#i/vo,/ en/t#ão,/ le/v#an/ta/se.
+ Scores:
+ - Rima Consoante: 0.5
+Letras após vogal acentuada: 
+Referência: antase
+Segmento: avamse
+a = a
+ - Estrutura Ritmica: 0.25
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10', '5'}
+União: {'10', '1', '5', '8'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#Es', 'r#i', '#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: #en, posição = 10
+Segmento: v#an, posição = 10
+Referência: r#i, posição = 5
+Segmento: t#i, posição = 5
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'con', 'tem', 'pla', 'ti', 'vo', 'en', 'tão', 'le', 'van', 'ta', 'se']
+Sílabas únicas: {'se', 'en', 'vo', 'ta', 'con', 'o', 'ti', 'pla', 'van', 'le', 'tão', 'tem'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.35
+Soma dos critérios: 1.75
+Score máximo: 5
+
+Verso: O/ con/tem/pla/t#i/vo,/ en/t#ão,/ le/v#an/ta/se.
+ Scores:
+ - Rima Consoante: 0.5
+Letras após vogal acentuada: 
+Referência: antase
+Segmento: avamse
+a = a
+ - Estrutura Ritmica: 0.35
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10', '5'}
+União: {'10', '1', '5', '8'}
+Jaccard: 0.5
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '5', '8'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#Es', 'r#i', '#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: #en, posição = 10
+Segmento: v#an, posição = 10
+Referência: r#i, posição = 5
+Segmento: t#i, posição = 5
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: v#an, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'con', 'tem', 'pla', 'ti', 'vo', 'en', 'tão', 'le', 'van', 'ta', 'se']
+Sílabas únicas: {'se', 'en', 'vo', 'ta', 'con', 'o', 'ti', 'pla', 'van', 'le', 'tão', 'tem'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.37
+Soma dos critérios: 1.85
+Score máximo: 5
+
+------------------
+Verso: F#ar/ se #i/a/ o ex/po/#en/te/ da/ ne/vr#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: avamse
+o != a
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '1'}
+União: {'2', '10', '1', '5', '6'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.083
+Sílabas acentuadas:
+Referência: ['#Es', 'r#i', '#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.3333333333333333
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '1'}
+Referência: #en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: #Es, posição = 1
+Segmento: F#ar, posição = 1
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['far', 'se i', 'a', 'o ex', 'po', 'en', 'te', 'da', 'ne', 'vro', 'se']
+Sílabas únicas: {'vro', 'se', 'en', 'te', 'po', 'o ex', 'se i', 'da', 'far', 'ne', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.057
+Soma dos critérios: 0.28
+Score máximo: 5
+
+Verso: F#ar/ se #i/a/ o ex/po/#en/te/ da/ ne/vr#o/se.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ose
+Segmento: avamse
+o != a
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '1'}
+União: {'2', '10', '1', '5', '6'}
+Jaccard: 0.4
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['1', '2', '6', '10']
+Intercessão: {'10', '2'}
+União: {'4', '2', '10', '1', '6'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.083
+Sílabas acentuadas:
+Referência: ['#Es', 'r#i', '#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.3333333333333333
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '1'}
+Referência: #en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: #Es, posição = 1
+Segmento: F#ar, posição = 1
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['F#ar', 'se #i', '#en', 'vr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '2'}
+Referência: t#en, posição = 10
+Segmento: vr#o, posição = 10
+Referência: c#e, posição = 2
+Segmento: se #i, posição = 2
+ Resultado: 0.0
+ - Acento: 0
+Acento da referência: Grave
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['far', 'se i', 'a', 'o ex', 'po', 'en', 'te', 'da', 'ne', 'vro', 'se']
+Sílabas únicas: {'vro', 'se', 'en', 'te', 'po', 'o ex', 'se i', 'da', 'far', 'ne', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.097
+Soma dos critérios: 0.48
+Score máximo: 5
+
+------------ESCOLHIDO----------------
+Quantidade de versos: 4
+Verso: O/ con/tem/pla/t#i/vo,/ en/t#ão,/ le/v#an/ta/se.
+ Scores:
+ - Rima Consoante: 0.5
+Letras após vogal acentuada: 
+Referência: antase
+Segmento: avamse
+a = a
+ - Estrutura Ritmica: 0.35
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10', '5'}
+União: {'10', '1', '5', '8'}
+Jaccard: 0.5
+Posição das sílabas acentuadas:
+Referência: ['2', '4', '10']
+Segmento: ['5', '8', '10']
+Intercessão: {'10'}
+União: {'4', '2', '10', '5', '8'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#Es', 'r#i', '#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '5'}
+Referência: #en, posição = 10
+Segmento: v#an, posição = 10
+Referência: r#i, posição = 5
+Segmento: t#i, posição = 5
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['c#e', 'r#ui', 't#en']
+Segmento: ['t#i', 't#ão,', 'v#an']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: t#en, posição = 10
+Segmento: v#an, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Esdrúxula
+Acento do segmento: Esdrúxula
+ - Rima Interna: 0.0
+Sílabas: ['o', 'con', 'tem', 'pla', 'ti', 'vo', 'en', 'tão', 'le', 'van', 'ta', 'se']
+Sílabas únicas: {'se', 'en', 'vo', 'ta', 'con', 'o', 'ti', 'pla', 'van', 'le', 'tão', 'tem'}
+Quantidade de sílabas: 12
+Quantidade de sílabas únicas: 12
+ - Score Resultante: 0.37
+Soma dos critérios: 1.85
+Score máximo: 5
+
+F#oi,/ Sem/ ma/i/#or/ e/x#a/me, a/pro/v#a/do.
+
+------------------
+Verso: E/ o/ ser/t#ã/o/ é/ um/ pa/ra/#í/so...
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.1
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'4', '10', '7', '1', '5'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['t#ã', '#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: v#a, posição = 10
+Segmento: #í, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.091
+Sílabas: ['e', 'o', 'ser', 'tã', 'o', 'é', 'um', 'pa', 'ra', 'í', 'so']
+Sílabas únicas: {'ra', 'e', 'é', 'um', 'í', 'o', 'pa', 'tã', 'ser', 'so'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.064
+Soma dos critérios: 0.19
+Score máximo: 3
+
+Verso: E/ o/ ser/t#ã/o/ é/ um/ pa/ra/#í/so...
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'4', '10', '7', '1', '5'}
+Jaccard: 0.2
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'4', '10', '7', '1', '5'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['t#ã', '#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: v#a, posição = 10
+Segmento: #í, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['t#ã', '#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: v#a, posição = 10
+Segmento: #í, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.091
+Sílabas: ['e', 'o', 'ser', 'tã', 'o', 'é', 'um', 'pa', 'ra', 'í', 'so']
+Sílabas únicas: {'ra', 'e', 'é', 'um', 'í', 'o', 'pa', 'tã', 'ser', 'so'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.097
+Soma dos critérios: 0.29
+Score máximo: 3
+
+------------------
+Verso: N#ão/ h#á/ al/vi/tr#ar/se #o/u/tro/ re/c#ur/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.25
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '2', '5', '6', '10']
+Intercessão: {'10', '1', '5'}
+União: {'7', '5', '6', '2', '10', '1'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['N#ão', 'h#á', 'tr#ar', 'se #o', 'c#ur']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '5'}
+Referência: v#a, posição = 10
+Segmento: c#ur, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: N#ão, posição = 1
+Referência: #or, posição = 5
+Segmento: tr#ar, posição = 5
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['não', 'há', 'al', 'vi', 'trar', 'se o', 'u', 'tro', 're', 'cur', 'so']
+Sílabas únicas: {'não', 'há', 'al', 'cur', 'u', 're', 'se o', 'tro', 'trar', 'vi', 'so'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.083
+Soma dos critérios: 0.25
+Score máximo: 3
+
+Verso: N#ão/ h#á/ al/vi/tr#ar/se #o/u/tro/ re/c#ur/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.5
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '2', '5', '6', '10']
+Intercessão: {'10', '1', '5'}
+União: {'7', '5', '6', '2', '10', '1'}
+Jaccard: 0.5
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '2', '5', '6', '10']
+Intercessão: {'10', '1', '5'}
+União: {'7', '5', '6', '2', '10', '1'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['N#ão', 'h#á', 'tr#ar', 'se #o', 'c#ur']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '5'}
+Referência: v#a, posição = 10
+Segmento: c#ur, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: N#ão, posição = 1
+Referência: #or, posição = 5
+Segmento: tr#ar, posição = 5
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['N#ão', 'h#á', 'tr#ar', 'se #o', 'c#ur']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '5'}
+Referência: v#a, posição = 10
+Segmento: c#ur, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: N#ão, posição = 1
+Referência: #or, posição = 5
+Segmento: tr#ar, posição = 5
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['não', 'há', 'al', 'vi', 'trar', 'se o', 'u', 'tro', 're', 'cur', 'so']
+Sílabas únicas: {'não', 'há', 'al', 'cur', 'u', 're', 'se o', 'tro', 'trar', 'vi', 'so'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.167
+Soma dos critérios: 0.5
+Score máximo: 3
+
+------------------
+Verso: Gu#ar/daa/ c#o/mo/ ca/pi/t#al/ pre/ci/#o/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.3
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'10', '1', '7'}
+União: {'7', '5', '3', '10', '1'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['Gu#ar', 'c#o', 't#al', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '7'}
+Referência: v#a, posição = 10
+Segmento: #o, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: Gu#ar, posição = 1
+Referência: x#a, posição = 7
+Segmento: t#al, posição = 7
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['guar', 'daa', 'co', 'mo', 'ca', 'pi', 'tal', 'pre', 'ci', 'o', 'so']
+Sílabas únicas: {'mo', 'pi', 'tal', 'pre', 'ci', 'o', 'co', 'daa', 'so', 'guar', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.1
+Soma dos critérios: 0.3
+Score máximo: 3
+
+Verso: Gu#ar/daa/ c#o/mo/ ca/pi/t#al/ pre/ci/#o/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.6
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'10', '1', '7'}
+União: {'7', '5', '3', '10', '1'}
+Jaccard: 0.6
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'10', '1', '7'}
+União: {'7', '5', '3', '10', '1'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['Gu#ar', 'c#o', 't#al', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '7'}
+Referência: v#a, posição = 10
+Segmento: #o, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: Gu#ar, posição = 1
+Referência: x#a, posição = 7
+Segmento: t#al, posição = 7
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['Gu#ar', 'c#o', 't#al', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '7'}
+Referência: v#a, posição = 10
+Segmento: #o, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: Gu#ar, posição = 1
+Referência: x#a, posição = 7
+Segmento: t#al, posição = 7
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['guar', 'daa', 'co', 'mo', 'ca', 'pi', 'tal', 'pre', 'ci', 'o', 'so']
+Sílabas únicas: {'mo', 'pi', 'tal', 'pre', 'ci', 'o', 'co', 'daa', 'so', 'guar', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.2
+Soma dos critérios: 0.6
+Score máximo: 3
+
+------------------
+Verso: #E/ra/ tru/a/n#es/co e #e/ra/ pa/vo/r#o/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.3
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '5', '6', '10']
+Intercessão: {'10', '1', '5'}
+União: {'7', '5', '6', '10', '1'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['#E', 'n#es', 'co e #e', 'r#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '5'}
+Referência: v#a, posição = 10
+Segmento: r#o, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: #E, posição = 1
+Referência: #or, posição = 5
+Segmento: n#es, posição = 5
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.091
+Sílabas: ['e', 'ra', 'tru', 'a', 'nes', 'co e e', 'ra', 'pa', 'vo', 'ro', 'so']
+Sílabas únicas: {'co e e', 'ra', 'nes', 'e', 'vo', 'ro', 'tru', 'pa', 'so', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.13
+Soma dos critérios: 0.39
+Score máximo: 3
+
+Verso: #E/ra/ tru/a/n#es/co e #e/ra/ pa/vo/r#o/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.6
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '5', '6', '10']
+Intercessão: {'10', '1', '5'}
+União: {'7', '5', '6', '10', '1'}
+Jaccard: 0.6
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '5', '6', '10']
+Intercessão: {'10', '1', '5'}
+União: {'7', '5', '6', '10', '1'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['#E', 'n#es', 'co e #e', 'r#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '5'}
+Referência: v#a, posição = 10
+Segmento: r#o, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: #E, posição = 1
+Referência: #or, posição = 5
+Segmento: n#es, posição = 5
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['#E', 'n#es', 'co e #e', 'r#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '5'}
+Referência: v#a, posição = 10
+Segmento: r#o, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: #E, posição = 1
+Referência: #or, posição = 5
+Segmento: n#es, posição = 5
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.091
+Sílabas: ['e', 'ra', 'tru', 'a', 'nes', 'co e e', 'ra', 'pa', 'vo', 'ro', 'so']
+Sílabas únicas: {'co e e', 'ra', 'nes', 'e', 'vo', 'ro', 'tru', 'pa', 'so', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.23
+Soma dos critérios: 0.69
+Score máximo: 3
+
+------------------
+Verso: #O/ra,/ #es/te/ f#a/to/ #e/ra um/ a/v#i/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '5', '7', '10']
+Intercessão: {'7', '1', '5', '10'}
+União: {'7', '5', '3', '10', '1'}
+Jaccard: 0.8
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['#O', '#es', 'f#a', '#e', 'v#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '1', '5', '10'}
+Referência: x#a, posição = 7
+Segmento: #e, posição = 7
+Referência: F#oi,, posição = 1
+Segmento: #O, posição = 1
+Referência: #or, posição = 5
+Segmento: f#a, posição = 5
+Referência: v#a, posição = 10
+Segmento: v#i, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['o', 'ra', 'es', 'te', 'fa', 'to', 'e', 'ra um', 'a', 'vi', 'so']
+Sílabas únicas: {'ra', 'e', 'te', 'vi', 'a', 'so', 'o', 'fa', 'ra um', 'es', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.133
+Soma dos critérios: 0.4
+Score máximo: 3
+
+Verso: #O/ra,/ #es/te/ f#a/to/ #e/ra um/ a/v#i/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.8
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '5', '7', '10']
+Intercessão: {'7', '1', '5', '10'}
+União: {'7', '5', '3', '10', '1'}
+Jaccard: 0.8
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '5', '7', '10']
+Intercessão: {'7', '1', '5', '10'}
+União: {'7', '5', '3', '10', '1'}
+Jaccard: 0.8
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['#O', '#es', 'f#a', '#e', 'v#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '1', '5', '10'}
+Referência: x#a, posição = 7
+Segmento: #e, posição = 7
+Referência: F#oi,, posição = 1
+Segmento: #O, posição = 1
+Referência: #or, posição = 5
+Segmento: f#a, posição = 5
+Referência: v#a, posição = 10
+Segmento: v#i, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['#O', '#es', 'f#a', '#e', 'v#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '1', '5', '10'}
+Referência: x#a, posição = 7
+Segmento: #e, posição = 7
+Referência: F#oi,, posição = 1
+Segmento: #O, posição = 1
+Referência: #or, posição = 5
+Segmento: f#a, posição = 5
+Referência: v#a, posição = 10
+Segmento: v#i, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['o', 'ra', 'es', 'te', 'fa', 'to', 'e', 'ra um', 'a', 'vi', 'so']
+Sílabas únicas: {'ra', 'e', 'te', 'vi', 'a', 'so', 'o', 'fa', 'ra um', 'es', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.267
+Soma dos critérios: 0.8
+Score máximo: 3
+
+------------------
+Verso: bal/b#úr/di/a/ do/ mu/lhe/r#io/ me/dr#o/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.083
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['2', '8', '10']
+Intercessão: {'10'}
+União: {'10', '2', '7', '1', '5', '8'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['b#úr', 'r#io', 'dr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: v#a, posição = 10
+Segmento: dr#o, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['bal', 'búr', 'di', 'a', 'do', 'mu', 'lhe', 'rio', 'me', 'dro', 'so']
+Sílabas únicas: {'rio', 'búr', 'mu', 'bal', 'do', 'lhe', 'dro', 'me', 'so', 'di', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.028
+Soma dos critérios: 0.08
+Score máximo: 3
+
+Verso: bal/b#úr/di/a/ do/ mu/lhe/r#io/ me/dr#o/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['2', '8', '10']
+Intercessão: {'10'}
+União: {'10', '2', '7', '1', '5', '8'}
+Jaccard: 0.16666666666666666
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['2', '8', '10']
+Intercessão: {'10'}
+União: {'10', '2', '7', '1', '5', '8'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['b#úr', 'r#io', 'dr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: v#a, posição = 10
+Segmento: dr#o, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['b#úr', 'r#io', 'dr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: v#a, posição = 10
+Segmento: dr#o, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['bal', 'búr', 'di', 'a', 'do', 'mu', 'lhe', 'rio', 'me', 'dro', 'so']
+Sílabas únicas: {'rio', 'búr', 'mu', 'bal', 'do', 'lhe', 'dro', 'me', 'so', 'di', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.056
+Soma dos critérios: 0.17
+Score máximo: 3
+
+------------ESCOLHIDO----------------
+Quantidade de versos: 6
+Verso: #O/ra,/ #es/te/ f#a/to/ #e/ra um/ a/v#i/so.
+ Scores:
+ - Rima Consoante: Sem verso que rima
+ - Estrutura Ritmica: 0.8
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '5', '7', '10']
+Intercessão: {'7', '1', '5', '10'}
+União: {'7', '5', '3', '10', '1'}
+Jaccard: 0.8
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '5', '7', '10']
+Intercessão: {'7', '1', '5', '10'}
+União: {'7', '5', '3', '10', '1'}
+Jaccard: 0.8
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['#O', '#es', 'f#a', '#e', 'v#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '1', '5', '10'}
+Referência: x#a, posição = 7
+Segmento: #e, posição = 7
+Referência: F#oi,, posição = 1
+Segmento: #O, posição = 1
+Referência: #or, posição = 5
+Segmento: f#a, posição = 5
+Referência: v#a, posição = 10
+Segmento: v#i, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['#O', '#es', 'f#a', '#e', 'v#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '1', '5', '10'}
+Referência: x#a, posição = 7
+Segmento: #e, posição = 7
+Referência: F#oi,, posição = 1
+Segmento: #O, posição = 1
+Referência: #or, posição = 5
+Segmento: f#a, posição = 5
+Referência: v#a, posição = 10
+Segmento: v#i, posição = 10
+ Resultado: 0.0
+ - Acento: Sem verso que rima
+ - Rima Interna: 0.0
+Sílabas: ['o', 'ra', 'es', 'te', 'fa', 'to', 'e', 'ra um', 'a', 'vi', 'so']
+Sílabas únicas: {'ra', 'e', 'te', 'vi', 'a', 'so', 'o', 'fa', 'ra um', 'es', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.267
+Soma dos critérios: 0.8
+Score máximo: 3
+
+------------------
+Verso: Fe/rr#a/do/ o/ b#oi,/ es/t#á/ ga/ran/t#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.25
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['2', '5', '7', '10']
+Intercessão: {'7', '5', '10'}
+União: {'3', '10', '2', '7', '1', '5'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['rr#a', 'b#oi,', 't#á', 't#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '5', '10'}
+Referência: #e, posição = 7
+Segmento: t#á, posição = 7
+Referência: f#a, posição = 5
+Segmento: b#oi,, posição = 5
+Referência: v#i, posição = 10
+Segmento: t#i, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['fe', 'rra', 'do', 'o', 'boi', 'es', 'tá', 'ga', 'ran', 'ti', 'do']
+Sílabas únicas: {'do', 'o', 'ti', 'fe', 'tá', 'boi', 'rra', 'ran', 'ga', 'es'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.268
+Soma dos critérios: 1.34
+Score máximo: 5
+
+Verso: Fe/rr#a/do/ o/ b#oi,/ es/t#á/ ga/ran/t#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.55
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['2', '5', '7', '10']
+Intercessão: {'7', '5', '10'}
+União: {'3', '10', '2', '7', '1', '5'}
+Jaccard: 0.5
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['2', '5', '7', '10']
+Intercessão: {'7', '5', '10'}
+União: {'7', '5', '2', '10', '1'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['rr#a', 'b#oi,', 't#á', 't#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '5', '10'}
+Referência: #e, posição = 7
+Segmento: t#á, posição = 7
+Referência: f#a, posição = 5
+Segmento: b#oi,, posição = 5
+Referência: v#i, posição = 10
+Segmento: t#i, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['rr#a', 'b#oi,', 't#á', 't#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '5', '10'}
+Referência: x#a, posição = 7
+Segmento: t#á, posição = 7
+Referência: #or, posição = 5
+Segmento: b#oi,, posição = 5
+Referência: v#a, posição = 10
+Segmento: t#i, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['fe', 'rra', 'do', 'o', 'boi', 'es', 'tá', 'ga', 'ran', 'ti', 'do']
+Sílabas únicas: {'do', 'o', 'ti', 'fe', 'tá', 'boi', 'rra', 'ran', 'ga', 'es'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.328
+Soma dos critérios: 1.64
+Score máximo: 5
+
+------------------
+Verso: N#a/da/ re/fe/r#i/a/ s#o/bre o/ pa/ss#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '5', '7', '10']
+Intercessão: {'7', '1', '5', '10'}
+União: {'3', '10', '7', '1', '5'}
+Jaccard: 0.8
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['N#a', 'r#i', 's#o', 'ss#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '1', '5', '10'}
+Referência: #e, posição = 7
+Segmento: s#o, posição = 7
+Referência: #O, posição = 1
+Segmento: N#a, posição = 1
+Referência: f#a, posição = 5
+Segmento: r#i, posição = 5
+Referência: v#i, posição = 10
+Segmento: ss#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['na', 'da', 're', 'fe', 'ri', 'a', 'so', 'bre o', 'pa', 'ssa', 'do']
+Sílabas únicas: {'do', 'ri', 're', 'fe', 'pa', 'da', 'so', 'ssa', 'bre o', 'a', 'na'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.48
+Soma dos critérios: 2.4
+Score máximo: 5
+
+Verso: N#a/da/ re/fe/r#i/a/ s#o/bre o/ pa/ss#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.9
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '5', '7', '10']
+Intercessão: {'7', '1', '5', '10'}
+União: {'3', '10', '7', '1', '5'}
+Jaccard: 0.8
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '5', '7', '10']
+Intercessão: {'7', '1', '5', '10'}
+União: {'7', '5', '10', '1'}
+Jaccard: 1.0
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['N#a', 'r#i', 's#o', 'ss#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '1', '5', '10'}
+Referência: #e, posição = 7
+Segmento: s#o, posição = 7
+Referência: #O, posição = 1
+Segmento: N#a, posição = 1
+Referência: f#a, posição = 5
+Segmento: r#i, posição = 5
+Referência: v#i, posição = 10
+Segmento: ss#a, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['N#a', 'r#i', 's#o', 'ss#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '1', '5', '10'}
+Referência: x#a, posição = 7
+Segmento: s#o, posição = 7
+Referência: F#oi,, posição = 1
+Segmento: N#a, posição = 1
+Referência: #or, posição = 5
+Segmento: r#i, posição = 5
+Referência: v#a, posição = 10
+Segmento: ss#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['na', 'da', 're', 'fe', 'ri', 'a', 'so', 'bre o', 'pa', 'ssa', 'do']
+Sílabas únicas: {'do', 'ri', 're', 'fe', 'pa', 'da', 'so', 'ssa', 'bre o', 'a', 'na'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.58
+Soma dos critérios: 2.9
+Score máximo: 5
+
+------------------
+Verso: S#an/to/ An/t#ô/ni/o/ A/pa/re/c#i/do
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '4', '10']
+Intercessão: {'10', '1'}
+União: {'3', '4', '10', '7', '1', '5'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['S#an', 't#ô', 'c#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '1'}
+Referência: v#i, posição = 10
+Segmento: c#i, posição = 10
+Referência: #O, posição = 1
+Segmento: S#an, posição = 1
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['san', 'to', 'an', 'tô', 'ni', 'o', 'a', 'pa', 're', 'ci', 'do']
+Sílabas únicas: {'ni', 'do', 'tô', 're', 'o', 'ci', 'an', 'pa', 'san', 'a', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.233
+Soma dos critérios: 1.17
+Score máximo: 5
+
+Verso: S#an/to/ An/t#ô/ni/o/ A/pa/re/c#i/do
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.367
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '4', '10']
+Intercessão: {'10', '1'}
+União: {'3', '4', '10', '7', '1', '5'}
+Jaccard: 0.3333333333333333
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '4', '10']
+Intercessão: {'10', '1'}
+União: {'4', '10', '7', '1', '5'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['S#an', 't#ô', 'c#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '1'}
+Referência: v#i, posição = 10
+Segmento: c#i, posição = 10
+Referência: #O, posição = 1
+Segmento: S#an, posição = 1
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['S#an', 't#ô', 'c#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '1'}
+Referência: v#a, posição = 10
+Segmento: c#i, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: S#an, posição = 1
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['san', 'to', 'an', 'tô', 'ni', 'o', 'a', 'pa', 're', 'ci', 'do']
+Sílabas únicas: {'ni', 'do', 'tô', 're', 'o', 'ci', 'an', 'pa', 'san', 'a', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.273
+Soma dos critérios: 1.37
+Score máximo: 5
+
+------------------
+Verso: T#i/nha/ m#e/i/o/ ca/m#i/nho/ an/d#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'3', '10', '7', '1', '5'}
+Jaccard: 0.8
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['T#i', 'm#e', 'm#i', 'd#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: #es, posição = 3
+Segmento: m#e, posição = 3
+Referência: #O, posição = 1
+Segmento: T#i, posição = 1
+Referência: v#i, posição = 10
+Segmento: d#a, posição = 10
+Referência: #e, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['ti', 'nha', 'me', 'i', 'o', 'ca', 'mi', 'nho', 'an', 'da', 'do']
+Sílabas únicas: {'do', 'mi', 'nho', 'nha', 'o', 'ti', 'me', 'an', 'i', 'da', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.48
+Soma dos critérios: 2.4
+Score máximo: 5
+
+Verso: T#i/nha/ m#e/i/o/ ca/m#i/nho/ an/d#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.7
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'3', '10', '7', '1', '5'}
+Jaccard: 0.8
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'10', '1', '7'}
+União: {'7', '5', '3', '10', '1'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['T#i', 'm#e', 'm#i', 'd#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: #es, posição = 3
+Segmento: m#e, posição = 3
+Referência: #O, posição = 1
+Segmento: T#i, posição = 1
+Referência: v#i, posição = 10
+Segmento: d#a, posição = 10
+Referência: #e, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['T#i', 'm#e', 'm#i', 'd#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '7'}
+Referência: v#a, posição = 10
+Segmento: d#a, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: T#i, posição = 1
+Referência: x#a, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['ti', 'nha', 'me', 'i', 'o', 'ca', 'mi', 'nho', 'an', 'da', 'do']
+Sílabas únicas: {'do', 'mi', 'nho', 'nha', 'o', 'ti', 'me', 'an', 'i', 'da', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.54
+Soma dos critérios: 2.7
+Score máximo: 5
+
+------------------
+Verso: A/ss#im,/ #e/ra/ um/ de/se/qui/li/br#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['2', '3', '10']
+Intercessão: {'3', '10'}
+União: {'3', '10', '2', '7', '1', '5'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.083
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['ss#im,', '#e', 'br#a']
+Resultado: 0.3333333333333333
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'3', '10'}
+Referência: #es, posição = 3
+Segmento: #e, posição = 3
+Referência: v#i, posição = 10
+Segmento: br#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['a', 'ssim', 'e', 'ra', 'um', 'de', 'se', 'qui', 'li', 'bra', 'do']
+Sílabas únicas: {'se', 'qui', 'ra', 'e', 'de', 'do', 'um', 'bra', 'li', 'ssim', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.45
+Soma dos critérios: 2.25
+Score máximo: 5
+
+Verso: A/ss#im,/ #e/ra/ um/ de/se/qui/li/br#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.25
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['2', '3', '10']
+Intercessão: {'3', '10'}
+União: {'3', '10', '2', '7', '1', '5'}
+Jaccard: 0.3333333333333333
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['2', '3', '10']
+Intercessão: {'10'}
+União: {'3', '10', '2', '7', '1', '5'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.083
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['ss#im,', '#e', 'br#a']
+Resultado: 0.3333333333333333
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'3', '10'}
+Referência: #es, posição = 3
+Segmento: #e, posição = 3
+Referência: v#i, posição = 10
+Segmento: br#a, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['ss#im,', '#e', 'br#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: v#a, posição = 10
+Segmento: br#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['a', 'ssim', 'e', 'ra', 'um', 'de', 'se', 'qui', 'li', 'bra', 'do']
+Sílabas únicas: {'se', 'qui', 'ra', 'e', 'de', 'do', 'um', 'bra', 'li', 'ssim', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.467
+Soma dos critérios: 2.33
+Score máximo: 5
+
+------------------
+Verso: O/ f#a/to/ f#oi/ de/ t#o/do i/nes/pe/r#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.062
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['2', '4', '6', '10']
+Intercessão: {'10'}
+União: {'3', '4', '10', '2', '7', '1', '5', '6'}
+Jaccard: 0.125
+ - Silabas Tônicas: 0.062
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['f#a', 'f#oi', 't#o', 'r#a']
+Resultado: 0.25
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10'}
+Referência: v#i, posição = 10
+Segmento: r#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['o', 'fa', 'to', 'foi', 'de', 'to', 'do i', 'nes', 'pe', 'ra', 'do']
+Sílabas únicas: {'ra', 'pe', 'nes', 'de', 'do', 'do i', 'o', 'fa', 'foi', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.443
+Soma dos critérios: 2.22
+Score máximo: 5
+
+Verso: O/ f#a/to/ f#oi/ de/ t#o/do i/nes/pe/r#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.134
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['2', '4', '6', '10']
+Intercessão: {'10'}
+União: {'3', '4', '10', '2', '7', '1', '5', '6'}
+Jaccard: 0.125
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['2', '4', '6', '10']
+Intercessão: {'10'}
+União: {'7', '5', '6', '4', '2', '10', '1'}
+Jaccard: 0.14285714285714285
+ - Silabas Tônicas: 0.062
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['f#a', 'f#oi', 't#o', 'r#a']
+Resultado: 0.25
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10'}
+Referência: v#i, posição = 10
+Segmento: r#a, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['f#a', 'f#oi', 't#o', 'r#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10'}
+Referência: v#a, posição = 10
+Segmento: r#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['o', 'fa', 'to', 'foi', 'de', 'to', 'do i', 'nes', 'pe', 'ra', 'do']
+Sílabas únicas: {'ra', 'pe', 'nes', 'de', 'do', 'do i', 'o', 'fa', 'foi', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.457
+Soma dos critérios: 2.29
+Score máximo: 5
+
+------------------
+Verso: N#ão/ ha/v#ia/ e/rr#ar/ o #al/vo/ des/me/d#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.333
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '3', '5', '6', '10']
+Intercessão: {'3', '1', '5', '10'}
+União: {'7', '5', '6', '3', '10', '1'}
+Jaccard: 0.6666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['N#ão', 'v#ia', 'rr#ar', 'o #al', 'd#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 5
+Intercessão: {'3', '1', '5', '10'}
+Referência: #es, posição = 3
+Segmento: v#ia, posição = 3
+Referência: #O, posição = 1
+Segmento: N#ão, posição = 1
+Referência: f#a, posição = 5
+Segmento: rr#ar, posição = 5
+Referência: v#i, posição = 10
+Segmento: d#i, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['não', 'ha', 'via', 'e', 'rrar', 'o al', 'vo', 'des', 'me', 'di', 'do']
+Sílabas únicas: {'não', 'rrar', 'e', 'vo', 'do', 'o al', 'ha', 'me', 'des', 'di', 'via'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.267
+Soma dos critérios: 1.33
+Score máximo: 5
+
+Verso: N#ão/ ha/v#ia/ e/rr#ar/ o #al/vo/ des/me/d#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.583
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '3', '5', '6', '10']
+Intercessão: {'3', '1', '5', '10'}
+União: {'7', '5', '6', '3', '10', '1'}
+Jaccard: 0.6666666666666666
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '5', '6', '10']
+Intercessão: {'10', '1', '5'}
+União: {'7', '5', '6', '3', '10', '1'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['N#ão', 'v#ia', 'rr#ar', 'o #al', 'd#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 5
+Intercessão: {'3', '1', '5', '10'}
+Referência: #es, posição = 3
+Segmento: v#ia, posição = 3
+Referência: #O, posição = 1
+Segmento: N#ão, posição = 1
+Referência: f#a, posição = 5
+Segmento: rr#ar, posição = 5
+Referência: v#i, posição = 10
+Segmento: d#i, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['N#ão', 'v#ia', 'rr#ar', 'o #al', 'd#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '5'}
+Referência: v#a, posição = 10
+Segmento: d#i, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: N#ão, posição = 1
+Referência: #or, posição = 5
+Segmento: rr#ar, posição = 5
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['não', 'ha', 'via', 'e', 'rrar', 'o al', 'vo', 'des', 'me', 'di', 'do']
+Sílabas únicas: {'não', 'rrar', 'e', 'vo', 'do', 'o al', 'ha', 'me', 'des', 'di', 'via'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.317
+Soma dos critérios: 1.58
+Score máximo: 5
+
+------------------
+Verso: Re/a/g#i/u a/pe/s#ar/ de/ fe/r#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.071
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['3', '6', '9']
+Intercessão: {'3'}
+União: {'3', '10', '7', '1', '5', '9', '6'}
+Jaccard: 0.14285714285714285
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['g#i', 's#ar', 'r#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'3'}
+Referência: #es, posição = 3
+Segmento: g#i, posição = 3
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['re', 'a', 'gi', 'u a', 'pe', 'sar', 'de', 'fe', 'ri', 'do']
+Sílabas únicas: {'pe', 'de', 'do', 'ri', 'sar', 're', 'gi', 'fe', 'u a', 'a'}
+Quantidade de sílabas: 10
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.214
+Soma dos critérios: 1.07
+Score máximo: 5
+
+Verso: Re/a/g#i/u a/pe/s#ar/ de/ fe/r#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.071
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['3', '6', '9']
+Intercessão: {'3'}
+União: {'3', '10', '7', '1', '5', '9', '6'}
+Jaccard: 0.14285714285714285
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['3', '6', '9']
+Intercessão: set()
+União: {'3', '10', '7', '1', '5', '9', '6'}
+Jaccard: 0.0
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['g#i', 's#ar', 'r#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'3'}
+Referência: #es, posição = 3
+Segmento: g#i, posição = 3
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['g#i', 's#ar', 'r#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: set()
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['re', 'a', 'gi', 'u a', 'pe', 'sar', 'de', 'fe', 'ri', 'do']
+Sílabas únicas: {'pe', 'de', 'do', 'ri', 'sar', 're', 'gi', 'fe', 'u a', 'a'}
+Quantidade de sílabas: 10
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.214
+Soma dos critérios: 1.07
+Score máximo: 5
+
+------------------
+Verso: Ti/ro/t#e/i/os/ du/r#an/te o/ d#ia/ t#o/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: odo
+Segmento: ado
+o != a
+ - Estrutura Ritmica: 0.25
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['3', '7', '9', '10']
+Intercessão: {'3', '10', '7'}
+União: {'3', '10', '7', '1', '5', '9'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['t#e', 'r#an', 'd#ia', 't#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '10', '7'}
+Referência: #es, posição = 3
+Segmento: t#e, posição = 3
+Referência: v#i, posição = 10
+Segmento: t#o, posição = 10
+Referência: #e, posição = 7
+Segmento: r#an, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['ti', 'ro', 'te', 'i', 'os', 'du', 'ran', 'te o', 'dia', 'to', 'do']
+Sílabas únicas: {'te o', 'ro', 'do', 'ti', 'i', 'os', 'du', 'ran', 'dia', 'te', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.25
+Soma dos critérios: 1.25
+Score máximo: 5
+
+Verso: Ti/ro/t#e/i/os/ du/r#an/te o/ d#ia/ t#o/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: odo
+Segmento: ado
+o != a
+ - Estrutura Ritmica: 0.417
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['3', '7', '9', '10']
+Intercessão: {'3', '10', '7'}
+União: {'3', '10', '7', '1', '5', '9'}
+Jaccard: 0.5
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['3', '7', '9', '10']
+Intercessão: {'10', '7'}
+União: {'7', '5', '3', '10', '1', '9'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['t#e', 'r#an', 'd#ia', 't#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '10', '7'}
+Referência: #es, posição = 3
+Segmento: t#e, posição = 3
+Referência: v#i, posição = 10
+Segmento: t#o, posição = 10
+Referência: #e, posição = 7
+Segmento: r#an, posição = 7
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['t#e', 'r#an', 'd#ia', 't#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '7'}
+Referência: v#a, posição = 10
+Segmento: t#o, posição = 10
+Referência: x#a, posição = 7
+Segmento: r#an, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['ti', 'ro', 'te', 'i', 'os', 'du', 'ran', 'te o', 'dia', 'to', 'do']
+Sílabas únicas: {'te o', 'ro', 'do', 'ti', 'i', 'os', 'du', 'ran', 'dia', 'te', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.283
+Soma dos critérios: 1.42
+Score máximo: 5
+
+------------------
+Verso: #E/ra,/ c#er/to,/ o i/ni/m#i/go a/ne/l#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'3', '10', '7', '1', '5'}
+Jaccard: 0.8
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['#E', 'c#er', 'm#i', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: #es, posição = 3
+Segmento: c#er, posição = 3
+Referência: #O, posição = 1
+Segmento: #E, posição = 1
+Referência: v#i, posição = 10
+Segmento: l#a, posição = 10
+Referência: #e, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['e', 'ra', 'cer', 'to', 'o i', 'ni', 'mi', 'go a', 'ne', 'la', 'do']
+Sílabas únicas: {'ra', 'cer', 'e', 'la', 'ni', 'do', 'mi', 'go a', 'o i', 'ne', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.48
+Soma dos critérios: 2.4
+Score máximo: 5
+
+Verso: #E/ra,/ c#er/to,/ o i/ni/m#i/go a/ne/l#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.7
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'3', '10', '7', '1', '5'}
+Jaccard: 0.8
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'10', '1', '7'}
+União: {'7', '5', '3', '10', '1'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['#E', 'c#er', 'm#i', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: #es, posição = 3
+Segmento: c#er, posição = 3
+Referência: #O, posição = 1
+Segmento: #E, posição = 1
+Referência: v#i, posição = 10
+Segmento: l#a, posição = 10
+Referência: #e, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['#E', 'c#er', 'm#i', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1', '7'}
+Referência: v#a, posição = 10
+Segmento: l#a, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: #E, posição = 1
+Referência: x#a, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['e', 'ra', 'cer', 'to', 'o i', 'ni', 'mi', 'go a', 'ne', 'la', 'do']
+Sílabas únicas: {'ra', 'cer', 'e', 'la', 'ni', 'do', 'mi', 'go a', 'o i', 'ne', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.54
+Soma dos critérios: 2.7
+Score máximo: 5
+
+------------------
+Verso: #E/ra um/ g#ol/pe/ de au/d#á/ci/a es/tu/p#en/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: endo
+Segmento: ado
+e != a
+ - Estrutura Ritmica: 0.25
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '3', '6', '10']
+Intercessão: {'3', '1', '10'}
+União: {'3', '10', '7', '1', '5', '6'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['#E', 'g#ol', 'd#á', 'p#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10'}
+Referência: #es, posição = 3
+Segmento: g#ol, posição = 3
+Referência: #O, posição = 1
+Segmento: #E, posição = 1
+Referência: v#i, posição = 10
+Segmento: p#en, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['e', 'ra um', 'gol', 'pe', 'de au', 'dá', 'ci', 'a es', 'tu', 'pen', 'do']
+Sílabas únicas: {'pe', 'a es', 'e', 'do', 'dá', 'tu', 'gol', 'ci', 'ra um', 'pen', 'de au'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.25
+Soma dos critérios: 1.25
+Score máximo: 5
+
+Verso: #E/ra um/ g#ol/pe/ de au/d#á/ci/a es/tu/p#en/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: endo
+Segmento: ado
+e != a
+ - Estrutura Ritmica: 0.417
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '3', '6', '10']
+Intercessão: {'3', '1', '10'}
+União: {'3', '10', '7', '1', '5', '6'}
+Jaccard: 0.5
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '3', '6', '10']
+Intercessão: {'10', '1'}
+União: {'7', '5', '6', '3', '10', '1'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['#E', 'g#ol', 'd#á', 'p#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10'}
+Referência: #es, posição = 3
+Segmento: g#ol, posição = 3
+Referência: #O, posição = 1
+Segmento: #E, posição = 1
+Referência: v#i, posição = 10
+Segmento: p#en, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['#E', 'g#ol', 'd#á', 'p#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1'}
+Referência: v#a, posição = 10
+Segmento: p#en, posição = 10
+Referência: F#oi,, posição = 1
+Segmento: #E, posição = 1
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['e', 'ra um', 'gol', 'pe', 'de au', 'dá', 'ci', 'a es', 'tu', 'pen', 'do']
+Sílabas únicas: {'pe', 'a es', 'e', 'do', 'dá', 'tu', 'gol', 'ci', 'ra um', 'pen', 'de au'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.283
+Soma dos critérios: 1.42
+Score máximo: 5
+
+------------ESCOLHIDO----------------
+Quantidade de versos: 11
+Verso: N#a/da/ re/fe/r#i/a/ s#o/bre o/ pa/ss#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.9
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '5', '7', '10']
+Segmento: ['1', '5', '7', '10']
+Intercessão: {'7', '1', '5', '10'}
+União: {'3', '10', '7', '1', '5'}
+Jaccard: 0.8
+Posição das sílabas acentuadas:
+Referência: ['1', '5', '7', '10']
+Segmento: ['1', '5', '7', '10']
+Intercessão: {'7', '1', '5', '10'}
+União: {'7', '5', '10', '1'}
+Jaccard: 1.0
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['#O', '#es', 'f#a', '#e', 'v#i']
+Segmento: ['N#a', 'r#i', 's#o', 'ss#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '1', '5', '10'}
+Referência: #e, posição = 7
+Segmento: s#o, posição = 7
+Referência: #O, posição = 1
+Segmento: N#a, posição = 1
+Referência: f#a, posição = 5
+Segmento: r#i, posição = 5
+Referência: v#i, posição = 10
+Segmento: ss#a, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['F#oi,', '#or', 'x#a', 'v#a']
+Segmento: ['N#a', 'r#i', 's#o', 'ss#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '1', '5', '10'}
+Referência: x#a, posição = 7
+Segmento: s#o, posição = 7
+Referência: F#oi,, posição = 1
+Segmento: N#a, posição = 1
+Referência: #or, posição = 5
+Segmento: r#i, posição = 5
+Referência: v#a, posição = 10
+Segmento: ss#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['na', 'da', 're', 'fe', 'ri', 'a', 'so', 'bre o', 'pa', 'ssa', 'do']
+Sílabas únicas: {'do', 'ri', 're', 'fe', 'pa', 'da', 'so', 'ssa', 'bre o', 'a', 'na'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.58
+Soma dos critérios: 2.9
+Score máximo: 5
+
+T#i/nha/ m#e/i/o/ ca/m#i/nho/ an/d#a/do.
+
+------------------
+Verso: E/ o/ ser/t#ã/o/ é/ um/ pa/ra/#í/so...
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: íso
+Segmento: iso
+í != i
+ - Estrutura Ritmica: 0.1
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'3', '4', '10', '1', '7'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['t#ã', '#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: d#a, posição = 10
+Segmento: #í, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['e', 'o', 'ser', 'tã', 'o', 'é', 'um', 'pa', 'ra', 'í', 'so']
+Sílabas únicas: {'ra', 'e', 'é', 'um', 'í', 'o', 'pa', 'tã', 'ser', 'so'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.238
+Soma dos critérios: 1.19
+Score máximo: 5
+
+Verso: E/ o/ ser/t#ã/o/ é/ um/ pa/ra/#í/so...
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: íso
+Segmento: iso
+í != i
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'3', '4', '10', '1', '7'}
+Jaccard: 0.2
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['4', '10']
+Intercessão: {'10'}
+União: {'3', '4', '10', '1', '7'}
+Jaccard: 0.2
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['t#ã', '#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: d#a, posição = 10
+Segmento: #í, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['t#ã', '#í']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 2
+Intercessão: {'10'}
+Referência: d#a, posição = 10
+Segmento: #í, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['e', 'o', 'ser', 'tã', 'o', 'é', 'um', 'pa', 'ra', 'í', 'so']
+Sílabas únicas: {'ra', 'e', 'é', 'um', 'í', 'o', 'pa', 'tã', 'ser', 'so'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.258
+Soma dos critérios: 1.29
+Score máximo: 5
+
+------------------
+Verso: N#ão/ h#á/ al/vi/tr#ar/se #o/u/tro/ re/c#ur/so.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: urso
+Segmento: iso
+u != i
+ - Estrutura Ritmica: 0.143
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '2', '5', '6', '10']
+Intercessão: {'10', '1'}
+União: {'7', '5', '6', '3', '2', '10', '1'}
+Jaccard: 0.2857142857142857
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['N#ão', 'h#á', 'tr#ar', 'se #o', 'c#ur']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1'}
+Referência: d#a, posição = 10
+Segmento: c#ur, posição = 10
+Referência: T#i, posição = 1
+Segmento: N#ão, posição = 1
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['não', 'há', 'al', 'vi', 'trar', 'se o', 'u', 'tro', 're', 'cur', 'so']
+Sílabas únicas: {'não', 'há', 'al', 'cur', 'u', 're', 'se o', 'tro', 'trar', 'vi', 'so'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.229
+Soma dos critérios: 1.14
+Score máximo: 5
+
+Verso: N#ão/ h#á/ al/vi/tr#ar/se #o/u/tro/ re/c#ur/so.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: urso
+Segmento: iso
+u != i
+ - Estrutura Ritmica: 0.286
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '2', '5', '6', '10']
+Intercessão: {'10', '1'}
+União: {'7', '5', '6', '3', '2', '10', '1'}
+Jaccard: 0.2857142857142857
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '2', '5', '6', '10']
+Intercessão: {'10', '1'}
+União: {'7', '5', '6', '3', '2', '10', '1'}
+Jaccard: 0.2857142857142857
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['N#ão', 'h#á', 'tr#ar', 'se #o', 'c#ur']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1'}
+Referência: d#a, posição = 10
+Segmento: c#ur, posição = 10
+Referência: T#i, posição = 1
+Segmento: N#ão, posição = 1
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['N#ão', 'h#á', 'tr#ar', 'se #o', 'c#ur']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1'}
+Referência: d#a, posição = 10
+Segmento: c#ur, posição = 10
+Referência: T#i, posição = 1
+Segmento: N#ão, posição = 1
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['não', 'há', 'al', 'vi', 'trar', 'se o', 'u', 'tro', 're', 'cur', 'so']
+Sílabas únicas: {'não', 'há', 'al', 'cur', 'u', 're', 'se o', 'tro', 'trar', 'vi', 'so'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.257
+Soma dos critérios: 1.29
+Score máximo: 5
+
+------------------
+Verso: Gu#ar/daa/ c#o/mo/ ca/pi/t#al/ pre/ci/#o/so.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: oso
+Segmento: iso
+o != i
+ - Estrutura Ritmica: 0.5
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'7', '3', '10', '1'}
+Jaccard: 1.0
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['Gu#ar', 'c#o', 't#al', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: m#e, posição = 3
+Segmento: c#o, posição = 3
+Referência: T#i, posição = 1
+Segmento: Gu#ar, posição = 1
+Referência: d#a, posição = 10
+Segmento: #o, posição = 10
+Referência: m#i, posição = 7
+Segmento: t#al, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['guar', 'daa', 'co', 'mo', 'ca', 'pi', 'tal', 'pre', 'ci', 'o', 'so']
+Sílabas únicas: {'mo', 'pi', 'tal', 'pre', 'ci', 'o', 'co', 'daa', 'so', 'guar', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.3
+Soma dos critérios: 1.5
+Score máximo: 5
+
+Verso: Gu#ar/daa/ c#o/mo/ ca/pi/t#al/ pre/ci/#o/so.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: oso
+Segmento: iso
+o != i
+ - Estrutura Ritmica: 1.0
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'7', '3', '10', '1'}
+Jaccard: 1.0
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'7', '3', '10', '1'}
+Jaccard: 1.0
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['Gu#ar', 'c#o', 't#al', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: m#e, posição = 3
+Segmento: c#o, posição = 3
+Referência: T#i, posição = 1
+Segmento: Gu#ar, posição = 1
+Referência: d#a, posição = 10
+Segmento: #o, posição = 10
+Referência: m#i, posição = 7
+Segmento: t#al, posição = 7
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['Gu#ar', 'c#o', 't#al', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: m#e, posição = 3
+Segmento: c#o, posição = 3
+Referência: T#i, posição = 1
+Segmento: Gu#ar, posição = 1
+Referência: d#a, posição = 10
+Segmento: #o, posição = 10
+Referência: m#i, posição = 7
+Segmento: t#al, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['guar', 'daa', 'co', 'mo', 'ca', 'pi', 'tal', 'pre', 'ci', 'o', 'so']
+Sílabas únicas: {'mo', 'pi', 'tal', 'pre', 'ci', 'o', 'co', 'daa', 'so', 'guar', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.4
+Soma dos critérios: 2.0
+Score máximo: 5
+
+------------------
+Verso: #E/ra/ tru/a/n#es/co e #e/ra/ pa/vo/r#o/so.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: oso
+Segmento: iso
+o != i
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '5', '6', '10']
+Intercessão: {'10', '1'}
+União: {'7', '5', '6', '3', '10', '1'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['#E', 'n#es', 'co e #e', 'r#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1'}
+Referência: d#a, posição = 10
+Segmento: r#o, posição = 10
+Referência: T#i, posição = 1
+Segmento: #E, posição = 1
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['e', 'ra', 'tru', 'a', 'nes', 'co e e', 'ra', 'pa', 'vo', 'ro', 'so']
+Sílabas únicas: {'co e e', 'ra', 'nes', 'e', 'vo', 'ro', 'tru', 'pa', 'so', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.252
+Soma dos critérios: 1.26
+Score máximo: 5
+
+Verso: #E/ra/ tru/a/n#es/co e #e/ra/ pa/vo/r#o/so.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: oso
+Segmento: iso
+o != i
+ - Estrutura Ritmica: 0.333
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '5', '6', '10']
+Intercessão: {'10', '1'}
+União: {'7', '5', '6', '3', '10', '1'}
+Jaccard: 0.3333333333333333
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '5', '6', '10']
+Intercessão: {'10', '1'}
+União: {'7', '5', '6', '3', '10', '1'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['#E', 'n#es', 'co e #e', 'r#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1'}
+Referência: d#a, posição = 10
+Segmento: r#o, posição = 10
+Referência: T#i, posição = 1
+Segmento: #E, posição = 1
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['#E', 'n#es', 'co e #e', 'r#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10', '1'}
+Referência: d#a, posição = 10
+Segmento: r#o, posição = 10
+Referência: T#i, posição = 1
+Segmento: #E, posição = 1
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['e', 'ra', 'tru', 'a', 'nes', 'co e e', 'ra', 'pa', 'vo', 'ro', 'so']
+Sílabas únicas: {'co e e', 'ra', 'nes', 'e', 'vo', 'ro', 'tru', 'pa', 'so', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.285
+Soma dos critérios: 1.42
+Score máximo: 5
+
+------------------
+Verso: bal/b#úr/di/a/ do/ mu/lhe/r#io/ me/dr#o/so.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: oso
+Segmento: iso
+o != i
+ - Estrutura Ritmica: 0.083
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '8', '10']
+Intercessão: {'10'}
+União: {'3', '2', '10', '1', '8', '7'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['b#úr', 'r#io', 'dr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: d#a, posição = 10
+Segmento: dr#o, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['bal', 'búr', 'di', 'a', 'do', 'mu', 'lhe', 'rio', 'me', 'dro', 'so']
+Sílabas únicas: {'rio', 'búr', 'mu', 'bal', 'do', 'lhe', 'dro', 'me', 'so', 'di', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.217
+Soma dos critérios: 1.08
+Score máximo: 5
+
+Verso: bal/b#úr/di/a/ do/ mu/lhe/r#io/ me/dr#o/so.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: oso
+Segmento: iso
+o != i
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '8', '10']
+Intercessão: {'10'}
+União: {'3', '2', '10', '1', '8', '7'}
+Jaccard: 0.16666666666666666
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '8', '10']
+Intercessão: {'10'}
+União: {'3', '2', '10', '1', '8', '7'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['b#úr', 'r#io', 'dr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: d#a, posição = 10
+Segmento: dr#o, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['b#úr', 'r#io', 'dr#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10'}
+Referência: d#a, posição = 10
+Segmento: dr#o, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['bal', 'búr', 'di', 'a', 'do', 'mu', 'lhe', 'rio', 'me', 'dro', 'so']
+Sílabas únicas: {'rio', 'búr', 'mu', 'bal', 'do', 'lhe', 'dro', 'me', 'so', 'di', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.233
+Soma dos critérios: 1.17
+Score máximo: 5
+
+------------ESCOLHIDO----------------
+Quantidade de versos: 5
+Verso: Gu#ar/daa/ c#o/mo/ ca/pi/t#al/ pre/ci/#o/so.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: oso
+Segmento: iso
+o != i
+ - Estrutura Ritmica: 1.0
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'7', '3', '10', '1'}
+Jaccard: 1.0
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'7', '3', '10', '1'}
+Jaccard: 1.0
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['Gu#ar', 'c#o', 't#al', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: m#e, posição = 3
+Segmento: c#o, posição = 3
+Referência: T#i, posição = 1
+Segmento: Gu#ar, posição = 1
+Referência: d#a, posição = 10
+Segmento: #o, posição = 10
+Referência: m#i, posição = 7
+Segmento: t#al, posição = 7
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['Gu#ar', 'c#o', 't#al', '#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: m#e, posição = 3
+Segmento: c#o, posição = 3
+Referência: T#i, posição = 1
+Segmento: Gu#ar, posição = 1
+Referência: d#a, posição = 10
+Segmento: #o, posição = 10
+Referência: m#i, posição = 7
+Segmento: t#al, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['guar', 'daa', 'co', 'mo', 'ca', 'pi', 'tal', 'pre', 'ci', 'o', 'so']
+Sílabas únicas: {'mo', 'pi', 'tal', 'pre', 'ci', 'o', 'co', 'daa', 'so', 'guar', 'ca'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.4
+Soma dos critérios: 2.0
+Score máximo: 5
+
+------------------
+Verso: Fe/rr#a/do/ o/ b#oi,/ es/t#á/ ga/ran/t#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '5', '7', '10']
+Intercessão: {'7', '10'}
+União: {'7', '5', '3', '2', '10', '1'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['rr#a', 'b#oi,', 't#á', 't#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '10'}
+Referência: t#al, posição = 7
+Segmento: t#á, posição = 7
+Referência: #o, posição = 10
+Segmento: t#i, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['fe', 'rra', 'do', 'o', 'boi', 'es', 'tá', 'ga', 'ran', 'ti', 'do']
+Sílabas únicas: {'do', 'o', 'ti', 'fe', 'tá', 'boi', 'rra', 'ran', 'ga', 'es'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.252
+Soma dos critérios: 1.26
+Score máximo: 5
+
+Verso: Fe/rr#a/do/ o/ b#oi,/ es/t#á/ ga/ran/t#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.333
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '5', '7', '10']
+Intercessão: {'7', '10'}
+União: {'7', '5', '3', '2', '10', '1'}
+Jaccard: 0.3333333333333333
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '5', '7', '10']
+Intercessão: {'7', '10'}
+União: {'7', '5', '3', '2', '10', '1'}
+Jaccard: 0.3333333333333333
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['rr#a', 'b#oi,', 't#á', 't#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '10'}
+Referência: t#al, posição = 7
+Segmento: t#á, posição = 7
+Referência: #o, posição = 10
+Segmento: t#i, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['rr#a', 'b#oi,', 't#á', 't#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'7', '10'}
+Referência: m#i, posição = 7
+Segmento: t#á, posição = 7
+Referência: d#a, posição = 10
+Segmento: t#i, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['fe', 'rra', 'do', 'o', 'boi', 'es', 'tá', 'ga', 'ran', 'ti', 'do']
+Sílabas únicas: {'do', 'o', 'ti', 'fe', 'tá', 'boi', 'rra', 'ran', 'ga', 'es'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.285
+Soma dos critérios: 1.42
+Score máximo: 5
+
+------------------
+Verso: S#an/to/ An/t#ô/ni/o/ A/pa/re/c#i/do
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '4', '10']
+Intercessão: {'10', '1'}
+União: {'3', '4', '10', '1', '7'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['S#an', 't#ô', 'c#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '1'}
+Referência: #o, posição = 10
+Segmento: c#i, posição = 10
+Referência: Gu#ar, posição = 1
+Segmento: S#an, posição = 1
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['san', 'to', 'an', 'tô', 'ni', 'o', 'a', 'pa', 're', 'ci', 'do']
+Sílabas únicas: {'ni', 'do', 'tô', 're', 'o', 'ci', 'an', 'pa', 'san', 'a', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.24
+Soma dos critérios: 1.2
+Score máximo: 5
+
+Verso: S#an/to/ An/t#ô/ni/o/ A/pa/re/c#i/do
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '4', '10']
+Intercessão: {'10', '1'}
+União: {'3', '4', '10', '1', '7'}
+Jaccard: 0.4
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '4', '10']
+Intercessão: {'10', '1'}
+União: {'3', '4', '10', '1', '7'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['S#an', 't#ô', 'c#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '1'}
+Referência: #o, posição = 10
+Segmento: c#i, posição = 10
+Referência: Gu#ar, posição = 1
+Segmento: S#an, posição = 1
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['S#an', 't#ô', 'c#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'10', '1'}
+Referência: d#a, posição = 10
+Segmento: c#i, posição = 10
+Referência: T#i, posição = 1
+Segmento: S#an, posição = 1
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['san', 'to', 'an', 'tô', 'ni', 'o', 'a', 'pa', 're', 'ci', 'do']
+Sílabas únicas: {'ni', 'do', 'tô', 're', 'o', 'ci', 'an', 'pa', 'san', 'a', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.28
+Soma dos critérios: 1.4
+Score máximo: 5
+
+------------------
+Verso: A/ss#im,/ #e/ra/ um/ de/se/qui/li/br#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.2
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '3', '10']
+Intercessão: {'3', '10'}
+União: {'3', '2', '10', '1', '7'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['ss#im,', '#e', 'br#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'3', '10'}
+Referência: c#o, posição = 3
+Segmento: #e, posição = 3
+Referência: #o, posição = 10
+Segmento: br#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['a', 'ssim', 'e', 'ra', 'um', 'de', 'se', 'qui', 'li', 'bra', 'do']
+Sílabas únicas: {'se', 'qui', 'ra', 'e', 'de', 'do', 'um', 'bra', 'li', 'ssim', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.44
+Soma dos critérios: 2.2
+Score máximo: 5
+
+Verso: A/ss#im,/ #e/ra/ um/ de/se/qui/li/br#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.4
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '3', '10']
+Intercessão: {'3', '10'}
+União: {'3', '2', '10', '1', '7'}
+Jaccard: 0.4
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '3', '10']
+Intercessão: {'3', '10'}
+União: {'3', '2', '10', '1', '7'}
+Jaccard: 0.4
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['ss#im,', '#e', 'br#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'3', '10'}
+Referência: c#o, posição = 3
+Segmento: #e, posição = 3
+Referência: #o, posição = 10
+Segmento: br#a, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['ss#im,', '#e', 'br#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'3', '10'}
+Referência: m#e, posição = 3
+Segmento: #e, posição = 3
+Referência: d#a, posição = 10
+Segmento: br#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['a', 'ssim', 'e', 'ra', 'um', 'de', 'se', 'qui', 'li', 'bra', 'do']
+Sílabas únicas: {'se', 'qui', 'ra', 'e', 'de', 'do', 'um', 'bra', 'li', 'ssim', 'a'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.48
+Soma dos critérios: 2.4
+Score máximo: 5
+
+------------------
+Verso: O/ f#a/to/ f#oi/ de/ t#o/do i/nes/pe/r#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.071
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '4', '6', '10']
+Intercessão: {'10'}
+União: {'7', '6', '3', '4', '2', '10', '1'}
+Jaccard: 0.14285714285714285
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['f#a', 'f#oi', 't#o', 'r#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10'}
+Referência: #o, posição = 10
+Segmento: r#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['o', 'fa', 'to', 'foi', 'de', 'to', 'do i', 'nes', 'pe', 'ra', 'do']
+Sílabas únicas: {'ra', 'pe', 'nes', 'de', 'do', 'do i', 'o', 'fa', 'foi', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.432
+Soma dos critérios: 2.16
+Score máximo: 5
+
+Verso: O/ f#a/to/ f#oi/ de/ t#o/do i/nes/pe/r#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.143
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '4', '6', '10']
+Intercessão: {'10'}
+União: {'7', '6', '3', '4', '2', '10', '1'}
+Jaccard: 0.14285714285714285
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['2', '4', '6', '10']
+Intercessão: {'10'}
+União: {'7', '6', '3', '4', '2', '10', '1'}
+Jaccard: 0.14285714285714285
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['f#a', 'f#oi', 't#o', 'r#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10'}
+Referência: #o, posição = 10
+Segmento: r#a, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['f#a', 'f#oi', 't#o', 'r#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'10'}
+Referência: d#a, posição = 10
+Segmento: r#a, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.091
+Sílabas: ['o', 'fa', 'to', 'foi', 'de', 'to', 'do i', 'nes', 'pe', 'ra', 'do']
+Sílabas únicas: {'ra', 'pe', 'nes', 'de', 'do', 'do i', 'o', 'fa', 'foi', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.447
+Soma dos critérios: 2.23
+Score máximo: 5
+
+------------------
+Verso: N#ão/ ha/v#ia/ e/rr#ar/ o #al/vo/ des/me/d#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.25
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '5', '6', '10']
+Intercessão: {'3', '1', '10'}
+União: {'7', '5', '6', '3', '10', '1'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['N#ão', 'v#ia', 'rr#ar', 'o #al', 'd#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10'}
+Referência: c#o, posição = 3
+Segmento: v#ia, posição = 3
+Referência: Gu#ar, posição = 1
+Segmento: N#ão, posição = 1
+Referência: #o, posição = 10
+Segmento: d#i, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['não', 'ha', 'via', 'e', 'rrar', 'o al', 'vo', 'des', 'me', 'di', 'do']
+Sílabas únicas: {'não', 'rrar', 'e', 'vo', 'do', 'o al', 'ha', 'me', 'des', 'di', 'via'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.25
+Soma dos critérios: 1.25
+Score máximo: 5
+
+Verso: N#ão/ ha/v#ia/ e/rr#ar/ o #al/vo/ des/me/d#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.5
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '5', '6', '10']
+Intercessão: {'3', '1', '10'}
+União: {'7', '5', '6', '3', '10', '1'}
+Jaccard: 0.5
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '5', '6', '10']
+Intercessão: {'3', '1', '10'}
+União: {'7', '5', '6', '3', '10', '1'}
+Jaccard: 0.5
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['N#ão', 'v#ia', 'rr#ar', 'o #al', 'd#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10'}
+Referência: c#o, posição = 3
+Segmento: v#ia, posição = 3
+Referência: Gu#ar, posição = 1
+Segmento: N#ão, posição = 1
+Referência: #o, posição = 10
+Segmento: d#i, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['N#ão', 'v#ia', 'rr#ar', 'o #al', 'd#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10'}
+Referência: m#e, posição = 3
+Segmento: v#ia, posição = 3
+Referência: T#i, posição = 1
+Segmento: N#ão, posição = 1
+Referência: d#a, posição = 10
+Segmento: d#i, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['não', 'ha', 'via', 'e', 'rrar', 'o al', 'vo', 'des', 'me', 'di', 'do']
+Sílabas únicas: {'não', 'rrar', 'e', 'vo', 'do', 'o al', 'ha', 'me', 'des', 'di', 'via'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.3
+Soma dos critérios: 1.5
+Score máximo: 5
+
+------------------
+Verso: Re/a/g#i/u a/pe/s#ar/ de/ fe/r#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.083
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['3', '6', '9']
+Intercessão: {'3'}
+União: {'3', '10', '1', '9', '6', '7'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['g#i', 's#ar', 'r#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'3'}
+Referência: c#o, posição = 3
+Segmento: g#i, posição = 3
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['re', 'a', 'gi', 'u a', 'pe', 'sar', 'de', 'fe', 'ri', 'do']
+Sílabas únicas: {'pe', 'de', 'do', 'ri', 'sar', 're', 'gi', 'fe', 'u a', 'a'}
+Quantidade de sílabas: 10
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.217
+Soma dos critérios: 1.08
+Score máximo: 5
+
+Verso: Re/a/g#i/u a/pe/s#ar/ de/ fe/r#i/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: ido
+Segmento: ado
+i != a
+ - Estrutura Ritmica: 0.167
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['3', '6', '9']
+Intercessão: {'3'}
+União: {'3', '10', '1', '9', '6', '7'}
+Jaccard: 0.16666666666666666
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['3', '6', '9']
+Intercessão: {'3'}
+União: {'3', '10', '1', '9', '6', '7'}
+Jaccard: 0.16666666666666666
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['g#i', 's#ar', 'r#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'3'}
+Referência: c#o, posição = 3
+Segmento: g#i, posição = 3
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['g#i', 's#ar', 'r#i']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 3
+Intercessão: {'3'}
+Referência: m#e, posição = 3
+Segmento: g#i, posição = 3
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['re', 'a', 'gi', 'u a', 'pe', 'sar', 'de', 'fe', 'ri', 'do']
+Sílabas únicas: {'pe', 'de', 'do', 'ri', 'sar', 're', 'gi', 'fe', 'u a', 'a'}
+Quantidade de sílabas: 10
+Quantidade de sílabas únicas: 10
+ - Score Resultante: 0.233
+Soma dos critérios: 1.17
+Score máximo: 5
+
+------------------
+Verso: Ti/ro/t#e/i/os/ du/r#an/te o/ d#ia/ t#o/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: odo
+Segmento: ado
+o != a
+ - Estrutura Ritmica: 0.3
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['3', '7', '9', '10']
+Intercessão: {'3', '10', '7'}
+União: {'7', '3', '10', '1', '9'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['t#e', 'r#an', 'd#ia', 't#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '10', '7'}
+Referência: c#o, posição = 3
+Segmento: t#e, posição = 3
+Referência: #o, posição = 10
+Segmento: t#o, posição = 10
+Referência: t#al, posição = 7
+Segmento: r#an, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['ti', 'ro', 'te', 'i', 'os', 'du', 'ran', 'te o', 'dia', 'to', 'do']
+Sílabas únicas: {'te o', 'ro', 'do', 'ti', 'i', 'os', 'du', 'ran', 'dia', 'te', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.26
+Soma dos critérios: 1.3
+Score máximo: 5
+
+Verso: Ti/ro/t#e/i/os/ du/r#an/te o/ d#ia/ t#o/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: odo
+Segmento: ado
+o != a
+ - Estrutura Ritmica: 0.6
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['3', '7', '9', '10']
+Intercessão: {'3', '10', '7'}
+União: {'7', '3', '10', '1', '9'}
+Jaccard: 0.6
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['3', '7', '9', '10']
+Intercessão: {'3', '10', '7'}
+União: {'7', '3', '10', '1', '9'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['t#e', 'r#an', 'd#ia', 't#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '10', '7'}
+Referência: c#o, posição = 3
+Segmento: t#e, posição = 3
+Referência: #o, posição = 10
+Segmento: t#o, posição = 10
+Referência: t#al, posição = 7
+Segmento: r#an, posição = 7
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['t#e', 'r#an', 'd#ia', 't#o']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '10', '7'}
+Referência: m#e, posição = 3
+Segmento: t#e, posição = 3
+Referência: d#a, posição = 10
+Segmento: t#o, posição = 10
+Referência: m#i, posição = 7
+Segmento: r#an, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['ti', 'ro', 'te', 'i', 'os', 'du', 'ran', 'te o', 'dia', 'to', 'do']
+Sílabas únicas: {'te o', 'ro', 'do', 'ti', 'i', 'os', 'du', 'ran', 'dia', 'te', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.32
+Soma dos critérios: 1.6
+Score máximo: 5
+
+------------------
+Verso: #E/ra,/ c#er/to,/ o i/ni/m#i/go a/ne/l#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 0.5
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'7', '3', '10', '1'}
+Jaccard: 1.0
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['#E', 'c#er', 'm#i', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: c#o, posição = 3
+Segmento: c#er, posição = 3
+Referência: Gu#ar, posição = 1
+Segmento: #E, posição = 1
+Referência: #o, posição = 10
+Segmento: l#a, posição = 10
+Referência: t#al, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['e', 'ra', 'cer', 'to', 'o i', 'ni', 'mi', 'go a', 'ne', 'la', 'do']
+Sílabas únicas: {'ra', 'cer', 'e', 'la', 'ni', 'do', 'mi', 'go a', 'o i', 'ne', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.5
+Soma dos critérios: 2.5
+Score máximo: 5
+
+Verso: #E/ra,/ c#er/to,/ o i/ni/m#i/go a/ne/l#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 1.0
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'7', '3', '10', '1'}
+Jaccard: 1.0
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'7', '3', '10', '1'}
+Jaccard: 1.0
+ - Silabas Tônicas: 0.125
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['#E', 'c#er', 'm#i', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: c#o, posição = 3
+Segmento: c#er, posição = 3
+Referência: Gu#ar, posição = 1
+Segmento: #E, posição = 1
+Referência: #o, posição = 10
+Segmento: l#a, posição = 10
+Referência: t#al, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['#E', 'c#er', 'm#i', 'l#a']
+Resultado: 0.25
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: m#e, posição = 3
+Segmento: c#er, posição = 3
+Referência: T#i, posição = 1
+Segmento: #E, posição = 1
+Referência: d#a, posição = 10
+Segmento: l#a, posição = 10
+Referência: m#i, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.25
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['e', 'ra', 'cer', 'to', 'o i', 'ni', 'mi', 'go a', 'ne', 'la', 'do']
+Sílabas únicas: {'ra', 'cer', 'e', 'la', 'ni', 'do', 'mi', 'go a', 'o i', 'ne', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.625
+Soma dos critérios: 3.12
+Score máximo: 5
+
+------------------
+Verso: #E/ra um/ g#ol/pe/ de au/d#á/ci/a es/tu/p#en/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: endo
+Segmento: ado
+e != a
+ - Estrutura Ritmica: 0.3
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '6', '10']
+Intercessão: {'3', '1', '10'}
+União: {'7', '6', '3', '10', '1'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['#E', 'g#ol', 'd#á', 'p#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10'}
+Referência: c#o, posição = 3
+Segmento: g#ol, posição = 3
+Referência: Gu#ar, posição = 1
+Segmento: #E, posição = 1
+Referência: #o, posição = 10
+Segmento: p#en, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['e', 'ra um', 'gol', 'pe', 'de au', 'dá', 'ci', 'a es', 'tu', 'pen', 'do']
+Sílabas únicas: {'pe', 'a es', 'e', 'do', 'dá', 'tu', 'gol', 'ci', 'ra um', 'pen', 'de au'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.26
+Soma dos critérios: 1.3
+Score máximo: 5
+
+Verso: #E/ra um/ g#ol/pe/ de au/d#á/ci/a es/tu/p#en/do.
+ Scores:
+ - Rima Consoante: 0
+Letras após vogal acentuada: 
+Referência: endo
+Segmento: ado
+e != a
+ - Estrutura Ritmica: 0.6
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '6', '10']
+Intercessão: {'3', '1', '10'}
+União: {'7', '6', '3', '10', '1'}
+Jaccard: 0.6
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '6', '10']
+Intercessão: {'3', '1', '10'}
+União: {'7', '6', '3', '10', '1'}
+Jaccard: 0.6
+ - Silabas Tônicas: 0.0
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['#E', 'g#ol', 'd#á', 'p#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10'}
+Referência: c#o, posição = 3
+Segmento: g#ol, posição = 3
+Referência: Gu#ar, posição = 1
+Segmento: #E, posição = 1
+Referência: #o, posição = 10
+Segmento: p#en, posição = 10
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['#E', 'g#ol', 'd#á', 'p#en']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10'}
+Referência: m#e, posição = 3
+Segmento: g#ol, posição = 3
+Referência: T#i, posição = 1
+Segmento: #E, posição = 1
+Referência: d#a, posição = 10
+Segmento: p#en, posição = 10
+ Resultado: 0.0
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['e', 'ra um', 'gol', 'pe', 'de au', 'dá', 'ci', 'a es', 'tu', 'pen', 'do']
+Sílabas únicas: {'pe', 'a es', 'e', 'do', 'dá', 'tu', 'gol', 'ci', 'ra um', 'pen', 'de au'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.32
+Soma dos critérios: 1.6
+Score máximo: 5
+
+------------ESCOLHIDO----------------
+Quantidade de versos: 9
+Verso: #E/ra,/ c#er/to,/ o i/ni/m#i/go a/ne/l#a/do.
+ Scores:
+ - Rima Consoante: 1
+Letras após vogal acentuada: 
+Referência: ado
+Segmento: ado
+ado = ado
+ - Estrutura Ritmica: 1.0
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'7', '3', '10', '1'}
+Jaccard: 1.0
+Posição das sílabas acentuadas:
+Referência: ['1', '3', '7', '10']
+Segmento: ['1', '3', '7', '10']
+Intercessão: {'3', '1', '10', '7'}
+União: {'7', '3', '10', '1'}
+Jaccard: 1.0
+ - Silabas Tônicas: 0.125
+Sílabas acentuadas:
+Referência: ['Gu#ar', 'c#o', 't#al', '#o']
+Segmento: ['#E', 'c#er', 'm#i', 'l#a']
+Resultado: 0.0
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: c#o, posição = 3
+Segmento: c#er, posição = 3
+Referência: Gu#ar, posição = 1
+Segmento: #E, posição = 1
+Referência: #o, posição = 10
+Segmento: l#a, posição = 10
+Referência: t#al, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.0
+Sílabas acentuadas:
+Referência: ['T#i', 'm#e', 'm#i', 'd#a']
+Segmento: ['#E', 'c#er', 'm#i', 'l#a']
+Resultado: 0.25
+Score da posição igual:
+Dividendo: 4
+Intercessão: {'3', '1', '10', '7'}
+Referência: m#e, posição = 3
+Segmento: c#er, posição = 3
+Referência: T#i, posição = 1
+Segmento: #E, posição = 1
+Referência: d#a, posição = 10
+Segmento: l#a, posição = 10
+Referência: m#i, posição = 7
+Segmento: m#i, posição = 7
+ Resultado: 0.25
+ - Acento: 1
+Acento da referência: Grave
+Acento do segmento: Grave
+ - Rima Interna: 0.0
+Sílabas: ['e', 'ra', 'cer', 'to', 'o i', 'ni', 'mi', 'go a', 'ne', 'la', 'do']
+Sílabas únicas: {'ra', 'cer', 'e', 'la', 'ni', 'do', 'mi', 'go a', 'o i', 'ne', 'to'}
+Quantidade de sílabas: 11
+Quantidade de sílabas únicas: 11
+ - Score Resultante: 0.625
+Soma dos critérios: 3.12
+Score máximo: 5
+

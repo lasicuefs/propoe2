@@ -2,12 +2,22 @@ from model.mives import Mives
 from model.poem_builder import Poem_builder
 from model.filter import Filter
 from configuration.conf import *
+import random
 
 mives = Mives(mives_xml)
-sentences = Filter(mives.sentences, metrificacao,
+metrics = []
+for metric in metrificacao:
+    if metric == "":
+        metrics.append(random.randrange(6, 13))
+    else:
+        metrics.append(metric)
+
+print("Metricas:", metrics)
+
+sentences = Filter(mives.sentences, metrics,
                    padrao_ritmico, seed).get_rhymes()
-builder = Poem_builder(sentences, metrificacao,
-                       padrao_ritmico, pesos_avaliacao, seed)
-builder.build(verbose=verbose, debug=debug)
+
+builder = Poem_builder(sentences, metrics,
+                       padrao_ritmico, pesos_avaliacao, filename, seed)
+builder.build()
 builder.result()
-builder.save(caminho_poema)

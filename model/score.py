@@ -3,7 +3,7 @@ from .utils import consonant_removal
 
 class Score():
 
-    def __init__(self, verse, debug):
+    def __init__(self, verse):
         self.verse = verse  # Scanned Verse
         self.consonant_rhyme_score = 0
         self.accent_score = 0
@@ -11,7 +11,7 @@ class Score():
         self.rhyme_structure_score = 0
         self.score_result = 0
         self.rhyme_intern_score = 0
-        self.debug = debug
+        self.rhyme_verse = False
         self.debug_repr = {
             "Rima Consoante": "",
             "Estrutura Ritmica": "",
@@ -23,7 +23,7 @@ class Score():
 
     def __repr__(self):
         output = "Verso: " + self.verse + "\n Scores:"
-        if self.debug and self.debug_repr["Rima Consoante"] == "":
+        if self.debug_repr["Rima Consoante"] == "":
             output = output + "\n - Rima Consoante: Sem verso que rima"
 
             output = output + "\n - Estrutura Ritmica: " + str(round(self.rhyme_structure_score, 3)) + \
@@ -40,7 +40,7 @@ class Score():
             output = output + "\n - Score Resultante: " + str(round(self.score_result, 3)) + \
                 self.debug_repr["Resultado"]
 
-        elif self.debug:
+        else:
             output = output + "\n - Rima Consoante: " + str(round(self.consonant_rhyme_score, 3)) + \
                 self.debug_repr["Rima Consoante"]
 
@@ -58,13 +58,6 @@ class Score():
 
             output = output + "\n - Score Resultante: " + str(round(self.score_result, 3)) + \
                 self.debug_repr["Resultado"]
-        else:
-            output = output + "\n - Rima Consoante: " + str(round(self.consonant_rhyme_score, 3)) + \
-                "\n - Estrutura Ritmica: " + str(round(self.rhyme_structure_score, 3)) + \
-                "\n - Silabas Tônicas: " + str(round(self.stress_score, 3)) + \
-                "\n - Acento: " + str(round(self.accent_score, 3)) + \
-                "\n - Rima Interna: " + str(round(self.intern_rhyme_score, 3)) + \
-                "\n Score Resultante: " + str(round(self.score_result, 3))
 
         return (output)
 
@@ -103,10 +96,16 @@ class Score():
 
         It is multiplied by 0.5 because this score is half the score for stress syllables.
         """
-        result, d = self.jacard(a.stress_syllables, b.stress_syllables)
+        count = 0
+        for s in a.stress_syllables:
+            if s in b.stress_syllables:
+                count += 1
+        div = self.get_size(a.stress_syllables, b.stress_syllables)
+        result = count/div
         self.debug_repr["Silabas Tonicas"] += "\nSílabas acentuadas:" +\
             "\nReferência: " + str(a.stress_syllables) + \
-            "\nSegmento: " + str(b.stress_syllables) + d
+            "\nSegmento: " + str(b.stress_syllables) + \
+            "\nResultado: " + str(result)
 
         return result * 0.5
 
@@ -176,6 +175,7 @@ class Score():
         s = self.same_stress_syllable(reference, possible_verse)
         ps = self.same_pos_stress_syllable(reference, possible_verse)
         self.stress_score += (s + ps)/2
+        self.rhyme_verse = rhyme_verse
         if rhyme_verse:
             self.accent_score = self.same_accent(possible_verse, rhyme_verse)
             self.consonant_rhyme_score = self.consonant_rhyme(

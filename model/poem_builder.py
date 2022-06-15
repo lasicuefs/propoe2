@@ -2,11 +2,13 @@ import random
 from .score import Score
 from collections import Counter
 from .poem_evaluation import Evaluation
+from .utils import remove_end_ponctuation
+import sys
 
 
 class Poem_builder():
 
-    def __init__(self, sentences, metrics, rhyme, score_weight, seed):
+    def __init__(self, sentences, metrics, rhyme, score_weight, filename, seed):
         # List of Rhyme objects
         self.sentences = sentences
         # Ex: "AABB CCDD"
@@ -19,6 +21,10 @@ class Poem_builder():
         self.evaluation = Evaluation()
         random.seed(seed)
 
+        self.orig_stdout = sys.stdout
+        self.f = open(filename, 'w')
+        sys.stdout = self.f
+
     def result(self):
         print(self.poem)
         print(self.evaluation)
@@ -30,20 +36,19 @@ class Poem_builder():
         text_file.write(self.poem)
         text_file.close()
 
-    def build(self, verbose=False, debug=False):
+    def build(self):
         """ Build poem. Get best sentences and add it in the string self.poem.
-
-        Parameter:
-          verbose: If True, prints the score os every sentence in the poem.
-          debug: If True, it will print every decision of the system.
         """
-        sentences = self.get_poem_sentences(verbose, debug)
+        sentences = self.get_poem_sentences()
         for letter in self.rhyme:
             if letter == " ":
                 self.poem = self.poem + "\n"
             else:
                 s = sentences[letter].pop(0)
-                self.poem = self.poem + s.sentence + "\n"
+                self.poem = self.poem + \
+                    remove_end_ponctuation(s.sentence).capitalize() + "\n"
+        sys.stdout = self.orig_stdout
+        self.f.close()
 
     def random_sentence(self, letter, sentences, metric_count):
         pos_sentences = self.sentences[letter].metrics[self.metrics[metric_count]]
@@ -66,7 +71,7 @@ class Poem_builder():
             sentences[letter] = []
         return sentences
 
-    def get_poem_sentences(self, verbose, debug):
+    def get_poem_sentences(self):
         """ Return a list of Sentence objects in order to build a poem.
         """
         rhyme = self.rhyme
@@ -87,9 +92,8 @@ class Poem_builder():
                 # Reference verse.
                 fixed_verse = current_verse
                 last_rhyme[letter] = current_verse
-                if verbose:
-                    print(current_verse.scanned_sentence)
-                    print()
+                print(current_verse.scanned_sentence)
+                print()
                 new_strophe = False
                 metric_count += 1
             else:
@@ -101,7 +105,7 @@ class Poem_builder():
                     verse_rhyme = None
                 next_s, next_verse = self.find_sentence(
                     sentences, [current_verse, fixed_verse], letter,
-                    verse_rhyme, metric_count, verbose, debug)
+                    verse_rhyme, metric_count)
 
                 last_rhyme[letter] = next_verse
                 sentences[letter].append(next_s)
@@ -111,7 +115,7 @@ class Poem_builder():
 
         return sentences
 
-    def find_sentence(self, sentences, verses, letter, last_rhyme, metric_count, verbose, debug):
+    def find_sentence(self, sentences, verses, letter, last_rhyme, metric_count):
         """ Return best Sentence object given a score.
 
         Parameters:
@@ -121,28 +125,34 @@ class Poem_builder():
           last_rhyme: Verse object of the last Sentence that rhymes.
           metric_count: Index from self.metrics that shows with metric does 
             this Sentence object needs.
-          verbose: If True, prints the chosen sentence and its scores.
 
         Return:
           next_s: Chosen Sentence object
           next_verse: Chosen Verse object from the Sentence object
         """
         max_score = -1
+        count = 0
         for sentence in self.sentences[letter].metrics[self.metrics[metric_count]]:
             if sentence.not_in(sentences[letter]):
                 for possible_verse in sentence.verse_structures:
-                    score = Score(possible_verse.scanned_sentence, debug)
+                    score = Score(possible_verse.scanned_sentence)
+                    count += 1
+                    print("------------------")
                     for verse in verses:
                         score.score(verse, possible_verse,
                                     last_rhyme, self.score_weight)
+
+                        print(score)
+                        print()
                         if score.score_result > max_score:
                             max_score = score.score_result
                             next_s = sentence
                             next_verse = possible_verse
                             result_score = score
-        if verbose:
-            print(result_score)
-            print()
+        print("------------ESCOLHIDO----------------")
+        print("Quantidade de versos:", str(count))
+        print(result_score)
+        print()
 
         self.evaluation.add(result_score)
         return next_s, next_verse
