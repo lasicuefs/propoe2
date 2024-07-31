@@ -28,6 +28,10 @@ class Filter():
         for letter in rhymes:
             sentences[letter] = self.random_rhyme(rhymes[letter])
         return sentences
+        # sentences['A'] = self.sentences[116]
+        # sentences['B'] = self.sentences[39]
+        # return sentences
+
 
     def random_rhyme(self, rhymes):
         """ Return a random Rhyme object inside a list of Rhyme objects
