@@ -13,7 +13,7 @@ class Sentence ():
     def __eq__(self, other):
         sentence = sentence_preprocess(self.sentence)
         other = sentence_preprocess(other.sentence)
-        return sentence.split()[-1].strip() == other.split()[-1].strip()
+        return sentence == other
 
     def __hash__(self):
         return hash(('sentence', self.sentence))
