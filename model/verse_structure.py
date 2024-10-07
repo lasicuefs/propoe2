@@ -64,6 +64,7 @@ class VerseStructure:
         return remove_end_ponctuation("".join(after))
 
     def stress_syllable(self):
+        # TODO: define what is the return type of this method
         """
         Return:
           syllables: List of stressed syllables.
