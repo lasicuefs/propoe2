@@ -2,7 +2,7 @@
 from .utils import remove_end_ponctuation, sentence_preprocess
 
 
-class Sentence ():
+class Sentence:
 
     def __init__(self, sentence, link, sentence_number, verse_structures):
         self.sentence = sentence
