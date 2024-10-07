@@ -6,8 +6,10 @@ from .utils import (
 from .utils import left_consonant_removal
 
 
-class Verse_structure:
-    def __init__(self, sentence, syllable_number, stress_position, scanned_sentence):
+class VerseStructure:
+    def __init__(
+        self, sentence, syllable_number, stress_position, scanned_sentence
+    ):
         self.metric = int(syllable_number)
         self.stress_position = stress_position.split()
         self.scanned_sentence = scanned_sentence
@@ -45,7 +47,9 @@ class Verse_structure:
 
     def get_last_syllables(self):
         after = self.syllables[int(self.stress_position[-1]) :]
-        stress = self.scanned_sentence.split("/")[int(self.stress_position[-1]) - 1]
+        stress = self.scanned_sentence.split("/")[
+            int(self.stress_position[-1]) - 1
+        ]
         stress = stress.split("#")[-1]
         after.insert(0, stress)
         return remove_end_ponctuation("".join(after))

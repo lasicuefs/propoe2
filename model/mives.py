@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET
 from .sentence import Sentence
-from .verse_structure import Verse_structure
+from .verse_structure import VerseStructure
 from .utils import remove_end_ponctuation, remove_pontuation
 from .rhyme import Rhyme
 
@@ -60,7 +60,7 @@ class Mives:
         stress_position = verses[1].text
         scanned_sentence = verses[2].text
         last_syllable = self.get_last_syllable(scanned_sentence)
-        return last_syllable, Verse_structure(
+        return last_syllable, VerseStructure(
             sentence, syllable_number, stress_position, scanned_sentence
         )
 
@@ -75,6 +75,11 @@ class Mives:
             last_syllable, verse_struct = self.get_verse_info(verses, sentence)
             verse_structures.append(verse_struct)
         # Remove error in Mives. Sentences with no stress syllable in the last word
-        if "#" in remove_end_ponctuation(verse_struct.scanned_sentence).split()[-1]:
-            sentence_obj = Sentence(sentence, link, sentence_number, verse_structures)
+        if (
+            "#"
+            in remove_end_ponctuation(verse_struct.scanned_sentence).split()[-1]
+        ):
+            sentence_obj = Sentence(
+                sentence, link, sentence_number, verse_structures
+            )
         return last_syllable, sentence_obj
