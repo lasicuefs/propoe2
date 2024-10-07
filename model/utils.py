@@ -2,7 +2,7 @@ import re
 import string
 
 
-def sentence_preprocess(sentence):
+def sentence_preprocess(sentence: str) -> str:
     """ Lower case sentence string and remove all pontuation and numbers
     """
     sentence = sentence.lower()
@@ -11,11 +11,12 @@ def sentence_preprocess(sentence):
     return sentence.strip()
 
 
-def remove_space(sentence):
+def remove_space(sentence: str) -> str:
+    # TODO: This returns a ``str``, I guess
     return sentence.replace(" ", "")
 
 
-def left_consonant_removal(sentence):
+def left_consonant_removal(sentence: str) -> str:
     """ Lower case sentence string and remove everything that is not vowel from the left
             side of the sentence.
     """
@@ -25,7 +26,9 @@ def left_consonant_removal(sentence):
     return sentence.strip()
 
 
-def consonant_removal(sentence):
+def consonant_removal(sentence) -> str:
+    # TODO: What is ``sentence`` in this case?
+    # TODO: I guess the return type should be a ``str``
     """ Lower case sentence string and remove everything that is not vowel.
     """
     sentence = sentence.lower()
@@ -36,7 +39,7 @@ def consonant_removal(sentence):
     return sentence.strip()
 
 
-def remove_pontuation(word):
+def remove_pontuation(word: str) -> str:
     """ Remove pontuation from a word
     """
     exclude = set(string.punctuation)
@@ -45,7 +48,7 @@ def remove_pontuation(word):
     return last_syllable.strip()
 
 
-def scanned_sentence_preprocess(sentence):
+def scanned_sentence_preprocess(sentence: str) -> str:
     """ Lower case sentence string and remove all pontuation and numbers, except "/".
     """
     sentence = sentence.lower()
@@ -55,7 +58,7 @@ def scanned_sentence_preprocess(sentence):
     return sentence.strip()
 
 
-def remove_end_ponctuation(sentence):
+def remove_end_ponctuation(sentence: str) -> str:
     """ Remove pontuation at the end of a sentence
     """
     return re.sub("""^[^a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ]*
