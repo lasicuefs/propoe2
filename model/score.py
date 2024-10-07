@@ -1,8 +1,7 @@
 from .utils import consonant_removal
 
 
-class Score():
-
+class Score:
     def __init__(self, verse):
         self.verse = verse  # Scanned Verse
         self.consonant_rhyme_score = 0
