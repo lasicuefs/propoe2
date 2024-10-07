@@ -1,5 +1,7 @@
 class Evaluation:
-    def __init__(self):
+    # TODO: define the type of the attributes
+
+    def __init__(self) -> None:
         self.consonant_rhyme_score = 0
         self.accent_score = 0
         self.stress_score = 0
@@ -9,7 +11,8 @@ class Evaluation:
         self.count_rhyme = 0
         self.intern_rhyme_score = 0
 
-    def add(self, score):
+    def add(self, score) -> None:
+        # TODO: define the type of score
         """Sum scores of every verse."""
         self.consonant_rhyme_score += score.consonant_rhyme_score
         self.accent_score += score.accent_score
@@ -21,7 +24,7 @@ class Evaluation:
         if score.rhyme_verse:
             self.count_rhyme += 1
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return (
             "Resultado:"
             + "\n - Estrutura Ritmica: "
