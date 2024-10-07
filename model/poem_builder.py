@@ -36,17 +36,17 @@ class Poem_builder:
         self.f = open(filename, "w")
         sys.stdout = self.f
 
-    def result(self):
+    def result(self) -> None:
         print(self.poem)
         print(self.evaluation)
 
-    def save(self, path):
+    def save(self, path) -> None:
         """Save poem in txt file."""
         text_file = open(path, "w")
         text_file.write(self.poem)
         text_file.close()
 
-    def build(self):
+    def build(self) -> None:
         """Build poem. Get best sentences and add it in the string self.poem."""
         sentences = self.get_poem_sentences()
         for letter in self.rhyme:
