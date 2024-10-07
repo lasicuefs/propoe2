@@ -136,7 +136,7 @@ class PoemBuilder:
     # TODO: define missing types
     def find_sentence(
         self,
-        sentences: list[Sentence],
+        sentences,
         verses: list,
         letter: str,
         last_rhyme,
