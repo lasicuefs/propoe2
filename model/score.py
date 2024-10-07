@@ -2,7 +2,11 @@ from .utils import consonant_removal
 
 
 class Score:
-    def __init__(self, verse):
+
+    def __init__(self, verse) -> None:
+        # TODO: What is ``verse``'s type?
+        # TODO: Are all those scores integers or floats?
+        
         self.verse = verse  # Scanned Verse
         self.consonant_rhyme_score = 0
         self.accent_score = 0
