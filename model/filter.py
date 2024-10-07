@@ -43,6 +43,8 @@ class Filter:
         """
         rhymes = self.rhyme_filter()
         sentences = {}
+        # TODO: is it iterating keys or values?
+        #   Consider using .keys() or .items()
         for letter in rhymes:
             sentences[letter] = self.random_rhyme(rhymes[letter])
         return sentences
@@ -68,6 +70,8 @@ class Filter:
         """
         rhyme_counter = self.rhyme_by_metric()
         filtered_rhymes = {}
+        # TODO: is it iterating keys or values?
+        #   Consider using .keys() or .items()
         for letter in rhyme_counter:
             sentences = self.sentences.copy()
             filtered_rhymes[letter] = self.metric_filter(
