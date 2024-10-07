@@ -4,12 +4,11 @@ from .utils import remove_end_ponctuation, sentence_preprocess
 
 class Sentence:
 
-    def __init__(self, sentence, link, sentence_number, verse_structures) -> None:
+    def __init__(self, sentence, link, sentence_number, verse_structures: list[Verse_structure]) -> None:
         self.sentence = sentence
         self.link = link
         self.sentence_number = sentence_number
-        # List of Verse_structure object
-        self.verse_structures = verse_structures
+        self.verse_structures: list[Verse_structure] = verse_structures
 
     def __eq__(self, other) -> bool:
         sentence = sentence_preprocess(self.sentence)
