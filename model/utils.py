@@ -31,6 +31,8 @@ def consonant_removal(sentence):
     sentence = sentence.lower()
     sentence = re.match(
         r'[aeiouáàâãéèêíïóôõöú][a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ]*$', sentence)
+    # TODO: re.match returns ``Match[str]`` or ``None``
+    #   So, technically, we can't use ``str.strip``.
     return sentence.strip()
 
 
