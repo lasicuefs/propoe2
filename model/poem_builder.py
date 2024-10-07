@@ -21,6 +21,7 @@ class Poem_builder:
     poem: dict
         maps score name and its weight
     """
+
     # TODO: define what is the internal type of metrics
     # TODO: define what are the internal types of poem
     def __init__(self, sentences, metrics, rhyme, score_weight, filename, seed):
@@ -55,13 +56,17 @@ class Poem_builder:
             else:
                 s = sentences[letter].pop(0)
                 self.poem = (
-                    self.poem + remove_end_ponctuation(s.sentence).capitalize() + "\n"
+                    self.poem
+                    + remove_end_ponctuation(s.sentence).capitalize()
+                    + "\n"
                 )
         sys.stdout = self.orig_stdout
         self.f.close()
 
     def random_sentence(self, letter, sentences, metric_count):
-        pos_sentences = self.sentences[letter].metrics[self.metrics[metric_count]]
+        pos_sentences = self.sentences[letter].metrics[
+            self.metrics[metric_count]
+        ]
         number = random.randrange(len(pos_sentences))
         s = pos_sentences[number]
         if s.not_in(sentences[letter]):
@@ -127,7 +132,9 @@ class Poem_builder:
 
         return sentences
 
-    def find_sentence(self, sentences, verses, letter, last_rhyme, metric_count):
+    def find_sentence(
+        self, sentences, verses, letter, last_rhyme, metric_count
+    ):
         """Return best Sentence object given a score.
 
         Parameters:
@@ -144,7 +151,9 @@ class Poem_builder:
         """
         max_score = -1
         count = 0
-        for sentence in self.sentences[letter].metrics[self.metrics[metric_count]]:
+        for sentence in self.sentences[letter].metrics[
+            self.metrics[metric_count]
+        ]:
             if sentence.not_in(sentences[letter]):
                 for possible_verse in sentence.verse_structures:
                     score = Score(possible_verse.scanned_sentence)
