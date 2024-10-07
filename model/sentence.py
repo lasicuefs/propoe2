@@ -37,7 +37,7 @@ class Sentence:
         #   If sentences is a type that has the __contains__ method,
         #   this method is completely redundant, and should be deprecated.
         for sentence in sentences:
-            if self.__eq__(sentence):
+            if self == sentence:
                 return False
         return True
 
