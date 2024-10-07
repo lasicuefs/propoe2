@@ -42,6 +42,7 @@ class Sentence:
         return True
 
     def get_metric(self, metric) -> "Sentence":
+        # What is ``metric``?
         """ Return a Sentence object with Verse_structures that has metric egual m.
         """
         verses = [verse for verse in self.verse_structures if verse.metric == metric]
