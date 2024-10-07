@@ -1,6 +1,5 @@
 import random
 
-from model.sentence import Sentence
 from .score import Score
 from .poem_evaluation import Evaluation
 from .utils import remove_end_ponctuation
