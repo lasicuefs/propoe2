@@ -1,10 +1,15 @@
 # TODO: ``remove_end_ponctuation`` is missing
+from model.verse_structure import Verse_structure
 from .utils import remove_end_ponctuation, sentence_preprocess
 
 
 class Sentence:
 
     def __init__(self, sentence, link, sentence_number, verse_structures: list[Verse_structure]) -> None:
+        # TODO: Is ``sentence`` a Sentence?
+        # TODO: What is ``link``?
+        # TODO: What is ``sentence_number``?
+
         self.sentence = sentence
         self.link = link
         self.sentence_number = sentence_number
