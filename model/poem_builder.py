@@ -8,7 +8,7 @@ from .utils import remove_end_ponctuation
 import sys
 
 
-class Poem_builder:
+class PoemBuilder:
     """
 
     Attributes
