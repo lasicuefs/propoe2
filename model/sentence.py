@@ -4,7 +4,7 @@ from .utils import remove_end_ponctuation, sentence_preprocess
 
 class Sentence:
 
-    def __init__(self, sentence, link, sentence_number, verse_structures):
+    def __init__(self, sentence, link, sentence_number, verse_structures) -> None:
         self.sentence = sentence
         self.link = link
         self.sentence_number = sentence_number
