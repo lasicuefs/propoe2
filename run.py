@@ -1,5 +1,5 @@
 from model.mives import Mives
-from model.poem_builder import Poem_builder
+from model.poem_builder import PoemBuilder
 from model.filter import Filter
 from configuration.conf import *
 import random
@@ -14,10 +14,10 @@ for metric in metrificacao:
 
 print("Metricas:", metrics)
 
-sentences = Filter(mives.sentences, metrics,
-                   padrao_ritmico, seed).get_rhymes()
+sentences = Filter(mives.sentences, metrics, padrao_ritmico, seed).get_rhymes()
 
-builder = Poem_builder(sentences, metrics,
-                       padrao_ritmico, pesos_avaliacao, filename, seed)
+builder = PoemBuilder(
+    sentences, metrics, padrao_ritmico, pesos_avaliacao, filename, seed
+)
 builder.build()
 builder.result()

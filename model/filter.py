@@ -1,22 +1,40 @@
 from collections import Counter
 import random
+
+from model.rhyme import Rhyme
 from .utils import remove_space
 
 
-class Filter():
-    def __init__(self, sentences, metric, rhyme_pattern, seed):
-        # List of Rhyme objects
-        self.sentences = sentences
-        # List of metrics for each verse
+class Filter:
+    """
+
+    Attributes
+    ----------
+    setences: list[Rhyme]
+        List of Rhyme objects
+    metric: list
+        List of metrics for each verse
+    rhyme: str
+        Rhyme Pattern
+        E.g. "AABB CCDD"
+    choosen_rhymes: list[Rhyme]
+        List of Rhyme objects
+    """
+
+    def __init__(
+        self, sentences: list[Rhyme], metric, rhyme_pattern: str, seed
+    ) -> None:
+        # TODO: is ``sentences`` a ``list[Rhyme]`` or ``list[Sentence]``?
+        # TODO: define what ``metric`` is
+        # TODO: define what ``seed`` is
+        self.sentences: list[Rhyme] = sentences
         self.metric = metric
-        # String with letters representing rhyme. EX: "AABB CCDD"
-        self.rhyme = remove_space(rhyme_pattern)
-        # List of Rhyme objects
-        self.chosen_rhymes = []
+        self.rhyme: str = remove_space(rhyme_pattern)
+        self.chosen_rhymes: list[Rhyme] = []
         random.seed(seed)
 
-    def get_rhymes(self):
-        """ Return which Rhyme objects to use for each letter in the rhyme pattern.
+    def get_rhymes(self) -> dict[str, Rhyme]:
+        """Return which Rhyme objects to use for each letter in the rhyme pattern.
 
         Return:
           sentences: Dict of letters from rhyme pattern that maps to a Rhyme object
@@ -25,13 +43,14 @@ class Filter():
         """
         rhymes = self.rhyme_filter()
         sentences = {}
+        # TODO: is it iterating keys or values?
+        #   Consider using .keys() or .items()
         for letter in rhymes:
             sentences[letter] = self.random_rhyme(rhymes[letter])
         return sentences
 
     def random_rhyme(self, rhymes):
-        """ Return a random Rhyme object inside a list of Rhyme objects
-        """
+        """Return a random Rhyme object inside a list of Rhyme objects"""
         number = random.randrange(len(rhymes))
         rhyme = rhymes[number]
         if rhyme.not_in(self.chosen_rhymes):
@@ -40,8 +59,8 @@ class Filter():
         else:
             return self.random_rhyme(rhymes)
 
-    def rhyme_filter(self):
-        """Filter Rhyme object inside self.sentences 
+    def rhyme_filter(self) -> dict[str, list[Rhyme]]:
+        """Filter Rhyme object inside self.sentences
         and return possible Rhyme for each letter in the rhyme pattern.
 
         Return:
@@ -51,14 +70,17 @@ class Filter():
         """
         rhyme_counter = self.rhyme_by_metric()
         filtered_rhymes = {}
+        # TODO: is it iterating keys or values?
+        #   Consider using .keys() or .items()
         for letter in rhyme_counter:
             sentences = self.sentences.copy()
             filtered_rhymes[letter] = self.metric_filter(
-                sentences, rhyme_counter[letter])
+                sentences, rhyme_counter[letter]
+            )
         return filtered_rhymes
 
-    def metric_filter(self, sentences, metrics):
-        """ Return list of Rhyme objects that has the metrics.
+    def metric_filter(self, sentences, metrics) -> list[int]:
+        """Return list of Rhyme objects that has the metrics.
 
         Parameters:
           metrics: List of metrics for each verse. EX: [10,10,9,9].
@@ -71,14 +93,14 @@ class Filter():
                 aux_sentences.append(rhyme)
         return aux_sentences
 
-    def rhyme_by_metric(self):
-        """ Represent rhyme pattern and metrics in one data structure.
+    def rhyme_by_metric(self) -> dict[str, list[int]]:
+        """Represent rhyme pattern and metrics in one data structure.
 
         Example:
-          Input: 
+          Input:
             self.rhyme: "AABB AACC"
             self.metric: [10, 10, 10, 10, 9, 9, 10, 10]
-          Output: 
+          Output:
             letters: {"A":[10,10,9,9], "B":[10,10], "C":[10,10]}
         """
         letters = {}
