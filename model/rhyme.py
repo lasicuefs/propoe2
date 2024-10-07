@@ -1,4 +1,4 @@
-from collections.abc import Sequence, Collection
+from collections.abc import Collection
 from typing import Self
 
 from model.sentence import Sentence
