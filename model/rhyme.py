@@ -18,7 +18,7 @@ class Rhyme:
         return self.rhyme.strip() == other.rhyme.strip()
 
     def __repr__(self):
-        return self.rhyme + ":\n" + str(self.metrics) + "\n"
+        return f"{self.rhyme}:\n{self.metrics}\n"
 
     def not_in(self, sentences):
         # TODO: Technically this may be resumed to ``return self not in sentences``
