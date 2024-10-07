@@ -31,7 +31,11 @@ class Sentence:
                 "\n sentence number: " + str(self.sentence_number) +
                 "\n Verses: " + verses_repr)
 
-    def not_in(self, sentences) -> bool:
+    def not_in(self, sentences: list["Sentence"]) -> bool:
+        # TODO: Technically this may be resumed to ``return self not in sentences``
+        #   But first, I need to know what exactly type ``sentences`` takes.
+        #   If sentences is a type that has the __contains__ method,
+        #   this method is completely redundant, and should be deprecated.
         for sentence in sentences:
             if self.__eq__(sentence):
                 return False
