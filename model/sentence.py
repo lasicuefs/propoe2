@@ -11,15 +11,15 @@ class Sentence:
         # List of Verse_structure object
         self.verse_structures = verse_structures
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         sentence = sentence_preprocess(self.sentence)
         other = sentence_preprocess(other.sentence)
         return sentence.split()[-1].strip() == other.split()[-1].strip()
 
-    def __hash__(self):
+    def __hash__(self) -> int:
         return hash(('sentence', self.sentence))
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         verses_repr = "\n".join([verse.__repr__()
                                 for verse in self.verse_structures])
         return ("\n\n Sentence: " + self.sentence +
@@ -27,13 +27,13 @@ class Sentence:
                 "\n sentence number: " + str(self.sentence_number) +
                 "\n Verses: " + verses_repr)
 
-    def not_in(self, sentences):
+    def not_in(self, sentences) -> bool:
         for sentence in sentences:
             if self.__eq__(sentence):
                 return False
         return True
 
-    def get_metric(self, m):
+    def get_metric(self, m) -> "Sentence":
         """ Return a Sentence object with Verse_structures that has metric egual m.
         """
         verses = []
