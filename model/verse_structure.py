@@ -1,15 +1,21 @@
+from typing import Literal
 from .utils import (
     scanned_sentence_preprocess,
     sentence_preprocess,
     remove_end_ponctuation,
 )
+# TODO: resolve importing missing file
 from .utils import left_consonant_removal
 
+# TODO: Should it be an ``StrEnum``?
 type AccentationKind = (
     Literal["Esdrúxula"] | Literal["Grave"] | Literal["Aguda"]
 )
 
 class VerseStructure:
+    # TODO: define what each attribute here is
+    # TODO: define what each method does
+
     def __init__(
         self, sentence, syllable_number, stress_position, scanned_sentence
     ) -> None:
