@@ -1,3 +1,6 @@
+from typing import Self
+
+
 class Rhyme:
     """
 
@@ -10,14 +13,14 @@ class Rhyme:
         Maps the metric of a sentence to a list of Sentence objects
     """
 
-    def __init__(self, rhyme):
+    def __init__(self, rhyme: str) -> None:
         self.rhyme = rhyme
         self.metrics = {}
 
-    def __eq__(self, other):
+    def __eq__(self, other: Self) -> bool:
         return self.rhyme.strip() == other.rhyme.strip()
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"{self.rhyme}:\n{self.metrics}\n"
 
     def not_in(self, sentences):
