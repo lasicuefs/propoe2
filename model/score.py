@@ -1,3 +1,4 @@
+from model.verse_structure import Verse_structure
 from .utils import consonant_removal
 
 
@@ -24,7 +25,7 @@ class Score:
             "Resultado": ""
         }
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         output = "Verso: " + self.verse + "\n Scores:"
         if self.debug_repr["Rima Consoante"] == "":
             output = output + "\n - Rima Consoante: Sem verso que rima"
@@ -64,7 +65,7 @@ class Score:
 
         return (output)
 
-    def jacard(self, a, b):
+    def jacard(self, a, b) -> tuple[float, str]:
         a = set(a)
         b = set(b)
         n_intersect = len(set.intersection(a, b))
@@ -74,7 +75,7 @@ class Score:
         d += "\nJaccard: " + str(n_intersect/n_union)
         return n_intersect/n_union, d
 
-    def intern_rhyme(self, a):
+    def intern_rhyme(self, a) -> float:
         self.debug_repr["Rima Interna"] = ""
         syllables = a.get_syllables()
         self.debug_repr["Rima Interna"] += "\nSílabas: " + str(syllables) + \
@@ -83,7 +84,7 @@ class Score:
             "\nQuantidade de sílabas únicas: " + str(len(set(syllables)))
         return 1 - (len(set(syllables))/len(syllables))
 
-    def same_stress_pos(self, a, b):
+    def same_stress_pos(self, a, b) -> float:
         """ Score rhyme structure.
         """
         self.debug_repr["Estrutura Ritmica"] += "\nPosição das sílabas acentuadas:" + \
@@ -94,7 +95,7 @@ class Score:
         self.debug_repr["Estrutura Ritmica"] += d
         return result
 
-    def same_stress_syllable(self, a, b):
+    def same_stress_syllable(self, a, b) -> float:
         """ Score similar stress syllables.
 
         It is multiplied by 0.5 because this score is half the score for stress syllables.
@@ -112,7 +113,7 @@ class Score:
 
         return result * 0.5
 
-    def same_pos_stress_syllable(self, a, b):
+    def same_pos_stress_syllable(self, a, b) -> float:
         """ Score stress syllables at same position.
 
         It is multiplied by 0.5 because this score is half the score for stress syllables.
@@ -138,7 +139,7 @@ class Score:
 
         return score/div * 0.5
 
-    def get_size(self, a, b):
+    def get_size(self, a, b) -> int:
         len_a = len(a)
         len_b = len(b)
         if len_a > len_b:
@@ -146,13 +147,14 @@ class Score:
         else:
             return len_a
 
-    def same_accent(self, a, b):
+    def same_accent(self, a: Verse_structure, b: Verse_structure) -> bool:
+        # TODO: verify is ``a`` and ``b`` types are right, I'm guessing it's ``VerseStructure``
         self.debug_repr["Acento"] = ""
         self.debug_repr["Acento"] += "\nAcento da referência: " + str(a.accent) +\
             "\nAcento do segmento: " + str(b.accent)
         return a.accent == b.accent
 
-    def consonant_rhyme(self, a, b):
+    def consonant_rhyme(self, a: Verse_structure, b: Verse_structure) -> float:
         a_stress = a.get_last_syllables()
         b_stress = b.get_last_syllables()
         self.debug_repr["Rima Consoante"] = "\nLetras após vogal acentuada: \n" + \
@@ -171,7 +173,7 @@ class Score:
                 " != " + b_stress[0]
             return 0
 
-    def score(self, reference, possible_verse, rhyme_verse, weight):
+    def score(self, reference, possible_verse, rhyme_verse, weight) -> None:
         self.rhyme_structure_score += self.same_stress_pos(
             reference, possible_verse)/2
         self.intern_rhyme_score = self.intern_rhyme(possible_verse)
