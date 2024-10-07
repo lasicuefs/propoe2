@@ -179,6 +179,10 @@ class Score:
             return 0
 
     def score(self, reference, possible_verse, rhyme_verse, weight) -> None:
+        # TODO: what is ``reference``?
+        # TODO: what is ``possible_verse``?
+        # TODO: What is ``rhyme_verse``?
+        # TODO: What is ``weight``? I only know that this is a dict[str, T].
         self.rhyme_structure_score += self.same_stress_pos(
             reference, possible_verse)/2
         self.intern_rhyme_score = self.intern_rhyme(possible_verse)
