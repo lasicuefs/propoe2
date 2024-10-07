@@ -185,6 +185,9 @@ class Score:
         # TODO: What is ``weight``? I only know that this is a dict[str, T].
         self.rhyme_structure_score += self.same_stress_pos(
             reference, possible_verse)/2
+        
+        # TODO: Attribute declared outside __init__. 
+        #   Should it be an instance attribute or local variable?  
         self.intern_rhyme_score = self.intern_rhyme(possible_verse)
         s = self.same_stress_syllable(reference, possible_verse)
         ps = self.same_pos_stress_syllable(reference, possible_verse)
