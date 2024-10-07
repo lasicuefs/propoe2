@@ -7,15 +7,27 @@ import sys
 
 
 class Poem_builder:
+    """
+
+    Attributes
+    ----------
+    sentences: list[Rhyme]
+        List of Rhyme objects
+    rhyme: str
+        Rhyme Pattern
+        E.g.: "AABB CCDD"
+    metrics: list
+        List of metrics per verse
+    poem: dict
+        maps score name and its weight
+    """
+    # TODO: define what is the internal type of metrics
+    # TODO: define what are the internal types of poem
     def __init__(self, sentences, metrics, rhyme, score_weight, filename, seed):
-        # List of Rhyme objects
         self.sentences = sentences
-        # Ex: "AABB CCDD"
         self.rhyme = rhyme
-        # List of metrics per verse
         self.metrics = metrics
         self.poem = ""
-        # Dict that maps score name and its weight
         self.score_weight = score_weight
         self.evaluation = Evaluation()
         random.seed(seed)
