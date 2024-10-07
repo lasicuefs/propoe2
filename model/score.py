@@ -10,8 +10,8 @@ class Score:
         self.rhyme_structure_score = 0
         self.score_result = 0
         self.rhyme_intern_score = 0
-        self.rhyme_verse = False
-        self.debug_repr = {
+        self.rhyme_verse: bool = False
+        self.debug_repr: dict[str, str] = {
             "Rima Consoante": "",
             "Estrutura Ritmica": "",
             "Silabas Tonicas": "",
