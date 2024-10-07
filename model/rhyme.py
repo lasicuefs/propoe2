@@ -22,7 +22,7 @@ class Rhyme:
 
     def not_in(self, sentences):
         for sentence in sentences:
-            if self.__eq__(sentence):
+            if self == sentence:
                 return False
         return True
 
