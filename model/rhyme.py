@@ -1,4 +1,7 @@
+from collections.abc import Sequence, Collection
 from typing import Self
+
+from model.sentence import Sentence
 
 
 class Rhyme:
@@ -12,6 +15,7 @@ class Rhyme:
     metrics: dict
         Maps the metric of a sentence to a list of Sentence objects
     """
+    type Counter = dict[int, int]
 
     def __init__(self, rhyme: str) -> None:
         self.rhyme = rhyme
@@ -23,7 +27,7 @@ class Rhyme:
     def __repr__(self) -> str:
         return f"{self.rhyme}:\n{self.metrics}\n"
 
-    def not_in(self, sentences):
+    def not_in(self, sentences: Collection[Self]) -> bool:
         # TODO: Technically this may be resumed to ``return self not in sentences``
         #   But first, I need to know what exactly type ``sentences`` takes.
         #   If sentences is a type that has the __contains__ method,
@@ -34,7 +38,7 @@ class Rhyme:
                 return False
         return True
 
-    def add(self, sentence):
+    def add(self, sentence: Sentence) -> None:
         """ Populate self.metrics.
         It adds a Sentence object to its correct metric with only the verses that has this metric.
 
@@ -53,7 +57,7 @@ class Rhyme:
                 m_sentence = sentence.get_metric(metric)
                 self.metrics[metric].append(m_sentence)
 
-    def remove_duplicates(self, sentences):
+    def remove_duplicates(self, sentences: list[Sentence]):
         """ Return a list of Sentence object that only appears once in the
         list sentences from parameters.
 
@@ -70,7 +74,7 @@ class Rhyme:
             sentences.append(sentence)
         return uniq_sentences
 
-    def unique(self, sentences):
+    def unique(self, sentences: list[Sentence]) -> list[Sentence]:
         """ Return a list of Sentence object removing duplicates inside list from parameters.
 
         Ex:
@@ -83,7 +87,7 @@ class Rhyme:
                 uniq_sentences.append(sentence)
         return uniq_sentences
 
-    def size(self, counter):
+    def size(self, counter: Counter) -> bool:
         """ Return True if this object is able to generate a poem.
 
         Object is able to generate a poem if it has the values needed in the counter
@@ -118,7 +122,8 @@ class Rhyme:
             else:
                 return False
 
-    def get_unique_sentences(self, counter):
+    def get_unique_sentences(self, counter: Counter) -> list:
+        # TODO: returns a list, but a list of what? What should metrics be in this code?
         """ Merge List of Sentences with metrics in counter and return only the ones that
         appears once.
 
@@ -134,7 +139,7 @@ class Rhyme:
         metrics = self.remove_duplicates(metrics)
         return metrics
 
-    def check_sentences(self, counter):
+    def check_sentences(self, counter: Counter) -> bool:
         """  Check if object has more Sentences objects (removing repeted Sentence) from each metric
         nedded for a verse than letters from rhyme patter. 
 
