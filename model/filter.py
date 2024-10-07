@@ -1,18 +1,36 @@
 from collections import Counter
 import random
+
+from model.rhyme import Rhyme
 from .utils import remove_space
 
 
 class Filter:
-    def __init__(self, sentences, metric, rhyme_pattern, seed):
-        # List of Rhyme objects
-        self.sentences = sentences
-        # List of metrics for each verse
+    """
+
+    Attributes
+    ----------
+    setences: list[Rhyme]
+        List of Rhyme objects
+    metric: list
+        List of metrics for each verse
+    rhyme: str
+        Rhyme Pattern
+        E.g. "AABB CCDD"
+    choosen_rhymes: list[Rhyme]
+        List of Rhyme objects
+    """
+
+    def __init__(
+        self, sentences: list[Rhyme], metric, rhyme_pattern: str, seed
+    ) -> None:
+        # TODO: is ``sentences`` a ``list[Rhyme]`` or ``list[Sentence]``?
+        # TODO: define what ``metric`` is
+        # TODO: define what ``seed`` is
+        self.sentences: list[Rhyme] = sentences
         self.metric = metric
-        # String with letters representing rhyme. EX: "AABB CCDD"
-        self.rhyme = remove_space(rhyme_pattern)
-        # List of Rhyme objects
-        self.chosen_rhymes = []
+        self.rhyme: str = remove_space(rhyme_pattern)
+        self.chosen_rhymes: list[Rhyme] = []
         random.seed(seed)
 
     def get_rhymes(self):
