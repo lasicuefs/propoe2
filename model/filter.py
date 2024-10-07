@@ -33,7 +33,7 @@ class Filter:
         self.chosen_rhymes: list[Rhyme] = []
         random.seed(seed)
 
-    def get_rhymes(self):
+    def get_rhymes(self) -> dict[str, Rhyme]:
         """Return which Rhyme objects to use for each letter in the rhyme pattern.
 
         Return:
@@ -59,7 +59,7 @@ class Filter:
         else:
             return self.random_rhyme(rhymes)
 
-    def rhyme_filter(self):
+    def rhyme_filter(self) -> dict[str, list[Rhyme]]:
         """Filter Rhyme object inside self.sentences
         and return possible Rhyme for each letter in the rhyme pattern.
 
@@ -79,7 +79,7 @@ class Filter:
             )
         return filtered_rhymes
 
-    def metric_filter(self, sentences, metrics):
+    def metric_filter(self, sentences, metrics) -> list[int]:
         """Return list of Rhyme objects that has the metrics.
 
         Parameters:
@@ -93,7 +93,7 @@ class Filter:
                 aux_sentences.append(rhyme)
         return aux_sentences
 
-    def rhyme_by_metric(self):
+    def rhyme_by_metric(self) -> dict[str, list[int]]:
         """Represent rhyme pattern and metrics in one data structure.
 
         Example:
