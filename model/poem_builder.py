@@ -173,8 +173,10 @@ class Poem_builder:
                             result_score = score
         print("------------ESCOLHIDO----------------")
         print("Quantidade de versos:", str(count))
+        # TODO: ``result_score`` may never be assigned
         print(result_score)
         print()
 
         self.evaluation.add(result_score)
+        # TODO: ``next_s`` and ``next_verse`` may never be assigned
         return next_s, next_verse
