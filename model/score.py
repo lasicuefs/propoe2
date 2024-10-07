@@ -66,6 +66,7 @@ class Score:
         return (output)
 
     def jacard(self, a, b) -> tuple[float, str]:
+        # TODO: What are ``a`` and ``b``?
         a = set(a)
         b = set(b)
         n_intersect = len(set.intersection(a, b))
@@ -75,7 +76,7 @@ class Score:
         d += "\nJaccard: " + str(n_intersect/n_union)
         return n_intersect/n_union, d
 
-    def intern_rhyme(self, a) -> float:
+    def intern_rhyme(self, a: Verse_structure) -> float:
         self.debug_repr["Rima Interna"] = ""
         syllables = a.get_syllables()
         self.debug_repr["Rima Interna"] += "\nSílabas: " + str(syllables) + \
@@ -84,7 +85,7 @@ class Score:
             "\nQuantidade de sílabas únicas: " + str(len(set(syllables)))
         return 1 - (len(set(syllables))/len(syllables))
 
-    def same_stress_pos(self, a, b) -> float:
+    def same_stress_pos(self, a: Verse_structure, b: Verse_structure) -> float:
         """ Score rhyme structure.
         """
         self.debug_repr["Estrutura Ritmica"] += "\nPosição das sílabas acentuadas:" + \
@@ -95,7 +96,9 @@ class Score:
         self.debug_repr["Estrutura Ritmica"] += d
         return result
 
-    def same_stress_syllable(self, a, b) -> float:
+    def same_stress_syllable(
+        self, a: Verse_structure, b: Verse_structure
+    ) -> float:
         """ Score similar stress syllables.
 
         It is multiplied by 0.5 because this score is half the score for stress syllables.
@@ -113,7 +116,9 @@ class Score:
 
         return result * 0.5
 
-    def same_pos_stress_syllable(self, a, b) -> float:
+    def same_pos_stress_syllable(
+        self, a: Verse_structure, b: Verse_structure
+    ) -> float:
         """ Score stress syllables at same position.
 
         It is multiplied by 0.5 because this score is half the score for stress syllables.
