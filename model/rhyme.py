@@ -21,6 +21,8 @@ class Rhyme:
         return self.rhyme + ":\n" + str(self.metrics) + "\n"
 
     def not_in(self, sentences):
+        # TODO: Technically this may be resumed to ``return self not in sentences``
+        #   But first, I need to know what exactly type ``sentences`` takes.
         for sentence in sentences:
             if self == sentence:
                 return False
