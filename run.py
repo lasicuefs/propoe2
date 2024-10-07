@@ -14,10 +14,10 @@ for metric in metrificacao:
 
 print("Metricas:", metrics)
 
-sentences = Filter(mives.sentences, metrics,
-                   padrao_ritmico, seed).get_rhymes()
+sentences = Filter(mives.sentences, metrics, padrao_ritmico, seed).get_rhymes()
 
-builder = Poem_builder(sentences, metrics,
-                       padrao_ritmico, pesos_avaliacao, filename, seed)
+builder = Poem_builder(
+    sentences, metrics, padrao_ritmico, pesos_avaliacao, filename, seed
+)
 builder.build()
 builder.result()

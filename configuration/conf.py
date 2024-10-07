@@ -25,7 +25,7 @@ pesos_avaliacao = {
     "Acentuacao": 1,
     "Posicao tonica": 1,
     "Rima interna": 1,
-    "Estrutura ritmica": 1
+    "Estrutura ritmica": 1,
 }
 
 seed = None

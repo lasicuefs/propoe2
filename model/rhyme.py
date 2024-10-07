@@ -15,6 +15,7 @@ class Rhyme:
     metrics: dict
         Maps the metric of a sentence to a list of Sentence objects
     """
+
     type Counter = dict[int, int]
 
     def __init__(self, rhyme: str) -> None:
@@ -39,7 +40,7 @@ class Rhyme:
         return True
 
     def add(self, sentence: Sentence) -> None:
-        """ Populate self.metrics.
+        """Populate self.metrics.
         It adds a Sentence object to its correct metric with only the verses that has this metric.
 
         Return:
@@ -58,7 +59,7 @@ class Rhyme:
                 self.metrics[metric].append(m_sentence)
 
     def remove_duplicates(self, sentences: list[Sentence]):
-        """ Return a list of Sentence object that only appears once in the
+        """Return a list of Sentence object that only appears once in the
         list sentences from parameters.
 
         Ex:
@@ -75,7 +76,7 @@ class Rhyme:
         return uniq_sentences
 
     def unique(self, sentences: list[Sentence]) -> list[Sentence]:
-        """ Return a list of Sentence object removing duplicates inside list from parameters.
+        """Return a list of Sentence object removing duplicates inside list from parameters.
 
         Ex:
           Input: sentences = [Sentence1, Sentence1, Sentence2]
@@ -88,7 +89,7 @@ class Rhyme:
         return uniq_sentences
 
     def size(self, counter: Counter) -> bool:
-        """ Return True if this object is able to generate a poem.
+        """Return True if this object is able to generate a poem.
 
         Object is able to generate a poem if it has the values needed in the counter
         parameter for each metric.
@@ -103,7 +104,7 @@ class Rhyme:
             EX: {10: 2, 9: 2}
         """
 
-        if(self.check_sentences(counter)):
+        if self.check_sentences(counter):
             return True
         else:
             metrics = self.get_unique_sentences(counter)
@@ -124,7 +125,7 @@ class Rhyme:
 
     def get_unique_sentences(self, counter: Counter) -> list:
         # TODO: returns a list, but a list of what? What should metrics be in this code?
-        """ Merge List of Sentences with metrics in counter and return only the ones that
+        """Merge List of Sentences with metrics in counter and return only the ones that
         appears once.
 
         Parameters:
@@ -140,8 +141,8 @@ class Rhyme:
         return metrics
 
     def check_sentences(self, counter: Counter) -> bool:
-        """  Check if object has more Sentences objects (removing repeted Sentence) from each metric
-        nedded for a verse than letters from rhyme patter. 
+        """Check if object has more Sentences objects (removing repeted Sentence) from each metric
+        nedded for a verse than letters from rhyme patter.
 
         Parameters:
           counter: Dict mapping metric with its needed amount for the poem.
