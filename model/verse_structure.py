@@ -2,7 +2,7 @@ from .utils import scanned_sentence_preprocess, sentence_preprocess, remove_end_
 from .utils import left_consonant_removal
 
 
-class Verse_structure():
+class Verse_structure:
 
     def __init__(self, sentence, syllable_number, stress_position, scanned_sentence):
         self.metric = int(syllable_number)
