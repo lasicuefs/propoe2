@@ -1,4 +1,6 @@
 import random
+
+from model.sentence import Sentence
 from .score import Score
 from collections import Counter
 from .poem_evaluation import Evaluation
@@ -132,8 +134,14 @@ class Poem_builder:
 
         return sentences
 
+    # TODO: define missing types
     def find_sentence(
-        self, sentences, verses, letter, last_rhyme, metric_count
+        self,
+        sentences: list[Sentence],
+        verses: list,
+        letter: str,
+        last_rhyme,
+        metric_count,
     ):
         """Return best Sentence object given a score.
 
