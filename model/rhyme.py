@@ -1,9 +1,17 @@
 class Rhyme:
+    """
+
+    Attributes
+    ----------
+    rhyme: str
+        Target rhyme of the end of a sentence.
+        E.g. "ro".
+    metrics: dict
+        Maps the metric of a sentence to a list of Sentence objects
+    """
 
     def __init__(self, rhyme):
-        # EX: "ro", end of a sentence.
         self.rhyme = rhyme
-        # Dict the maps the metric of a sentence to a list of Sentence objects.
         self.metrics = {}
 
     def __eq__(self, other):
