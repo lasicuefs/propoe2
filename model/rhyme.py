@@ -1,4 +1,4 @@
-class Rhyme():
+class Rhyme:
 
     def __init__(self, rhyme):
         # EX: "ro", end of a sentence.
