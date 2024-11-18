@@ -1,7 +1,7 @@
 from collections.abc import Collection
 from typing import Self
 
-from model.sentence import Sentence
+from src.model.sentence import Sentence
 
 
 class Rhyme:

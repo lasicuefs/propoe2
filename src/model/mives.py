@@ -1,8 +1,8 @@
 import xml.etree.ElementTree as ET
-from .sentence import Sentence
-from .verse_structure import VerseStructure
-from .utils import remove_end_ponctuation, remove_pontuation
-from .rhyme import Rhyme
+from src.model.sentence import Sentence
+from src.model.verse_structure import VerseStructure
+from src.model.utils import remove_end_ponctuation, remove_pontuation
+from src.model.rhyme import Rhyme
 
 
 class Mives:

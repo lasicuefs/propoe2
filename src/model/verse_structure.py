@@ -1,11 +1,11 @@
 from typing import Literal
-from .utils import (
+from src.model.utils import (
     scanned_sentence_preprocess,
     sentence_preprocess,
     remove_end_ponctuation,
 )
 # TODO: resolve importing missing file
-from .utils import left_consonant_removal
+from src.model.utils import left_consonant_removal
 
 # TODO: Should it be an ``StrEnum``?
 type AccentationKind = (

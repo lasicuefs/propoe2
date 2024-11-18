@@ -1,8 +1,8 @@
 import random
 
-from .score import Score
-from .poem_evaluation import Evaluation
-from .utils import remove_end_ponctuation
+from src.model.score import Score
+from src.model.poem_evaluation import Evaluation
+from src.model.utils import remove_end_ponctuation
 import sys
 
 

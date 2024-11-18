@@ -1,8 +1,8 @@
 from collections import Counter
 import random
 
-from model.rhyme import Rhyme
-from .utils import remove_space
+from src.model.rhyme import Rhyme
+from src.model.utils import remove_space
 
 
 class Filter:

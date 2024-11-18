@@ -1,5 +1,5 @@
-from model.verse_structure import VerseStructure
-from .utils import consonant_removal
+from src.model.verse_structure import VerseStructure
+from src.model.utils import consonant_removal
 
 
 class Score:

@@ -1,6 +1,6 @@
 # TODO: ``remove_end_ponctuation`` is missing
-from model.verse_structure import VerseStructure
-from .utils import remove_end_ponctuation, sentence_preprocess
+from src.model.verse_structure import VerseStructure
+from src.model.utils import remove_end_ponctuation, sentence_preprocess
 
 
 class Sentence:

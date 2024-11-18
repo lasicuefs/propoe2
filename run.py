@@ -1,6 +1,6 @@
-from model.mives import Mives
-from model.poem_builder import PoemBuilder
-from model.filter import Filter
+from src.model.mives import Mives
+from src.model.poem_builder import PoemBuilder
+from src.model.filter import Filter
 from configuration.conf import *
 import random
 
