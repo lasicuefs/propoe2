@@ -75,11 +75,6 @@ class Mives:
             last_syllable, verse_struct = self.get_verse_info(verses, sentence)
             verse_structures.append(verse_struct)
         # Remove error in Mives. Sentences with no stress syllable in the last word
-        if (
-            "#"
-            in remove_end_ponctuation(verse_struct.scanned_sentence).split()[-1]
-        ):
-            sentence_obj = Sentence(
-                sentence, link, sentence_number, verse_structures
-            )
+        if "#" in remove_end_ponctuation(verse_struct.scanned_sentence).split()[-1]:
+            sentence_obj = Sentence(sentence, link, sentence_number, verse_structures)
         return last_syllable, sentence_obj

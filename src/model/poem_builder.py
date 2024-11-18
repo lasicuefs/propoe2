@@ -56,17 +56,13 @@ class PoemBuilder:
             else:
                 s = sentences[letter].pop(0)
                 self.poem = (
-                    self.poem
-                    + remove_end_ponctuation(s.sentence).capitalize()
-                    + "\n"
+                    self.poem + remove_end_ponctuation(s.sentence).capitalize() + "\n"
                 )
         sys.stdout = self.orig_stdout
         self.f.close()
 
     def random_sentence(self, letter, sentences, metric_count):
-        pos_sentences = self.sentences[letter].metrics[
-            self.metrics[metric_count]
-        ]
+        pos_sentences = self.sentences[letter].metrics[self.metrics[metric_count]]
         number = random.randrange(len(pos_sentences))
         s = pos_sentences[number]
         if s.not_in(sentences[letter]):
@@ -157,9 +153,7 @@ class PoemBuilder:
         """
         max_score = -1
         count = 0
-        for sentence in self.sentences[letter].metrics[
-            self.metrics[metric_count]
-        ]:
+        for sentence in self.sentences[letter].metrics[self.metrics[metric_count]]:
             if sentence.not_in(sentences[letter]):
                 for possible_verse in sentence.verse_structures:
                     score = Score(possible_verse.scanned_sentence)

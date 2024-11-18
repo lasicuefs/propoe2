@@ -29,9 +29,7 @@ class Sentence:
         return hash(("sentence", self.sentence))
 
     def __repr__(self) -> str:
-        verses_repr = "\n".join(
-            [verse.__repr__() for verse in self.verse_structures]
-        )
+        verses_repr = "\n".join([verse.__repr__() for verse in self.verse_structures])
         return (
             "\n\n Sentence: "
             + self.sentence
@@ -56,7 +54,5 @@ class Sentence:
     def get_metric(self, metric) -> "Sentence":
         # What is ``metric``?
         """Return a Sentence object with Verse_structures that has metric egual m."""
-        verses = [
-            verse for verse in self.verse_structures if verse.metric == metric
-        ]
+        verses = [verse for verse in self.verse_structures if verse.metric == metric]
         return Sentence(self.sentence, self.link, self.sentence_number, verses)

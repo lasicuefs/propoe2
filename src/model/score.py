@@ -144,9 +144,7 @@ class Score:
         self.debug_repr["Estrutura Ritmica"] += d
         return result
 
-    def same_stress_syllable(
-        self, a: VerseStructure, b: VerseStructure
-    ) -> float:
+    def same_stress_syllable(self, a: VerseStructure, b: VerseStructure) -> float:
         """Score similar stress syllables.
 
         It is multiplied by 0.5 because this score is half the score for stress syllables.
@@ -169,9 +167,7 @@ class Score:
 
         return result * 0.5
 
-    def same_pos_stress_syllable(
-        self, a: VerseStructure, b: VerseStructure
-    ) -> float:
+    def same_pos_stress_syllable(self, a: VerseStructure, b: VerseStructure) -> float:
         """Score stress syllables at same position.
 
         It is multiplied by 0.5 because this score is half the score for stress syllables.
@@ -203,9 +199,7 @@ class Score:
             )
             if a.pos_stress_dict[pos] == b.pos_stress_dict[pos]:
                 score += 1
-        self.debug_repr["Silabas Tonicas"] += "\n Resultado: " + str(
-            score / div
-        )
+        self.debug_repr["Silabas Tonicas"] += "\n Resultado: " + str(score / div)
 
         return score / div * 0.5
 
@@ -240,9 +234,7 @@ class Score:
             + b_stress
         )
         if a_stress == b_stress:
-            self.debug_repr["Rima Consoante"] += (
-                "\n" + a_stress + " = " + b_stress
-            )
+            self.debug_repr["Rima Consoante"] += "\n" + a_stress + " = " + b_stress
             return 1
         elif a_stress[0] == b_stress[0]:
             self.debug_repr["Rima Consoante"] += (
@@ -295,9 +287,7 @@ class Score:
             round(self.score_result, 2)
         )
         if rhyme_verse:
-            max_score += (
-                weight["Rima toante & consoante"] + weight["Acentuacao"]
-            )
+            max_score += weight["Rima toante & consoante"] + weight["Acentuacao"]
             self.debug_repr["Resultado"] += "\nScore máximo: " + str(max_score)
             self.score_result = self.score_result / max_score
         else:

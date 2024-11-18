@@ -54,9 +54,7 @@ def run():
             metrics.append(metric)
 
     print("Metricas:", metrics)
-    sentences = Filter(
-        mives.sentences, metrics, padrao_ritmico, seed
-    ).get_rhymes()
+    sentences = Filter(mives.sentences, metrics, padrao_ritmico, seed).get_rhymes()
     builder = PoemBuilder(
         sentences, metrics, padrao_ritmico, pesos_avaliacao, filename, seed
     )
@@ -65,7 +63,6 @@ def run():
 
 
 def test_print_message(capfd) -> None:
-
     expected = """\
 Metricas: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
 A nação inteira interveio

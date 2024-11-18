@@ -4,13 +4,13 @@ from src.model.utils import (
     sentence_preprocess,
     remove_end_ponctuation,
 )
+
 # TODO: resolve importing missing file
 from src.model.utils import left_consonant_removal
 
 # TODO: Should it be an ``StrEnum``?
-type AccentationKind = (
-    Literal["Esdrúxula"] | Literal["Grave"] | Literal["Aguda"]
-)
+type AccentationKind = Literal["Esdrúxula"] | Literal["Grave"] | Literal["Aguda"]
+
 
 class VerseStructure:
     # TODO: define what each attribute here is
@@ -56,9 +56,7 @@ class VerseStructure:
 
     def get_last_syllables(self) -> str:
         after = self.syllables[int(self.stress_position[-1]) :]
-        stress = self.scanned_sentence.split("/")[
-            int(self.stress_position[-1]) - 1
-        ]
+        stress = self.scanned_sentence.split("/")[int(self.stress_position[-1]) - 1]
         stress = stress.split("#")[-1]
         after.insert(0, stress)
         return remove_end_ponctuation("".join(after))
