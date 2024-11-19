@@ -2,6 +2,11 @@ from dataclasses import dataclass
 from functools import lru_cache
 import random
 
+from src.model.filter import Filter
+from src.model.mives import Mives
+from src.model.poem_builder import PoemBuilder
+from src.model.rhyme import Rhyme
+
 
 @dataclass(frozen=True, kw_only=True)
 class Weights:
@@ -137,3 +142,32 @@ class Propoe:
     prosody: Prosody
     evaluation_weights: Weights
     seed: int | None = None
+
+    @property
+    def builder(self) -> PoemBuilder:
+        return PoemBuilder(
+            self.sentences,
+            self.prosody.rhythm,
+            self.prosody.pattern,
+            self.evaluation_weights.as_dict,
+            self.filename,
+            self.seed,
+        )
+
+    @property
+    def filter(self) -> Filter:
+        return Filter(
+            sentences=Mives(self.mives_file).sentences,
+            metric=self.prosody.rhythm,
+            rhyme_pattern=self.prosody.pattern,
+            seed=self.seed,
+        )
+
+    @property
+    def sentences(self) -> dict[str, Rhyme]:
+        return self.filter.get_rhymes()
+
+    def build(self) -> None:
+        builder = self.builder
+        builder.build()
+        builder.result()
