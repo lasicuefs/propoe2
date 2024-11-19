@@ -143,13 +143,16 @@ Resultado:
 
     print("Metricas:", prosody.rhythm)
 
-    Propoe(
+    poem = Propoe(
         filename="poem_test_api.txt",
         mives_file="xml/sentencas.xml",
         prosody=prosody,
         evaluation_weights=weights,
         seed=1
-    ).build()
+    ).poem()
+
+    print(poem.poem)
+    print(poem.evaluation)
 
     actual, err = capfd.readouterr()
 
