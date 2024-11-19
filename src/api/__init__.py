@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from functools import lru_cache
 import random
 
 
@@ -38,6 +39,7 @@ class Weights:
     rhythmic_structure: int = 1
 
     @property
+    @lru_cache
     def as_dict(self) -> dict[str, int]:
         """Returns itself as a dict[str, int]
 
