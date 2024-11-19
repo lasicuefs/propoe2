@@ -1,10 +1,12 @@
 from dataclasses import dataclass
 from functools import lru_cache
 import random
+from typing import NamedTuple
 
 from src.model.filter import Filter
 from src.model.mives import Mives
 from src.model.poem_builder import PoemBuilder
+from src.model.poem_evaluation import Evaluation
 from src.model.rhyme import Rhyme
 
 
@@ -173,6 +175,10 @@ class Propoe:
     evaluation_weights: Weights
     seed: int | None = None
 
+    class Poem(NamedTuple):
+        poem: str
+        evaluation: Evaluation
+
     @property
     def builder(self) -> PoemBuilder:
         """PoemBuilder from the Propoe's instance internal attributes"""
@@ -205,8 +211,8 @@ class Propoe:
         """
         return self.filter.get_rhymes()
 
-    def build(self) -> None:
+    def poem(self) -> Poem:
         """Builds the Poem and writes it into ``self.filename``"""
         builder = self.builder
         builder.build()
-        builder.result()
+        return self.Poem(builder.poem, builder.evaluation)
