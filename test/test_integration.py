@@ -54,7 +54,9 @@ def run():
             metrics.append(metric)
 
     print("Metricas:", metrics)
-    sentences = Filter(mives.sentences, metrics, padrao_ritmico, seed).get_rhymes()
+    sentences = Filter(
+        mives.sentences, metrics, padrao_ritmico, seed
+    ).get_rhymes()
     builder = PoemBuilder(
         sentences, metrics, padrao_ritmico, pesos_avaliacao, filename, seed
     )
