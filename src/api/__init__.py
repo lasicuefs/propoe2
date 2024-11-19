@@ -133,4 +133,4 @@ class Propoe:
     mives_file: str
     prosody: Prosody
     evaluation_weights: Weights
-    seed: int | None
+    seed: int | None = None
