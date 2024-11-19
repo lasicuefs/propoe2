@@ -37,7 +37,8 @@ class Weights:
     internal_rhyme: int = 1
     rhythmic_structure: int = 1
 
-    def __dict__(self) -> dict[str, int]:
+    @property
+    def as_dict(self) -> dict[str, int]:
         """Returns itself as a dict[str, int]
 
         Note
