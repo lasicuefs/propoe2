@@ -9,6 +9,8 @@ considering the cuurent code is already working fine.
 
 import pytest
 
+from src.api import Propoe, Prosody, Weights
+
 
 def run():
     from src.model.mives import Mives
@@ -99,3 +101,59 @@ Resultado:
 
     assert expected == actual
     assert "" == err
+
+
+def test_with_api(capfd):
+    expected = """\
+Metricas: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+A nação inteira interveio
+Desafio o mundo inteiro
+Afinal a multidão nterveio
+Fora uma tenda de ferreiro
+
+Ao contrário, este fortaleceu-o
+Quebrou-se o encanto do conselheiro
+Fazia calar o bombardeio
+Acaba-se o desfiladeiro
+
+Voltavam abatidos e exaustos
+Moreira césar fora de combate
+É a escarpa abrupta e viva dos planaltos
+
+Lavraram incêndios em vários pontos
+Quedavam numa mornidão irritante
+Os comboios eram raros e incertos
+
+Resultado:
+ - Estrutura Ritmica: 0.535
+ - Silabas Tônicas: 0.058
+ - Acento: 1.0
+ - Rima Interna: 0.045
+ - Rima Toante & Consoante: 0.688
+ Score Resultante: 0.419
+"""
+
+    prosody = Prosody(
+        "ABAB ABAB CDC CDC",
+        [10] * 14,
+    )
+
+    # Everything is set-up as 1
+    weights = Weights()
+
+    print("Metricas:", prosody.rhythm)
+
+    Propoe(
+        filename="poem_test_api.txt",
+        mives_file="xml/sentencas.xml",
+        prosody=prosody,
+        evaluation_weights=weights,
+        seed=1
+    ).build()
+
+    actual, err = capfd.readouterr()
+
+    assert expected == actual
+    assert "" == err
+
+
