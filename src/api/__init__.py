@@ -137,6 +137,36 @@ class Prosody:
 
 @dataclass(frozen=True, kw_only=True)
 class Propoe:
+    """The Propoe2's API to generate Poems and write it into a file.
+
+    Attributes
+    ----------
+    filename : str
+        The name of the output's file.
+    mives_file : str
+        The MIVES file containing sentences to be read from.
+    prosody : Prosody
+        The prosody containing rhythm and pattern.
+    evaluation_weights : Weights
+        The weights used for evaluation when building.
+    seed : Optional[int], default=None
+        The seed for deterministic poem generation.
+
+    Properties
+    ----------
+    builder : PoemBuilder
+        returns a PoemBuilder from its internal attributes.
+    filter : Filter
+        returns a Filter from its internal attributes.
+    sentences : dict[str, Rhyme]
+        Returns a dictionary of sentences with their corresponding rhymes.
+
+    Methods
+    -------
+    build() -> None
+        Builds the poem using the PoemBuilder instance.
+    """
+
     filename: str
     mives_file: str
     prosody: Prosody
@@ -145,6 +175,7 @@ class Propoe:
 
     @property
     def builder(self) -> PoemBuilder:
+        """PoemBuilder from the Propoe's instance internal attributes"""
         return PoemBuilder(
             self.sentences,
             self.prosody.rhythm,
@@ -156,6 +187,7 @@ class Propoe:
 
     @property
     def filter(self) -> Filter:
+        """Filter from the Propoe's instance internal attributes"""
         return Filter(
             sentences=Mives(self.mives_file).sentences,
             metric=self.prosody.rhythm,
@@ -165,9 +197,16 @@ class Propoe:
 
     @property
     def sentences(self) -> dict[str, Rhyme]:
+        """Dict of letters from rhyme pattern that maps to a Rhyme object.
+
+        Pattern
+        -------
+                {"A": Rhyme, "B": Rhyme}
+        """
         return self.filter.get_rhymes()
 
     def build(self) -> None:
+        """Builds the Poem and writes it into ``self.filename``"""
         builder = self.builder
         builder.build()
         builder.result()
