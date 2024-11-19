@@ -1,5 +1,6 @@
 import random
 
+from src.model.rhyme import Rhyme
 from src.model.score import Score
 from src.model.poem_evaluation import Evaluation
 from src.model.utils import remove_end_ponctuation
@@ -11,26 +12,39 @@ class PoemBuilder:
 
     Attributes
     ----------
-    sentences: list[Rhyme]
+    sentences: dict[str, Rhyme]
         List of Rhyme objects
     rhyme: str
-        Rhyme Pattern
-        E.g.: "AABB CCDD"
-    metrics: list
+        Rhyme Pattern. E.g.: "AABB CCDD"
+    metrics: list[int]
         List of metrics per verse
-    poem: dict
+    poem: str
         maps score name and its weight
+    score_weight: dict[str, int]
+        Score Weight for the poem evaluation
+    evaluation: Evaluation
+        The evaluation of the Poem
+    orig_stdout: TextIO
+        The original System's Stdout
+    f: TextIOWrapper[_WrappedBuffer]
+        The file reference for the filename with "write" access.
     """
 
-    # TODO: define what is the internal type of metrics
-    # TODO: define what are the internal types of poem
-    def __init__(self, sentences, metrics, rhyme, score_weight, filename, seed):
-        self.sentences = sentences
-        self.rhyme = rhyme
-        self.metrics = metrics
-        self.poem = ""
-        self.score_weight = score_weight
-        self.evaluation = Evaluation()
+    def __init__(
+        self,
+        sentences: dict[str, Rhyme],
+        metrics: list[int],
+        rhyme: str,
+        score_weight: dict[str, int],
+        filename: str,
+        seed: int | None,
+    ) -> None:
+        self.sentences: dict[str, Rhyme] = sentences
+        self.rhyme: str = rhyme
+        self.metrics: list[int] = metrics
+        self.poem: str = ""
+        self.score_weight: dict[str, int] = score_weight
+        self.evaluation: Evaluation = Evaluation()
         random.seed(seed)
 
         self.orig_stdout = sys.stdout
@@ -56,13 +70,17 @@ class PoemBuilder:
             else:
                 s = sentences[letter].pop(0)
                 self.poem = (
-                    self.poem + remove_end_ponctuation(s.sentence).capitalize() + "\n"
+                    self.poem
+                    + remove_end_ponctuation(s.sentence).capitalize()
+                    + "\n"
                 )
         sys.stdout = self.orig_stdout
         self.f.close()
 
     def random_sentence(self, letter, sentences, metric_count):
-        pos_sentences = self.sentences[letter].metrics[self.metrics[metric_count]]
+        pos_sentences = self.sentences[letter].metrics[
+            self.metrics[metric_count]
+        ]
         number = random.randrange(len(pos_sentences))
         s = pos_sentences[number]
         if s.not_in(sentences[letter]):
@@ -153,7 +171,9 @@ class PoemBuilder:
         """
         max_score = -1
         count = 0
-        for sentence in self.sentences[letter].metrics[self.metrics[metric_count]]:
+        for sentence in self.sentences[letter].metrics[
+            self.metrics[metric_count]
+        ]:
             if sentence.not_in(sentences[letter]):
                 for possible_verse in sentence.verse_structures:
                     score = Score(possible_verse.scanned_sentence)
