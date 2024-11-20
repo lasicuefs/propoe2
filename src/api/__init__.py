@@ -8,6 +8,7 @@ from src.model.poem_builder import PoemBuilder
 from src.model.poem_evaluation import Evaluation
 from src.model.rhyme import Rhyme
 
+__all__ = ["Weights", "Prosody", "Propoe"]
 
 @dataclass(frozen=True, kw_only=True)
 class Weights:
