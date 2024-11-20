@@ -138,7 +138,15 @@ class Prosody:
 
 @dataclass(frozen=True)
 class Poem:
-    """Final Poem generated from Propoe's API"""
+    """Final Poem generated from Propoe's API
+    
+    Propoerties
+    -----------
+    content: str
+        Poem's content
+    evaluation: Evaluation
+        Poem's evaluation score
+    """
     _builder: PoemBuilder
 
     def __post_init__(self):
