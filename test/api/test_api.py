@@ -12,7 +12,7 @@ import pytest
 from src.api import Prosody, Weights
 
 
-def test(desc: str) -> Callable[..., Any]:
+def describe(desc: str) -> Callable[..., Any]:
     """Decorator to add a readable description to a test unit"""
 
     def wrapper(func: Callable[..., Any]):
@@ -65,7 +65,7 @@ class DescribeProsody:
         Prosody("AB BA", [10] * 4)
 
     @staticmethod
-    @test(
+    @describe(
         "Should ignore whitespaces when analizying the lenght of rhythm and rhymes"
     )
     def and_should_ignore_whitespace_for_rhymes():
