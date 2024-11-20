@@ -62,7 +62,7 @@ class DescribeProsody:
 
     @staticmethod
     def but_should_not_raise_for_same_size():
-        Prosody("AB BA", [10] * 4)
+        assert Prosody("AB BA", [10] * 4) is not None
 
     @staticmethod
     @describe(
