@@ -182,7 +182,7 @@ class Propoe:
     @property
     def builder(self) -> PoemBuilder:
         """PoemBuilder from the Propoe's instance internal attributes"""
-        return PoemBuilder(
+        builder = PoemBuilder(
             self.sentences,
             self.prosody.rhythm,
             self.prosody.pattern,
@@ -190,6 +190,8 @@ class Propoe:
             self.filename,
             self.seed,
         )
+        builder.build()
+        return builder
 
     @property
     def filter(self) -> Filter:
@@ -211,8 +213,10 @@ class Propoe:
         """
         return self.filter.get_rhymes()
 
-    def poem(self) -> Poem:
-        """Builds the Poem and writes it into ``self.filename``"""
-        builder = self.builder
-        builder.build()
-        return self.Poem(builder.poem, builder.evaluation)
+    @property
+    def poem(self) -> str:
+        return self.builder.poem
+    
+    @property
+    def evaluation(self) -> Evaluation:
+        return self.builder.evaluation
