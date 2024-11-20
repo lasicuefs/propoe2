@@ -8,7 +8,7 @@ def test_determinism():
 
     propoe = Propoe(
         filename="poem_test.txt",
-        mives_file="xml/sentences.xml",
+        mives_file="xml/sentencas.xml",
         evaluation_weights=Weights(),
         prosody=Prosody(
             "AB AB", [10, 7, 7, 10]
