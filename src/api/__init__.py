@@ -138,6 +138,7 @@ class Prosody:
 
 @dataclass(frozen=True)
 class Poem:
+    """Final Poem generated from Propoe's API"""
     _builder: PoemBuilder
 
     def __post_init__(self):
@@ -180,10 +181,8 @@ class Propoe:
         returns a Filter from its internal attributes.
     sentences : dict[str, Rhyme]
         Returns a dictionary of sentences with their corresponding rhymes.
-    poem: str
-        Final generated Poem
-    evaluation: Evaluation
-        Final evaluation scores of the Poem
+    poem: Poem
+        Final generated Poem, including the evaluation score.
     """
 
     filename: str
