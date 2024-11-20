@@ -1,3 +1,11 @@
+"""Tests the internal API's objects
+
+Note
+----
+``Propoe`` and ``Poem`` are not tested here, 
+since they are covered by the integration test.
+"""
+
 from typing import Any, Callable
 import pytest
 
