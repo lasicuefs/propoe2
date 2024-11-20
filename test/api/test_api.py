@@ -23,7 +23,7 @@ def describe(desc: str) -> Callable[..., Any]:
 
 class DescribeWeights:
     @staticmethod
-    def it_should_init_everything_as_one():
+    def it_should_init_all_fields_as_one_by_default():
         actual = Weights()
 
         assert 1 == actual.vocal_harmony
@@ -33,7 +33,8 @@ class DescribeWeights:
         assert 1 == actual.rhythmic_structure
 
     @staticmethod
-    def and_should_maps_internal_dict_api():
+    @describe("``as_dict`` should map the internal API")
+    def and_its_as_dict_should_map_internal_api():
         actual = Weights(
             vocal_harmony=1,
             accentuation=2,
@@ -77,7 +78,7 @@ class DescribeProsody:
         assert Prosody("ABBA", [10] * 4) is not None
 
     @staticmethod
-    def its_attributes_are_available():
+    def its_attributes_should_be_available():
         rhythm = [10] * 4
         rhyme = "AB BA"
         actual = Prosody("AB BA", [10] * 4)
