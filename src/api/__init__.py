@@ -174,10 +174,6 @@ class Propoe:
     evaluation_weights: Weights
     seed: int | None = None
 
-    class Poem(NamedTuple):
-        poem: str
-        evaluation: Evaluation
-
     @property
     def builder(self) -> PoemBuilder:
         """PoemBuilder from the Propoe's instance internal attributes"""
