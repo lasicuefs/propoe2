@@ -162,11 +162,10 @@ class Propoe:
         returns a Filter from its internal attributes.
     sentences : dict[str, Rhyme]
         Returns a dictionary of sentences with their corresponding rhymes.
-
-    Methods
-    -------
-    build() -> None
-        Builds the poem using the PoemBuilder instance.
+    poem: str
+        Final generated Poem
+    evaluation: Evaluation
+        Final evaluation scores of the Poem
     """
 
     filename: str
@@ -215,8 +214,10 @@ class Propoe:
 
     @property
     def poem(self) -> str:
+        """Final generated Poem"""
         return self.builder.poem
     
     @property
     def evaluation(self) -> Evaluation:
+        """Final evaluation scores of the Poem"""
         return self.builder.evaluation
