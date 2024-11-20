@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from functools import lru_cache
 import random
-from typing import NamedTuple
 
 from src.model.filter import Filter
 from src.model.mives import Mives
@@ -137,6 +136,25 @@ class Prosody:
         return self.rhyme
 
 
+@dataclass(frozen=True)
+class Poem:
+    _builder: PoemBuilder
+
+    def __post_init__(self):
+        self._builder.build()
+
+    @property
+    def content(self) -> str:
+        """Final generated Poem"""
+        return self._builder.poem
+
+    @property
+    def evaluation(self) -> Evaluation:
+        """Final evaluation scores of the Poem"""
+        return self._builder.evaluation
+
+
+
 @dataclass(frozen=True, kw_only=True)
 class Propoe:
     """The Propoe2's API to generate Poems and write it into a file.
@@ -175,20 +193,6 @@ class Propoe:
     seed: int | None = None
 
     @property
-    def builder(self) -> PoemBuilder:
-        """PoemBuilder from the Propoe's instance internal attributes"""
-        builder = PoemBuilder(
-            self.sentences,
-            self.prosody.rhythm,
-            self.prosody.pattern,
-            self.evaluation_weights.as_dict,
-            self.filename,
-            self.seed,
-        )
-        builder.build()
-        return builder
-
-    @property
     def filter(self) -> Filter:
         """Filter from the Propoe's instance internal attributes"""
         return Filter(
@@ -207,13 +211,20 @@ class Propoe:
                 {"A": Rhyme, "B": Rhyme}
         """
         return self.filter.get_rhymes()
-
-    @property
-    def poem(self) -> str:
-        """Final generated Poem"""
-        return self.builder.poem
     
     @property
-    def evaluation(self) -> Evaluation:
-        """Final evaluation scores of the Poem"""
-        return self.builder.evaluation
+    def poem(self) -> Poem:
+        """PoemBuilder from the Propoe's instance internal attributes
+
+        Warning
+        -------
+        For some reason, this should be run only once.
+        """
+        return Poem(PoemBuilder(
+            self.sentences,
+            self.prosody.rhythm,
+            self.prosody.pattern,
+            self.evaluation_weights.as_dict,
+            self.filename,
+            self.seed,
+        ))
