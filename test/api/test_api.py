@@ -12,7 +12,7 @@ import pytest
 from src.api import Prosody, Weights
 
 
-def describe(desc: str) -> Callable[..., Any]:
+def description(desc: str) -> Callable[..., Any]:
     """Decorator to add a readable description to a test unit"""
 
     def wrapper(func: Callable[..., Any]):
@@ -33,7 +33,7 @@ class DescribeWeights:
         assert 1 == actual.rhythmic_structure
 
     @staticmethod
-    @describe("``as_dict`` should map the internal API")
+    @description("``as_dict`` should map the internal API")
     def and_its_as_dict_should_map_internal_api():
         actual = Weights(
             vocal_harmony=1,
@@ -66,7 +66,7 @@ class DescribeProsody:
         assert Prosody("AB BA", [10] * 4) is not None
 
     @staticmethod
-    @describe(
+    @description(
         "Should ignore whitespaces when analizying the lenght of rhythm and rhymes"
     )
     def and_should_ignore_whitespace_for_rhymes():
