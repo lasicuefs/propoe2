@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 import random
 
 from src.model.rhyme import Rhyme
@@ -7,6 +8,7 @@ from src.model.utils import remove_end_ponctuation
 import sys
 
 
+@dataclass
 class PoemBuilder:
     """
 
@@ -30,25 +32,20 @@ class PoemBuilder:
         The file reference for the filename with "write" access.
     """
 
-    def __init__(
-        self,
-        sentences: dict[str, Rhyme],
-        metrics: list[int],
-        rhyme: str,
-        score_weight: dict[str, int],
-        filename: str,
-        seed: int | None,
-    ) -> None:
-        self.sentences: dict[str, Rhyme] = sentences
-        self.rhyme: str = rhyme
-        self.metrics: list[int] = metrics
+    sentences: dict[str, Rhyme]
+    metrics: list[int]
+    rhyme: str
+    score_weight: dict[str, int]
+    _filename: str
+    _seed: int | None
+
+    def __post_init__(self):
         self.poem: str = ""
-        self.score_weight: dict[str, int] = score_weight
         self.evaluation: Evaluation = Evaluation()
-        random.seed(seed)
+        random.seed(self._seed)
 
         self.orig_stdout = sys.stdout
-        self.f = open(filename, "w")
+        self.f = open(self._filename, "w")
         sys.stdout = self.f
 
     def result(self) -> None:
