@@ -1,5 +1,6 @@
 from src.api import Propoe, Prosody, Weights
 
+
 def test_determinism():
     """Propoe should not return different poems for the same instance.
 
@@ -10,10 +11,8 @@ def test_determinism():
         filename="poem_test.txt",
         mives_file="xml/sentencas.xml",
         evaluation_weights=Weights(),
-        prosody=Prosody(
-            "AB AB", [10, 7, 7, 10]
-        ),
-        seed=None
+        prosody=Prosody("AB AB", [10, 7, 7, 10]),
+        seed=None,
     )
 
     propoe.poem == propoe.poem
