@@ -2,7 +2,7 @@
 
 Note
 ----
-``Propoe`` and ``Poem`` are not tested here, 
+``Propoe`` and ``Poem`` are not tested here,
 since they are covered by the integration test.
 """
 
@@ -13,6 +13,8 @@ from src.api import Prosody, Weights
 
 
 def test(desc: str) -> Callable[..., Any]:
+    """Decorator to add a readable description to a test unit"""
+
     def wrapper(func: Callable[..., Any]):
         return func
 
