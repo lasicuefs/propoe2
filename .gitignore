@@ -3,3 +3,4 @@ poem_test.txt
 .coverage
 .pytest_cache/
 .ruff_cache/
+poetry.lock
