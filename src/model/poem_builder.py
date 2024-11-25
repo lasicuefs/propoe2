@@ -22,7 +22,7 @@ class PoemBuilder:
         List of metrics per verse
     poem: str
         maps score name and its weight
-    score_weight: dict[str, int]
+    score_weight: dict[str, float]
         Score Weight for the poem evaluation
     evaluation: Evaluation
         The evaluation of the Poem
@@ -35,7 +35,7 @@ class PoemBuilder:
     sentences: dict[str, Rhyme]
     metrics: list[int]
     rhyme: str
-    score_weight: dict[str, int]
+    score_weight: dict[str, float]
     _filename: str
     _seed: int | None
 
