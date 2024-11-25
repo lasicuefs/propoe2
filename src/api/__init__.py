@@ -19,19 +19,19 @@ class Weights:
 
     Attributes
     ----------
-    vocal_harmony: int
+    vocal_harmony: float
         Toante & consonant rhymes' weight
 
-    accentuation: int
+    accentuation: float
         Accentuation's weight
 
-    tonic_position: int
+    tonic_position: float
         Tonical Position's weight
 
-    internal_rhyme: int
+    internal_rhyme: float
         Internal rhymes's weight
 
-    rhythmic_structure: int
+    rhythmic_structure: float
         Rhythmic structure's weight
 
     Note
@@ -39,11 +39,11 @@ class Weights:
     All values are set-up to 1 by default.
     """
 
-    vocal_harmony: int = 1
-    accentuation: int = 1
-    tonic_position: int = 1
-    internal_rhyme: int = 1
-    rhythmic_structure: int = 1
+    vocal_harmony: float = 1
+    accentuation: float = 1
+    tonic_position: float = 1
+    internal_rhyme: float = 1
+    rhythmic_structure: float = 1
 
     @property
     @lru_cache
