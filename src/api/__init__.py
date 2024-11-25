@@ -47,8 +47,8 @@ class Weights:
 
     @property
     @lru_cache
-    def as_dict(self) -> dict[str, int]:
-        """Returns itself as a dict[str, int]
+    def as_dict(self) -> dict[str, float]:
+        """Returns itself as a dict[str, float]
 
         Note
         ----
