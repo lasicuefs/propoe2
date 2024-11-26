@@ -36,7 +36,7 @@ def run():
         10,
         10,
     ]
-    pesos_avaliacao: dict[str, int] = {
+    pesos_avaliacao: dict[str, float] = {
         "Rima toante & consoante": 1,
         "Acentuacao": 1,
         "Posicao tonica": 1,
