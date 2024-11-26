@@ -1,7 +1,7 @@
 from typing import Protocol
 from pydantic import BaseModel
 
-from src.model.poem_evaluation import Evaluation as InternalEvaluation
+from src.model.poem_evaluation import Evaluation as DomainEvaluation
 
 __all__ = ["Poem"]
 
@@ -11,7 +11,7 @@ class IsPoem(Protocol):
     def content(self) -> str: ...
 
     @property
-    def evaluation(self) -> InternalEvaluation: ...
+    def evaluation(self) -> DomainEvaluation: ...
 
 
 class EvaluationCounting(BaseModel):
@@ -37,7 +37,7 @@ class Evaluation(BaseModel):
     countings: EvaluationCounting
 
     @staticmethod
-    def from_evaluation(evaluation: InternalEvaluation) -> "Evaluation":
+    def from_evaluation(evaluation: DomainEvaluation) -> "Evaluation":
         schema_score = EvaluationScore(
             accent=evaluation.accent_score,
             stress=evaluation.stress_score,
