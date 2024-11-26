@@ -8,12 +8,12 @@ app = FastAPI()
 
 @app.get("/poem/")
 async def poem(
-    prosody: propoe.Prosody, weights: schemas.Weights = schemas.Weights()
+    prosody: schemas.Prosody, weights: schemas.Weights = schemas.Weights()
 ) -> schemas.Poem:
     poem = propoe.Propoe(
         filename="poem_test_api.txt",
         mives_file="xml/sentencas.xml",
-        prosody=prosody,
+        prosody=prosody.as_domain(),
         evaluation_weights=weights.as_domain(),
     ).poem
 
