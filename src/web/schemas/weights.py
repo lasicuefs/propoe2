@@ -27,4 +27,4 @@ class Weights(BaseModel):
             return x.replace("_", "-")
 
         alias_generator = to_kebab
-        allow_population_by_field_name = True
+        populate_by_name = True
