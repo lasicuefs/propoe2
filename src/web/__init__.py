@@ -17,7 +17,7 @@ async def poem(
         evaluation_weights=weights,
     ).poem
 
-    return schemas.Poem.from_poem(poem)
+    return schemas.Poem.from_domain(poem)
 
 
 @app.get("/sample/")
@@ -36,4 +36,4 @@ async def sample() -> schemas.Poem:
         evaluation_weights=weights,
     ).poem
 
-    return schemas.Poem.from_poem(poem)
+    return schemas.Poem.from_domain(poem)

@@ -37,7 +37,7 @@ class Evaluation(BaseModel):
     countings: EvaluationCounting
 
     @staticmethod
-    def from_evaluation(evaluation: DomainEvaluation) -> "Evaluation":
+    def from_domain(evaluation: DomainEvaluation) -> "Evaluation":
         schema_score = EvaluationScore(
             accent=evaluation.accent_score,
             stress=evaluation.stress_score,
@@ -61,8 +61,8 @@ class Poem(BaseModel):
     evaluation: Evaluation
 
     @staticmethod
-    def from_poem(poem: IsPoem) -> "Poem":
+    def from_domain(poem: IsPoem) -> "Poem":
         return Poem(
             content=poem.content.splitlines(),
-            evaluation=Evaluation.from_evaluation(poem.evaluation),
+            evaluation=Evaluation.from_domain(poem.evaluation),
         )
