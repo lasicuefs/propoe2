@@ -1,14 +1,16 @@
 from fastapi import FastAPI
 
-from src.api import Propoe, Prosody, Weights
+from src import api as propoe
 from src.web import schemas
 
 app = FastAPI()
 
 
 @app.get("/poem/")
-async def poem(prosody: Prosody, weights: Weights = Weights()) -> schemas.Poem:
-    poem = Propoe(
+async def poem(
+    prosody: propoe.Prosody, weights: propoe.Weights = propoe.Weights()
+) -> schemas.Poem:
+    poem = propoe.Propoe(
         filename="poem_test_api.txt",
         mives_file="xml/sentencas.xml",
         prosody=prosody,
@@ -20,14 +22,14 @@ async def poem(prosody: Prosody, weights: Weights = Weights()) -> schemas.Poem:
 
 @app.get("/sample/")
 async def sample() -> schemas.Poem:
-    prosody = Prosody(
+    prosody = propoe.Prosody(
         "ABAB ABAB CDC CDC",
         [10] * 14,
     )
 
-    weights = Weights()
+    weights = propoe.Weights()
 
-    poem = Propoe(
+    poem = propoe.Propoe(
         filename="poem_test_api.txt",
         mives_file="xml/sentencas.xml",
         prosody=prosody,
