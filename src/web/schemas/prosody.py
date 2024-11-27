@@ -16,6 +16,7 @@ class Prosody(BaseModel):
             min_length=1,
             max_length=100,
             pattern=r"([A-Z]:whitespace:)*",
+            strict=True,
         ),
     ]
     rhythm: Annotated[
@@ -24,7 +25,10 @@ class Prosody(BaseModel):
             examples=[
                 [10] * 8,
                 [10, 10, None, None, 5],
-            ]
+            ],
+            min_length=1,
+            max_length=100,
+            strict=True,
         ),
     ]
 
