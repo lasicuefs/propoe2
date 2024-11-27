@@ -15,7 +15,8 @@ class Prosody(BaseModel):
             examples=["ABAB CDCD", "AABB CC DD"],
             min_length=1,
             max_length=100,
-            pattern=r"([A-Z]:whitespace:)*",
+            pattern=r"^[A-Z]+"  # First stanza
+            + r"( [A-Z]+)*$",  # Left optional stanzas
             strict=True,
         ),
     ]
