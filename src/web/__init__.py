@@ -6,7 +6,7 @@ from src.web import schemas
 app = FastAPI()
 
 
-@app.get("/poem/")
+@app.post("/poem/")
 async def poem(
     prosody: schemas.Prosody, weights: schemas.Weights = schemas.Weights()
 ) -> schemas.Poem:
