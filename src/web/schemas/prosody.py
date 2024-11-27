@@ -9,7 +9,15 @@ type Rhythm = list[Union[int, str, None]]
 
 
 class Prosody(BaseModel):
-    pattern: Annotated[str, Field(examples=["ABAB CDCD", "AABB CC DD"])]
+    pattern: Annotated[
+        str,
+        Field(
+            examples=["ABAB CDCD", "AABB CC DD"],
+            min_length=1,
+            max_length=100,
+            pattern=r"([A-Z]:whitespace:)*",
+        ),
+    ]
     rhythm: Annotated[
         Rhythm,
         Field(
