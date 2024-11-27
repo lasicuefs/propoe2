@@ -10,14 +10,14 @@ app = FastAPI()
 async def poem(
     prosody: schemas.Prosody, weights: schemas.Weights = schemas.Weights()
 ) -> schemas.Poem:
-    poem = propoe.Propoe(
+    result = propoe.Propoe(
         filename="poem_test_api.txt",
         mives_file="xml/sentencas.xml",
         prosody=prosody.as_domain(),
         evaluation_weights=weights.as_domain(),
     ).poem
 
-    return schemas.Poem.from_domain(poem)
+    return schemas.Poem.from_domain(result)
 
 
 @app.get("/sample/")
@@ -29,11 +29,11 @@ async def sample() -> schemas.Poem:
 
     weights = propoe.Weights()
 
-    poem = propoe.Propoe(
+    result = propoe.Propoe(
         filename="poem_test_api.txt",
         mives_file="xml/sentencas.xml",
         prosody=prosody,
         evaluation_weights=weights,
     ).poem
 
-    return schemas.Poem.from_domain(poem)
+    return schemas.Poem.from_domain(result)
