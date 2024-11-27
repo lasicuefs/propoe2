@@ -34,7 +34,9 @@ class Prosody(BaseModel):
 
     @model_validator(mode="after")
     def rhythm_and_pattern_matches(self, values) -> Self:
-        assert len(self.rhythm) == len(self.pattern.replace(" ", ""))
+        assert len(self.rhythm) == len(
+            self.pattern.replace(" ", "")
+        ), "Pattern's and Rythm's lenghts don't match"
         return self
 
     def as_domain(self) -> domain.Prosody:
