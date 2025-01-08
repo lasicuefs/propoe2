@@ -21,7 +21,9 @@ build-backend = "poetry.core.masonry.api"
 
 
 [tool.pytest.ini_options]
+pythonpath = "."
+testpaths = ["test"]
+python_files = ["test_*.py"]
+
 python_classes = ["Test", "Describe"]
 python_functions = ["test_", "it_", "its_", "and_", "but_", "they_", "should_", "*_test"]
-python_files = ["test_*.py",]
-testpaths = ["tests",]
