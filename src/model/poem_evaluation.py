@@ -28,15 +28,23 @@ class Evaluation:
         return (
             "Resultado:"
             + "\n - Estrutura Ritmica: "
-            + str(round(self.rhyme_structure_score / self.count, 3))
+            + str(self.rhyme_structure_score)
             + "\n - Silabas Tônicas: "
-            + str(round(self.stress_score / self.count, 3))
+            + str(self.stress_score)
             + "\n - Acento: "
-            + str(round(self.accent_score / self.count_rhyme, 3))
+            + str(self.accent_score)
             + "\n - Rima Interna: "
-            + str(round(self.intern_rhyme_score / self.count, 3))
+            + str(self.intern_rhyme_score)
             + "\n - Rima Toante & Consoante: "
-            + str(round(self.consonant_rhyme_score / self.count_rhyme, 3))
+            + str(self.consonant_rhyme_score)
             + "\n Score Resultante: "
-            + str(round(self.score_result / self.count, 3))
+            + str(self.score_result)
         )
+
+    def setFinalScore(self):
+        self.rhyme_structure_score = round(self.rhyme_structure_score / self.count, 3)
+        self.stress_score = round(self.stress_score / self.count, 3)
+        self.accent_score = round(self.accent_score / self.count_rhyme, 3)
+        self.intern_rhyme_score = round(self.intern_rhyme_score / self.count, 3)
+        self.consonant_rhyme_score = round(self.consonant_rhyme_score / self.count_rhyme, 3)
+        self.score_result = round(self.score_result / self.count, 3)

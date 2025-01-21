@@ -73,6 +73,7 @@ class PoemBuilder:
                 )
         sys.stdout = self.orig_stdout
         self.f.close()
+        self.evaluation.setFinalScore()
 
     def random_sentence(self, letter, sentences, metric_count):
         pos_sentences = self.sentences[letter].metrics[
