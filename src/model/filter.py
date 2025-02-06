@@ -50,6 +50,8 @@ class Filter:
         return sentences
 
     def random_rhyme(self, rhymes):
+        # TODO: review this function
+        # Try: A10 B5 A10 B5 Prosody
         """Return a random Rhyme object inside a list of Rhyme objects"""
         number = random.randrange(len(rhymes))
         rhyme = rhymes[number]

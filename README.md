@@ -6,6 +6,26 @@ O [PROPOE](https://linguamatica.com/index.php/linguamatica/article/view/369) *(p
 
 Nessa segunda versão foram implementadas melhorias e adicionados novos critérios rítmicos em comparação com a [primeira versão](https://github.com/lasicuefs/propoe), além da migração do código-fonte de JAVA para Python. Foram implementados ajustes na filtragem de sentenças candidatas, no cálculo dos escores dos versos, alteração do parâmetro de metro para que o usuário possa definir metros diferentes para cada verso, adição dos critérios de rima interna, consoante e toante, inclusão dos parâmetros de esquema rítmico e peso dos critérios. Este último permite que o usuário defina quais critérios devem ser mais importantes no momento da montagem do poema.
 
+## Execução
+
+Instalando dependências do Poetry:
+
+```sh
+poetry install
+```
+
+Inicializando o ambiente:
+
+```sh
+poetry shell
+```
+
+Executando o servidor
+
+```sh
+fastapi dev src/web
+```
+
 ## Código
 
 Para roda o código basta executar o arquivo *propoe2/run.py*
