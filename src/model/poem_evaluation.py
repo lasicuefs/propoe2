@@ -42,9 +42,15 @@ class Evaluation:
         )
 
     def setFinalScore(self):
-        self.rhyme_structure_score = round(self.rhyme_structure_score / self.count, 3)
-        self.stress_score = round(self.stress_score / self.count, 3)
-        self.accent_score = round(self.accent_score / self.count_rhyme, 3)
-        self.intern_rhyme_score = round(self.intern_rhyme_score / self.count, 3)
-        self.consonant_rhyme_score = round(self.consonant_rhyme_score / self.count_rhyme, 3)
-        self.score_result = round(self.score_result / self.count, 3)
+        if self.rhyme_structure_score != 0:
+            self.rhyme_structure_score = round(self.rhyme_structure_score / self.count, 3)
+        if self.stress_score != 0:
+            self.stress_score = round(self.stress_score / self.count, 3)
+        if self.accent_score != 0:
+            self.accent_score = round(self.accent_score / self.count_rhyme, 3)
+        if self.intern_rhyme_score != 0:
+            self.intern_rhyme_score = round(self.intern_rhyme_score / self.count, 3)
+        if self.consonant_rhyme_score != 0:
+            self.consonant_rhyme_score = round(self.consonant_rhyme_score / self.count_rhyme, 3)
+        if self.score_result != 0:
+            self.score_result = round(self.score_result / self.count, 3)
