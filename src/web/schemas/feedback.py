@@ -1,3 +1,5 @@
+"""User's Feedback Schemas"""
+
 from pydantic import BaseModel, Field
 
 
