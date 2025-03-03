@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from src import api as propoe
+from src.web.schemas.feedback import Feedback
 from src.web.schemas.prosody import Prosody
 from src.web.schemas.weights import Weights
 from src.web.schemas.literary_work import LiteraryWork
@@ -57,3 +58,8 @@ async def sample() -> Poem:
     ).poem
 
     return Poem.from_domain(result)
+
+
+@app.post("/feedback/")
+async def feedback(entry: Feedback):
+    pass
