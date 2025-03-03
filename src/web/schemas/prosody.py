@@ -1,4 +1,4 @@
-from typing import Annotated, Any, Self, Union
+from typing import Annotated, Self, Union
 from pydantic import BaseModel, Field, model_validator
 
 from src import api as domain
