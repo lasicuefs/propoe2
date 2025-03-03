@@ -1,3 +1,5 @@
+"""Prosody Schemas"""
+
 from typing import Annotated, Self, Union
 from pydantic import BaseModel, Field, model_validator
 
