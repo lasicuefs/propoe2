@@ -4,3 +4,4 @@ poem_test.txt
 .pytest_cache/
 .ruff_cache/
 poetry.lock
+**/*.log
