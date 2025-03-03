@@ -1,5 +1,3 @@
-__all__ = ["Prosody"]
-
 from typing import Annotated, Any, Self, Union
 from pydantic import BaseModel, Field, model_validator
 
@@ -42,3 +40,5 @@ class Prosody(BaseModel):
 
     def as_domain(self) -> domain.Prosody:
         return domain.Prosody(self.pattern, self.rhythm)
+
+__all__ = ["Prosody"]
