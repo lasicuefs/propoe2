@@ -1,13 +1,19 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from loguru import logger
 from pydantic import BaseModel
 
 from src import api as propoe
 from src.web.schemas.feedback import Feedback
 from src.web.schemas.prosody import Prosody
 from src.web.schemas.weights import Weights
-from src.web.schemas.literary_work import LiteraryWork
 from src.web.schemas.poem import Poem
+
+logger.add(
+    "logs/feedback.log",
+    format="{time:YYYY-MM-DD} | Action: Feedback | ⭐ {extra[stars]} : {message}",
+    filter=lambda record: "feedback" in record["extra"],
+)
 
 app = FastAPI()
 app.add_middleware(
@@ -25,21 +31,23 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 class Entry(BaseModel):
     prosody: Prosody
     weights: Weights
-    literary_work : LiteraryWork
+
 
 @app.post("/poem/")
 async def poem(entry: Entry) -> Poem:
     result = propoe.Propoe(
         filename="poem_test_api.txt",
-        mives_file=entry.literary_work.value(),
+        mives_file="xml/sentencas.xml",
         prosody=entry.prosody.as_domain(),
         evaluation_weights=entry.weights.as_domain(),
     ).poem
 
     return Poem.from_domain(result)
+
 
 @app.get("/sample/")
 async def sample() -> Poem:
@@ -61,5 +69,5 @@ async def sample() -> Poem:
 
 
 @app.post("/feedback/")
-async def feedback(entry: Feedback):
-    pass
+async def feedback(feed: Feedback) -> None:
+    logger.bind(feedback=True).info(feed.comment, stars=feed.stars)
