@@ -22,6 +22,14 @@ logger.add(
 )
 
 logger.add(
+    "logs/poems.log",
+    serialize=True,
+    format="Poem generated!",
+    encoding="UTF-8",
+    filter=lambda record: "poem" in record["extra"],
+)
+
+logger.add(
     "logs/feedback.log",
     format="{time:YYYY-MM-DD} | Action: Feedback | ⭐ {extra[stars]} : {message}",
     encoding="UTF-8",
@@ -61,15 +69,22 @@ class Entry(BaseModel):
 async def poem(entry: Entry) -> Poem:
     """Generate a Poem from an Json entry."""
 
-    result = propoe.Propoe(
-        filename="poem_test_api.txt",
-        mives_file="xml/sentencas.xml",
-        prosody=entry.prosody.as_domain(),
-        evaluation_weights=entry.weights.as_domain(),
-    ).poem
+    async def log_generated_poem(generated_poem) -> None:
+        logger.bind(poem=True).info(generated_poem.model_dump())
+
+    result = Poem.from_domain(
+        propoe.Propoe(
+            filename="poem_test_api.txt",
+            mives_file="xml/sentencas.xml",
+            prosody=entry.prosody.as_domain(),
+            evaluation_weights=entry.weights.as_domain(),
+        ).poem
+    )
 
     await log_request("poem", f"Poem '{entry.prosody.pattern}' requested!")
-    return Poem.from_domain(result)
+    await log_generated_poem(result)
+
+    return result
 
 
 @app.get("/sample/")
