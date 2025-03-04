@@ -12,6 +12,7 @@ from src.web.schemas.poem import Poem
 logger.add(
     "logs/feedback.log",
     format="{time:YYYY-MM-DD} | Action: Feedback | ⭐ {extra[stars]} : {message}",
+    encoding="UTF-8",
     filter=lambda record: "feedback" in record["extra"],
 )
 
