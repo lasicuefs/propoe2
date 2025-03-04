@@ -71,6 +71,5 @@ async def sample() -> Poem:
 
 @app.post("/feedback/")
 async def feedback(feed: Feedback) -> None:
-    logger.bind(feedback=True).info(
-        feed.comment.replace("\n", "¶ "), stars=feed.stars
-    )
+    inlined_comment = feed.comment.replace("\n", "¶ ")
+    logger.bind(feedback=True).info(inlined_comment, stars=feed.stars)
