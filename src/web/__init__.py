@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from src import api as propoe
+from src.web import origins
 from src.web.logging import PropoesEvent
 from src.web.schemas.feedback import Feedback
 from src.web.schemas.prosody import Prosody
@@ -19,14 +20,7 @@ propoe_event = PropoesEvent()
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:4200",
-        "https://localhost:4200",
-        "http://127.0.0.1:4200",
-        "https://127.0.0.1:4200",
-        "http://rickbarretto.github.io/propoe2-ui/",
-        "https://rickbarretto.github.io/propoe2-ui/",
-    ],
+    allow_origins=origins.ALLOWED,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
