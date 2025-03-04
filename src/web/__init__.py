@@ -5,41 +5,16 @@ See http://127.0.0.1:8000/docs#/ for more information.
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from loguru import logger
 from pydantic import BaseModel
 
 from src import api as propoe
+from src.web.logging import PropoesEvent
 from src.web.schemas.feedback import Feedback
 from src.web.schemas.prosody import Prosody
 from src.web.schemas.weights import Weights
 from src.web.schemas.poem import Poem
 
-logger.add(
-    "logs/request.log",
-    format="{time:YYYY-MM-DD} | Action: Request at /{extra[route]}/ | {message}",
-    encoding="UTF-8",
-    filter=lambda record: "request" in record["extra"],
-)
-
-logger.add(
-    "logs/poems.log",
-    serialize=True,
-    format="Poem generated!",
-    encoding="UTF-8",
-    filter=lambda record: "poem" in record["extra"],
-)
-
-logger.add(
-    "logs/feedback.log",
-    format="{time:YYYY-MM-DD} | Action: Feedback | ⭐ {extra[stars]} : {message}",
-    encoding="UTF-8",
-    filter=lambda record: "feedback" in record["extra"],
-)
-
-
-async def log_request(route: str, message: str) -> None:
-    logger.bind(request=True).info(message, route=route)
-
+propoe_event = PropoesEvent()
 
 app = FastAPI()
 app.add_middleware(
@@ -69,9 +44,6 @@ class Entry(BaseModel):
 async def poem(entry: Entry) -> Poem:
     """Generate a Poem from an Json entry."""
 
-    async def log_generated_poem(generated_poem) -> None:
-        logger.bind(poem=True).info(generated_poem.model_dump())
-
     result = Poem.from_domain(
         propoe.Propoe(
             filename="poem_test_api.txt",
@@ -81,8 +53,10 @@ async def poem(entry: Entry) -> Poem:
         ).poem
     )
 
-    await log_request("poem", f"Poem '{entry.prosody.pattern}' requested!")
-    await log_generated_poem(result)
+    await propoe_event.route_requested(
+        "poem", f"Poem '{entry.prosody.pattern}' requested!"
+    )
+    await propoe_event.poem_created(result)
 
     return result
 
@@ -109,7 +83,7 @@ async def sample() -> Poem:
         evaluation_weights=weights,
     ).poem
 
-    await log_request("sample", "Sample requested!")
+    await propoe_event.route_requested("sample", "Sample requested!")
     return Poem.from_domain(result)
 
 
@@ -117,10 +91,5 @@ async def sample() -> Poem:
 async def feedback(feed: Feedback) -> None:
     """Logs User's feedback about Propoe"""
 
-    async def log_feedback(comment: str, stars: int) -> None:
-        logger.bind(feedback=True).info(comment, stars=stars)
-
-    inlined_comment = feed.comment.replace("\n", "¶ ")
-
-    await log_request("feedback", "Feedback submited!")
-    await log_feedback(inlined_comment, feed.stars)
+    await propoe_event.route_requested("feedback", "Feedback submited!")
+    await propoe_event.feedback_submited(feed.comment, feed.stars)
