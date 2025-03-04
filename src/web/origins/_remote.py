@@ -4,14 +4,15 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import Optional
 
+
 def doesnt_contain_schema(url: str) -> bool:
     return ":" not in url
 
-class RemoteOrigin(ABC):
 
+class RemoteOrigin(ABC):
     @abstractmethod
-    def __str__(self) -> str:
-        ...
+    def __str__(self) -> str: ...
+
 
 @dataclass
 class Website(RemoteOrigin):
@@ -27,7 +28,7 @@ class Website(RemoteOrigin):
 
 
 @dataclass
-class GithubPage(RemoteOrigin):
+class GithubPages(RemoteOrigin):
     """Origin for Github Pages"""
 
     user: str
@@ -38,9 +39,9 @@ class GithubPage(RemoteOrigin):
         if isinstance(self.custom_domain, str):
             assert doesnt_contain_schema(self.custom_domain)
 
-    def using_domain(self, domain: str) -> "GithubPage":
+    def using_domain(self, domain: str) -> "GithubPages":
         """GithubPage using a custom ``domain``"""
-        return GithubPage(self.user, self.repo, domain)
+        return GithubPages(self.user, self.repo, domain)
 
     def __str__(self) -> str:
         """Returns the origin from Github's Page"""

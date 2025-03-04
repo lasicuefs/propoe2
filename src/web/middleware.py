@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.web.origins import urls_from, GithubPage, LocalHost
+from src.web.origins import urls_from, GithubPages, LocalHost
 
 
 def set_allowed_origins(app: FastAPI) -> None:
@@ -11,9 +11,9 @@ def set_allowed_origins(app: FastAPI) -> None:
         CORSMiddleware,
         allow_origins=urls_from(
             remotes=[
-                GithubPage("rickbarretto", "propoe2-ui"),
+                GithubPages("rickbarretto", "propoe2-ui"),
                 # Just an example
-                # GithubPage("lasicuefs", "propoe2-ui").using_domain("propoe2.com"),
+                # GithubPages("lasicuefs", "propoe2-ui").using_domain("propoe2.com"),
                 # Alternatively:
                 # Website("propoe2.com")
             ],
