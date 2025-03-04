@@ -15,6 +15,13 @@ from src.web.schemas.weights import Weights
 from src.web.schemas.poem import Poem
 
 logger.add(
+    "logs/request.log",
+    format="{time:YYYY-MM-DD} | Action: Request at /{extra[route]}/ | {message}",
+    encoding="UTF-8",
+    filter=lambda record: "request" in record["extra"],
+)
+
+logger.add(
     "logs/feedback.log",
     format="{time:YYYY-MM-DD} | Action: Feedback | ⭐ {extra[stars]} : {message}",
     encoding="UTF-8",
@@ -40,6 +47,7 @@ app.add_middleware(
 
 class Entry(BaseModel):
     """Entry Scheme for the /poem/ endpoint"""
+
     prosody: Prosody
     weights: Weights
 
@@ -55,13 +63,16 @@ async def poem(entry: Entry) -> Poem:
         evaluation_weights=entry.weights.as_domain(),
     ).poem
 
+    logger.bind(request=True).info(
+        f"Poem '{entry.prosody.pattern}' requested!", route="poem"
+    )
     return Poem.from_domain(result)
 
 
 @app.get("/sample/")
 async def sample() -> Poem:
     """Generates a default random sample of the Poem.
-    
+
     By default, this sample is in the format "ABAB ABAB CDC CDC",
     with 10 phonetic sylables each.
     """
@@ -80,12 +91,15 @@ async def sample() -> Poem:
         evaluation_weights=weights,
     ).poem
 
+    logger.bind(request=True).info("Sample requested!", route="sample")
     return Poem.from_domain(result)
 
 
 @app.post("/feedback/")
 async def feedback(feed: Feedback) -> None:
     """Logs User's feedback about Propoe"""
+
+    logger.bind(request=True).info("Feedback submited!", route="feedback")
 
     inlined_comment = feed.comment.replace("\n", "¶ ")
     logger.bind(feedback=True).info(inlined_comment, stars=feed.stars)
