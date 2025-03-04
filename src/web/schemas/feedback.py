@@ -18,7 +18,7 @@ class Feedback(BaseModel):
         examples=["5"], strict=True, ge=1, le=5, description="Stars evaluation"
     )
     comment: str = Field(
-        examples=["Excelent, Propoe2 is awesome!"],
+        examples=["Excellent, Propoe2 is awesome!"],
         strict=True,
         max_length=280,
         description="Feedback content",
