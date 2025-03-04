@@ -1,3 +1,8 @@
+"""Endpoints of Propoe2's server
+
+See http://127.0.0.1:8000/docs#/ for more information.
+"""
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from loguru import logger
@@ -34,12 +39,15 @@ app.add_middleware(
 
 
 class Entry(BaseModel):
+    """Entry Scheme for the /poem/ endpoint"""
     prosody: Prosody
     weights: Weights
 
 
 @app.post("/poem/")
 async def poem(entry: Entry) -> Poem:
+    """Generate a Poem from an Json entry."""
+
     result = propoe.Propoe(
         filename="poem_test_api.txt",
         mives_file="xml/sentencas.xml",
@@ -52,6 +60,12 @@ async def poem(entry: Entry) -> Poem:
 
 @app.get("/sample/")
 async def sample() -> Poem:
+    """Generates a default random sample of the Poem.
+    
+    By default, this sample is in the format "ABAB ABAB CDC CDC",
+    with 10 phonetic sylables each.
+    """
+
     prosody = propoe.Prosody(
         "ABAB ABAB CDC CDC",
         [10] * 14,
@@ -71,5 +85,7 @@ async def sample() -> Poem:
 
 @app.post("/feedback/")
 async def feedback(feed: Feedback) -> None:
+    """Logs User's feedback about Propoe"""
+
     inlined_comment = feed.comment.replace("\n", "¶ ")
     logger.bind(feedback=True).info(inlined_comment, stars=feed.stars)
