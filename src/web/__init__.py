@@ -28,6 +28,11 @@ logger.add(
     filter=lambda record: "feedback" in record["extra"],
 )
 
+
+async def log_request(route: str, message: str) -> None:
+    logger.bind(request=True).info(message, route=route)
+
+
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
@@ -63,9 +68,7 @@ async def poem(entry: Entry) -> Poem:
         evaluation_weights=entry.weights.as_domain(),
     ).poem
 
-    logger.bind(request=True).info(
-        f"Poem '{entry.prosody.pattern}' requested!", route="poem"
-    )
+    await log_request("poem", f"Poem '{entry.prosody.pattern}' requested!")
     return Poem.from_domain(result)
 
 
@@ -91,7 +94,7 @@ async def sample() -> Poem:
         evaluation_weights=weights,
     ).poem
 
-    logger.bind(request=True).info("Sample requested!", route="sample")
+    await log_request("sample", "Sample requested!")
     return Poem.from_domain(result)
 
 
@@ -99,7 +102,10 @@ async def sample() -> Poem:
 async def feedback(feed: Feedback) -> None:
     """Logs User's feedback about Propoe"""
 
-    logger.bind(request=True).info("Feedback submited!", route="feedback")
+    async def log_feedback(comment: str, stars: int) -> None:
+        logger.bind(feedback=True).info(comment, stars=stars)
 
     inlined_comment = feed.comment.replace("\n", "¶ ")
-    logger.bind(feedback=True).info(inlined_comment, stars=feed.stars)
+
+    await log_request("feedback", "Feedback submited!")
+    await log_feedback(inlined_comment, feed.stars)
