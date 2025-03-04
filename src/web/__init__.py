@@ -4,12 +4,11 @@ See http://127.0.0.1:8000/docs#/ for more information.
 """
 
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from src import api as propoe
-from src.web import origins
 from src.web.logging import PropoesEvent
+from src.web import middleware
 from src.web.schemas.feedback import Feedback
 from src.web.schemas.prosody import Prosody
 from src.web.schemas.weights import Weights
@@ -18,14 +17,7 @@ from src.web.schemas.poem import Poem
 propoe_event = PropoesEvent()
 
 app = FastAPI()
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins.ALLOWED,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
+middleware.set_allowed_origins(app)
 
 class Entry(BaseModel):
     """Entry Scheme for the /poem/ endpoint"""
