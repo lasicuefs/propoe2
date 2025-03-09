@@ -10,11 +10,15 @@ type Rhythm = list[Union[int, str, None]]
 
 
 class AvailableLiteraryWorks(StrEnum):
+    """All available literary works for poem generation."""
+
     OS_SERTOES = "xml/sentencas.xml"
     MACUNAIMA = "xml/sentencas.xml"
 
 
 class LiteraryWork(BaseModel):
+    """Literary work schema."""
+
     name: Annotated[
         str,
         Field(
