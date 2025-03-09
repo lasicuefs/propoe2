@@ -3,6 +3,7 @@
 See http://127.0.0.1:8000/docs#/ for more information.
 """
 
+from datetime import datetime
 from fastapi import FastAPI
 from pydantic import BaseModel
 
@@ -34,9 +35,23 @@ class Entry(BaseModel):
 async def poem(entry: Entry) -> Poem:
     """Generate a Poem from an Json entry."""
 
+    def file() -> str:
+        """File to be written
+
+        Note
+        ----
+        I would love to redirect to ``/dev/null/`` via ``os.devnull``,
+        which works for both Windows and Linux.
+
+        Unfortunately, this is not possible since
+        the request runs endless for some unknown reason...
+        """
+        time = datetime.now().strftime("%Y-%m-%d-%H%M%S%f")
+        return f"logs/poems/{time}.log" if settings.in_dev else "poem.txt"
+
     result = Poem.from_domain(
         propoe.Propoe(
-            filename="poem_test_api.txt",
+            filename=file(),
             mives_file="xml/sentencas.xml",
             prosody=entry.prosody.as_domain(),
             evaluation_weights=entry.weights.as_domain(),
