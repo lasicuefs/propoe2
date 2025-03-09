@@ -1,4 +1,4 @@
-from enum import Enum
+from enum import StrEnum
 from typing import Annotated, Self, Union
 
 from pydantic import BaseModel, Field, model_validator
@@ -9,7 +9,7 @@ from src.web.schemas._util import to_kebab
 type Rhythm = list[Union[int, str, None]]
 
 
-class AvailableLiteraryWorks(str, Enum):
+class AvailableLiteraryWorks(StrEnum):
     OS_SERTOES = "xml/sentencas.xml"
     MACUNAIMA = "xml/sentencas.xml"
 
