@@ -9,9 +9,7 @@ from fastapi import FastAPI
 from src import api as propoe
 from src.web.logging import PropoesEvent
 from src.web import config, middleware
-from src.web.schemas.feedback import Feedback
-from src.web.schemas.poem_result import Poem
-from src.web.schemas.poem_forms import PoemForms
+from src.web.schemas import Feedback, Poem, PoemForms
 
 propoe_event = PropoesEvent()
 settings = config.settings()
