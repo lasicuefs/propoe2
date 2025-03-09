@@ -9,7 +9,7 @@ from src.web.schemas._util import to_kebab
 type Rhythm = list[Union[int, str, None]]
 
 
-class LiteraryWorkEnum(str, Enum):
+class AvailableLiteraryWorks(str, Enum):
     OS_SERTOES = "xml/sentencas.xml"
     MACUNAIMA = "xml/sentencas.xml"
 
@@ -28,11 +28,11 @@ class LiteraryWork(BaseModel):
 
     @model_validator(mode="after")
     def validate_status(self, value) -> Self:
-        assert LiteraryWorkEnum[self.name.upper()].name
+        assert AvailableLiteraryWorks[self.name.upper()].name
         return self
 
     def value(self) -> str:
-        return LiteraryWorkEnum[self.name.upper()].value
+        return AvailableLiteraryWorks[self.name.upper()].value
 
 
 class Prosody(BaseModel):
