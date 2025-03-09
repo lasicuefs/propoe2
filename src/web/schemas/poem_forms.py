@@ -6,6 +6,8 @@ from pydantic import BaseModel, Field, model_validator
 from src import api as domain
 from src.web.schemas._util import to_kebab
 
+__all__ = ["PropoeForms"]
+
 type Rhythm = list[Union[int, str, None]]
 
 
