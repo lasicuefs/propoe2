@@ -71,13 +71,16 @@ class Prosody(BaseModel):
     @model_validator(mode="after")
     def rhythm_and_pattern_matches(self) -> Self:
         """Checks if Rhythm and Pattern has the same length"""
+
         assert len(self.rhythm) == len(
             self.pattern.replace(" ", "")
         ), "Pattern's and Rythm's lenghts don't match"
+
         return self
 
     def as_domain(self) -> domain.Prosody:
         """Converts the Schema to Domain's model"""
+
         return domain.Prosody(self.pattern, self.rhythm)
 
 
@@ -92,6 +95,7 @@ class Weights(BaseModel):
 
     def as_domain(self) -> domain.Weights:
         """Converts the Schema to Domain's model"""
+
         return domain.Weights(
             accentuation=self.accentuation,
             internal_rhyme=self.internal_rhyme,
