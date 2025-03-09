@@ -36,26 +36,42 @@ def register_essential_logs() -> None:
 
     """
 
-    logger.add(
-        "logs/requests.log",
-        format="{time:YYYY-MM-DD} | Action: Request at /{extra[route]}/ | {message}",
-        encoding="UTF-8",
-        filter=lambda record: "request" in record["extra"],
+    def file(name: str) -> str:
+        """Helper function that generates file's path"""
+        return f"logs/{name}.log"
+
+    def by_key(key: str):  # -> Callable[..., bool]:
+        """Generates lambda function for Loguru's filter"""
+        return lambda record: key in record["extra"]
+
+    REQUEST_FORMAT = (
+        "{time:YYYY-MM-DD} | Action: Request at /{extra[route]}/ | {message}"
+    )
+
+    FEEDBACK_FORMAT = (
+        "{time:YYYY-MM-DD} | Action: Feedback | ⭐ {extra[stars]} : {message}"
     )
 
     logger.add(
-        "logs/poems.log",
+        file("requests"),
+        format=REQUEST_FORMAT,
+        encoding="UTF-8",
+        filter=by_key("request"),
+    )
+
+    logger.add(
+        file("poems"),
         serialize=True,
         format="Poem generated!",
         encoding="UTF-8",
-        filter=lambda record: "poem" in record["extra"],
+        filter=by_key("poem"),
     )
 
     logger.add(
-        "logs/feedbacks.log",
-        format="{time:YYYY-MM-DD} | Action: Feedback | ⭐ {extra[stars]} : {message}",
+        file("feedbacks"),
+        format=FEEDBACK_FORMAT,
         encoding="UTF-8",
-        filter=lambda record: "feedback" in record["extra"],
+        filter=by_key("feedback"),
     )
 
     are_essential_logs_registered = True  # noqa: F841
