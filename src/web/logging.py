@@ -13,7 +13,7 @@ avoiding some undesirable behaviors.
 from loguru import logger
 
 from src.web.config import Settings
-from src.web.schemas.poem_result import Poem
+from src.web.schemas import Poem
 
 are_essential_logs_registered = False
 
