@@ -8,16 +8,20 @@ from pydantic import BaseModel
 
 from src import api as propoe
 from src.web.logging import PropoesEvent
-from src.web import middleware
+from src.web import config, middleware
 from src.web.schemas.feedback import Feedback
 from src.web.schemas.prosody import Prosody
 from src.web.schemas.weights import Weights
 from src.web.schemas.poem import Poem
 
 propoe_event = PropoesEvent()
+settings = config.settings()
 
 app = FastAPI()
 middleware.set_allowed_origins(app)
+
+propoe_event.server_startup(settings)
+
 
 class Entry(BaseModel):
     """Entry Scheme for the /poem/ endpoint"""
