@@ -83,6 +83,7 @@ class Prosody(BaseModel):
 
 class Weights(BaseModel):
     """Weights' schema"""
+
     vocal_harmony: float = Field(default=1, ge=0, le=1)
     accentuation: float = Field(default=1, ge=0, le=1)
     tonic_position: float = Field(default=1, ge=0, le=1)
@@ -101,6 +102,7 @@ class Weights(BaseModel):
 
     class Config:
         """Allows ``kebab-case`` instead of ``snake_case``."""
+
         alias_generator = to_kebab
         populate_by_name = True
 
