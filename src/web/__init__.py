@@ -50,7 +50,7 @@ async def poem(entry: PoemForms) -> Poem:
     await propoe_event.route_requested(
         "poem", f"Poem '{entry.prosody.pattern}' requested!"
     )
-    await propoe_event.poem_created(result)
+    await propoe_event.poem_created(entry, result)
 
     return result
 
