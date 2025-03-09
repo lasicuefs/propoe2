@@ -1,3 +1,4 @@
+from enum import Enum
 from typing import Annotated, Self, Union
 
 from pydantic import BaseModel, Field, model_validator
@@ -6,6 +7,32 @@ from src import api as domain
 from src.web.schemas._util import to_kebab
 
 type Rhythm = list[Union[int, str, None]]
+
+
+class LiteraryWorkEnum(str, Enum):
+    OS_SERTOES = "xml/sentencas.xml"
+    MACUNAIMA = "xml/sentencas.xml"
+
+
+class LiteraryWork(BaseModel):
+    name: Annotated[
+        str,
+        Field(
+            examples=["OS_SERTOES"],
+            min_length=1,
+            max_length=50,
+            pattern=r"^[A-Z_]+",
+            strict=True,
+        ),
+    ]
+
+    @model_validator(mode="after")
+    def validate_status(self, value) -> Self:
+        assert LiteraryWorkEnum[self.name.upper()].name
+        return self
+
+    def value(self) -> str:
+        return LiteraryWorkEnum[self.name.upper()].value
 
 
 class Prosody(BaseModel):
