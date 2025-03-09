@@ -37,6 +37,16 @@ class Settings(BaseSettings):
 
     propoe_production: bool = False
 
+    @property
+    def in_production(self) -> bool:
+        """Alias to propoe_production"""
+        return self.propoe_production
+
+    @property
+    def in_dev(self) -> bool:
+        """Is in development mode"""
+        return not self.in_production
+
 
 @lru_cache
 def settings() -> Settings:
