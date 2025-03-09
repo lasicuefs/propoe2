@@ -10,7 +10,6 @@ Logs are registered only once on loguru's system,
 avoiding some undesirable behaviors.
 """
 
-from typing import Callable
 from loguru import logger
 
 from src.web.config import Settings
