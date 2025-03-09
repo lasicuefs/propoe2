@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field, model_validator
 from src import api as domain
 from src.web.schemas._util import to_kebab
 
-__all__ = ["PropoeForms"]
+__all__ = ["PoemForms"]
 
 type Rhythm = list[Union[int, str, None]]
 
@@ -107,7 +107,7 @@ class Weights(BaseModel):
         populate_by_name = True
 
 
-class PropoeForms(BaseModel):
+class PoemForms(BaseModel):
     """Entry Scheme for the /poem/ endpoint"""
 
     prosody: Prosody

@@ -11,7 +11,7 @@ from src.web.logging import PropoesEvent
 from src.web import config, middleware
 from src.web.schemas.feedback import Feedback
 from src.web.schemas.poem import Poem
-from src.web.schemas.poem_forms import PropoeForms
+from src.web.schemas.poem_forms import PoemForms
 
 propoe_event = PropoesEvent()
 settings = config.settings()
@@ -23,7 +23,7 @@ propoe_event.server_startup(settings)
 
 
 @app.post("/poem/")
-async def poem(entry: PropoeForms) -> Poem:
+async def poem(entry: PoemForms) -> Poem:
     """Generate a Poem from an Json entry."""
 
     def file() -> str:
