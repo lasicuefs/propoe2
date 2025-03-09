@@ -3,10 +3,10 @@
 Since loguru works as a singleton, which is an anti-pattern,
 this module will also follows the same.
 
-You may have multiple instances of PropoesEvent 
+You may have multiple instances of PropoesEvent
 and all methods works asyncronously.
 
-Logs are registered only once on loguru's system, 
+Logs are registered only once on loguru's system,
 avoiding some undesirable behaviors.
 """
 
