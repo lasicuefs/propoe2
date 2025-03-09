@@ -10,7 +10,7 @@ from src import api as propoe
 from src.web.logging import PropoesEvent
 from src.web import config, middleware
 from src.web.schemas.feedback import Feedback
-from src.web.schemas.poem import Poem
+from src.web.schemas.poem_result import Poem
 from src.web.schemas.poem_forms import PoemForms
 
 propoe_event = PropoesEvent()

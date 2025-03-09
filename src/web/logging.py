@@ -14,7 +14,7 @@ from typing import Callable
 from loguru import logger
 
 from src.web.config import Settings
-from src.web.schemas.poem import Poem
+from src.web.schemas.poem_result import Poem
 
 are_essential_logs_registered = False
 
