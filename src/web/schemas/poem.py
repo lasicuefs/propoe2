@@ -8,6 +8,8 @@ __all__ = ["Poem"]
 
 
 class IsPoem(Protocol):
+    """Protocol to avoid import from domain"""
+
     @property
     def content(self) -> str: ...
 
@@ -16,6 +18,8 @@ class IsPoem(Protocol):
 
 
 class Evaluation(BaseModel):
+    """Final evaluation returned by Propoe's algorithm."""
+
     vocal_harmony: float
     accentuation: float
     tonic_position: float
@@ -35,11 +39,15 @@ class Evaluation(BaseModel):
         )
 
     class Config:
+        """Allows ``kebab-case`` instead of only ``snake_case``"""
+
         alias_generator = to_kebab
         populate_by_name = True
 
 
 class Poem(BaseModel):
+    """Result schema for ``/poem/`` endpoint"""
+
     content: list[str]
     evaluation: Evaluation
 
