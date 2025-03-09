@@ -82,6 +82,7 @@ class Prosody(BaseModel):
 
 
 class Weights(BaseModel):
+    """Weights' schema"""
     vocal_harmony: float = Field(default=1, ge=0, le=1)
     accentuation: float = Field(default=1, ge=0, le=1)
     tonic_position: float = Field(default=1, ge=0, le=1)
@@ -89,6 +90,7 @@ class Weights(BaseModel):
     rhythmic_structure: float = Field(default=1, ge=0, le=1)
 
     def as_domain(self) -> domain.Weights:
+        """Converts the Schema to Domain's model"""
         return domain.Weights(
             accentuation=self.accentuation,
             internal_rhyme=self.internal_rhyme,
@@ -98,6 +100,7 @@ class Weights(BaseModel):
         )
 
     class Config:
+        """Allows ``kebab-case`` instead of ``snake_case``."""
         alias_generator = to_kebab
         populate_by_name = True
 
