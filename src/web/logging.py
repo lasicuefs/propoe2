@@ -10,8 +10,10 @@ Logs are registered only once on loguru's system,
 avoiding some undesirable behaviors.
 """
 
+from typing import Callable
 from loguru import logger
 
+from src.web.config import Settings
 from src.web.schemas.poem import Poem
 
 are_essential_logs_registered = False
@@ -53,6 +55,12 @@ def register_essential_logs() -> None:
     )
 
     logger.add(
+        file("server"),
+        encoding="UTF-8",
+        filter=by_key("server"),
+    )
+
+    logger.add(
         file("requests"),
         format=REQUEST_FORMAT,
         encoding="UTF-8",
@@ -83,6 +91,16 @@ class PropoesEvent:
     def __init__(self) -> None:
         if not are_essential_logs_registered:
             register_essential_logs()
+
+    @staticmethod
+    def server_startup(settings: Settings) -> None:
+        """Log server's startup
+
+        Parameters
+        ----------
+        settings: Settings
+        """
+        logger.bind(server=True).debug(settings.model_dump())
 
     @staticmethod
     async def route_requested(route: str, message: str) -> None:
