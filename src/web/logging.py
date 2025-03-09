@@ -96,6 +96,8 @@ class PropoesEvent:
     def server_startup(settings: Settings) -> None:
         """Log server's startup
 
+        Logs the information into ``logs/server.log``
+
         Parameters
         ----------
         settings: Settings
