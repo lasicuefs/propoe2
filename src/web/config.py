@@ -8,8 +8,8 @@ let Pydantic take care about all the rest.
 
         # Set the env var
         $  MY_VAR="Something"
-        
-        # Initialize the server 
+
+        # Initialize the server
         $ fastapi dev src/web
 """
 
@@ -22,10 +22,10 @@ class Settings(BaseSettings):
 
     External Documentation Resources
     --------------------------------
-    Environment Variables usage: 
+    Environment Variables usage:
         <https://fastapi.tiangolo.com/environment-variables>
-    
-    Settings class usage: 
+
+    Settings class usage:
         <https://fastapi.tiangolo.com/advanced/settings>
 
     Variables
@@ -34,6 +34,7 @@ class Settings(BaseSettings):
         Enables or disables features of Propoe when its in Production.
 
     """
+
     propoe_production = False
 
 
@@ -41,8 +42,9 @@ class Settings(BaseSettings):
 def settings() -> Settings:
     """Returns a ``Settings``'s instance.
 
-    Caches the instantiation of ``Settings`` 
+    Caches the instantiation of ``Settings``
     to avoid rebuilding it each time it's created.
+
     """
     return Settings()
 
