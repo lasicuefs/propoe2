@@ -35,7 +35,7 @@ class Settings(BaseSettings):
 
     """
 
-    propoe_production = False
+    propoe_production: bool = False
 
 
 @lru_cache
