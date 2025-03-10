@@ -45,7 +45,7 @@ class PoemBuilder:
         random.seed(self._seed)
 
         self.orig_stdout = sys.stdout
-        self.f = open(self._filename, "w")
+        self.f = open(self._filename, "w", encoding="UTF-8")
         sys.stdout = self.f
 
     def result(self) -> None:
@@ -54,7 +54,7 @@ class PoemBuilder:
 
     def save(self, path) -> None:
         """Save poem in txt file."""
-        text_file = open(path, "w")
+        text_file = open(path, "w", encoding="UTF-8")
         text_file.write(self.poem)
         text_file.close()
 

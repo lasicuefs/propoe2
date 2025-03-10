@@ -1,3 +1,5 @@
-from src.web.schemas.poem import *  # noqa: F403
-from src.web.schemas.weights import *  # noqa: F403
-from src.web.schemas.prosody import *  # noqa: F403
+"""Schemas used by Propoe2's API"""
+
+from src.web.schemas.poem_result import Poem  # noqa: F401
+from src.web.schemas.poem_forms import PoemForms  # noqa: F401
+from src.web.schemas.feedback import Feedback  # noqa: F401
