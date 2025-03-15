@@ -50,6 +50,7 @@ class Poem(BaseModel):
 
     content: list[str]
     evaluation: Evaluation
+    id: str = ""
 
     @staticmethod
     def from_domain(poem: IsPoem) -> "Poem":
@@ -57,3 +58,7 @@ class Poem(BaseModel):
             content=poem.content.splitlines(),
             evaluation=Evaluation.from_domain(poem.evaluation),
         )
+
+    def with_id(self, id: str) -> "Poem":
+        self.id = id
+        return self
