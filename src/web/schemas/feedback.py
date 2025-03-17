@@ -23,3 +23,4 @@ class Feedback(BaseModel):
         max_length=280,
         description="Feedback content",
     )
+    poem_id: str = ""

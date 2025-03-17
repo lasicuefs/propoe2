@@ -24,6 +24,8 @@ propoe_event.server_startup(settings)
 async def poem(entry: PoemForms) -> Poem:
     """Generate a Poem from an Json entry."""
 
+    time_id = datetime.now().strftime("%Y-%m-%d-%H%M%S%f")
+
     def file() -> str:
         """File to be written
 
@@ -35,8 +37,7 @@ async def poem(entry: PoemForms) -> Poem:
         Unfortunately, this is not possible since
         the request runs endless for some unknown reason...
         """
-        time = datetime.now().strftime("%Y-%m-%d-%H%M%S%f")
-        return f"logs/poems/{time}.log" if settings.in_dev else "poem.txt"
+        return f"logs/poems/{time_id}.log" if settings.in_dev else "poem.txt"
 
     result = Poem.from_domain(
         propoe.Propoe(
@@ -45,7 +46,7 @@ async def poem(entry: PoemForms) -> Poem:
             prosody=entry.prosody.as_domain(),
             evaluation_weights=entry.weights.as_domain(),
         ).poem
-    )
+    ).with_id(time_id)
 
     await propoe_event.route_requested(
         "poem", f"Poem '{entry.prosody.pattern}' requested!"
@@ -86,4 +87,4 @@ async def feedback(feed: Feedback) -> None:
     """Logs User's feedback about Propoe"""
 
     await propoe_event.route_requested("feedback", "Feedback submited!")
-    await propoe_event.feedback_submited(feed.comment, feed.stars)
+    await propoe_event.feedback_submited(feed.comment, feed.stars, feed.poem_id)
