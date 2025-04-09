@@ -11,6 +11,13 @@ class Evaluation:
         self.count_rhyme = 0
         self.intern_rhyme_score = 0
 
+    def poem_scores(self, scores:list):
+        for score in scores:
+            if score:
+                self.add(score)
+        self.setFinalScore()
+
+
     def add(self, score) -> None:
         # TODO: define the type of score
         """Sum scores of every verse."""

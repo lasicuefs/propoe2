@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 import random
 
+from src.model.poem import Poem
 from src.model.rhyme import Rhyme
 from src.model.score import Score
 from src.model.poem_evaluation import Evaluation
@@ -39,7 +40,12 @@ class PoemBuilder:
     _filename: str
     _seed: int | None
 
+
     def __post_init__(self):
+        self.metric_count = 0
+        self.last_rhyme = {}
+        self.poem_sentences = {}
+        self.poem_scores = {}
         self.poem: str = ""
         self.evaluation: Evaluation = Evaluation()
         random.seed(self._seed)
@@ -61,97 +67,106 @@ class PoemBuilder:
     def build(self) -> None:
         """Build poem. Get best sentences and add it in the string self.poem."""
         sentences = self.get_poem_sentences()
-        for letter in self.rhyme:
-            if letter == " ":
-                self.poem = self.poem + "\n"
-            else:
-                s = sentences[letter].pop(0)
-                self.poem = (
-                    self.poem
-                    + remove_end_ponctuation(s.sentence).capitalize()
-                    + "\n"
-                )
+        poem = self.buil_poem_result(sentences)
+        self.poem = poem.__repr__()
         sys.stdout = self.orig_stdout
         self.f.close()
-        self.evaluation.setFinalScore()
 
-    def random_sentence(self, letter, sentences, metric_count):
-        pos_sentences = self.sentences[letter].metrics[
-            self.metrics[metric_count]
+    def buil_poem_result(self, sentences):
+        verses = []
+        verses_score = []
+        verse_structure = []
+
+        for letter in self.rhyme:
+            if letter != " ":
+                s = sentences[letter].pop(0)
+                verses.append(remove_end_ponctuation(s.sentence).capitalize())
+                verse_structure.append(s.verse_structures[0].scanned_sentence)
+                verses_score.append(self.poem_scores[letter].pop(0))
+
+        self.evaluation.poem_scores(verses_score)
+        return Poem(verses=verses, verses_score=verses_score, verse_structure=verse_structure, poem_score=self.evaluation, poem_structure=self.rhyme)
+
+    def random_sentence(self, letter):
+        sentence_metric_list = self.sentences[letter].metrics[
+            self.metrics[self.metric_count]
         ]
-        number = random.randrange(len(pos_sentences))
-        s = pos_sentences[number]
-        if s.not_in(sentences[letter]):
-            return s
+        sentence_index = random.randrange(len(sentence_metric_list))
+        sentence = sentence_metric_list[sentence_index]
+        if sentence.not_in(self.poem_sentences[letter]):
+            return sentence
         else:
-            return self.random_sentence(letter, sentences, metric_count)
+            return self.random_sentence(letter)
 
-    def random_verse(self, sentence):
+    def random_verse_structures(self, sentence):
         number = random.randrange(len(sentence.verse_structures))
         return sentence.verse_structures[number]
 
     def initialize_sentences(self):
         """Initializa a Dict mapping the letters from the rhyme pattern to an empty list."""
-        sentences = {}
+        self.poem_sentences = {}
+        self.poem_scores ={}
         for letter in self.sentences:
-            sentences[letter] = []
-        return sentences
+            self.poem_sentences[letter] = []
+            self.poem_scores[letter] = []
 
     def get_poem_sentences(self):
         """Return a list of Sentence objects in order to build a poem."""
-        rhyme = self.rhyme
-        sentences = self.initialize_sentences()
-        # Dict that maps letters from rhyme pattern to its last Rhyme object
-        last_rhyme = {}
+        self.initialize_sentences()
+        self.last_rhyme = {}         # Dict that maps letters from rhyme pattern to its last Rhyme object
+        self.metric_count = 0         # Index from self.metrics that shows with metric does this Sentence object needs.
         new_strophe = True
-        # Index from self.metrics that shows with metric does this Sentence object needs.
-        metric_count = 0
+        current_verse_structures = None
+        ref_verse_structures = None
+
         # Iterate through every letter from rhyme pattern, one by one, in order.
-        for letter in rhyme:
+        for letter in self.rhyme:
             if letter == " ":
                 new_strophe = True
             elif new_strophe:
-                current = self.random_sentence(letter, sentences, metric_count)
-                sentences[letter].append(current)
-                current_verse = self.random_verse(current)
-                # Reference verse.
-                fixed_verse = current_verse
-                last_rhyme[letter] = current_verse
-                print(current_verse.scanned_sentence)
-                print()
+                current_verse_structures = self.start_new_strophe(letter)
+                ref_verse_structures = current_verse_structures
                 new_strophe = False
-                metric_count += 1
             else:
-                # If not a new rhyme, if there is a verse we can compare to.
-                if letter in last_rhyme:
-                    # Last Verse object that rhymes with the new verse to be found.
-                    verse_rhyme = last_rhyme[letter]
-                else:
-                    verse_rhyme = None
-                next_s, next_verse = self.find_sentence(
-                    sentences,
-                    [current_verse, fixed_verse],
-                    letter,
-                    verse_rhyme,
-                    metric_count,
-                )
+                current_verse_structures = self.new_verse_by_score(current_verse_structures, letter, ref_verse_structures)
 
-                last_rhyme[letter] = next_verse
-                sentences[letter].append(next_s)
-                current = next_s
-                current_verse = next_verse
-                metric_count += 1
+        return self.poem_sentences
 
-        return sentences
+    def reference_verse_rhyme(self, letter):
+        # If not a new rhyme, if there is a verse we can compare to.
+        if letter in self.last_rhyme:
+            # Last Verse object that rhymes with the new verse to be found.
+            return self.last_rhyme[letter]
+        return None
+
+    def new_verse_by_score(self, current_verse_structures, letter, ref_verse_structures):
+        verse_rhyme = self.reference_verse_rhyme(letter)
+        current_verse, current_verse_structures, verse_score = self.find_sentence(
+            [current_verse_structures, ref_verse_structures],
+            letter,
+            verse_rhyme)
+        self.add_new_verse(letter,current_verse_structures, current_verse, verse_score)
+        return current_verse_structures
+
+    def start_new_strophe(self, letter):
+        current_verse = self.random_sentence(letter)
+        current_verse_structures = self.random_verse_structures(current_verse)
+        self.add_new_verse(letter, current_verse_structures, current_verse, None)
+        print(current_verse_structures.scanned_sentence + "\n")
+        return current_verse_structures
+
+    def add_new_verse(self, letter, current_verse_structures, current_verse, verse_score):
+        self.last_rhyme[letter] = current_verse_structures
+        self.poem_sentences[letter].append(current_verse)
+        self.poem_scores[letter].append(verse_score)
+        self.metric_count += 1
 
     # TODO: define missing types
     def find_sentence(
         self,
-        sentences,
         verses: list,
         letter: str,
         last_rhyme,
-        metric_count,
     ):
         """Return best Sentence object given a score.
 
@@ -169,32 +184,30 @@ class PoemBuilder:
         """
         max_score = -1
         count = 0
-        for sentence in self.sentences[letter].metrics[
-            self.metrics[metric_count]
-        ]:
-            if sentence.not_in(sentences[letter]):
-                for possible_verse in sentence.verse_structures:
-                    score = Score(possible_verse.scanned_sentence)
-                    count += 1
-                    print("------------------")
-                    for verse in verses:
-                        score.score(
-                            verse, possible_verse, last_rhyme, self.score_weight
-                        )
+        candidate_sentences = self.sentences[letter].metrics[
+            self.metrics[self.metric_count]]
+        for sentence in candidate_sentences:
+            if sentence.not_in(self.poem_sentences[letter]):
+                verse_structures = sentence.verse_structures[0]
+                score = Score(verse_structures.scanned_sentence)
+                count += 1
+                print("------------------")
+                for verse in verses:
+                    score.score(verse, verse_structures, last_rhyme, self.score_weight)
 
-                        print(score)
-                        print()
-                        if score.score_result > max_score:
-                            max_score = score.score_result
-                            next_s = sentence
-                            next_verse = possible_verse
-                            result_score = score
+                    print(score)
+                    print()
+                    if score.score_result > max_score:
+                        max_score = score.score_result
+                        next_verse = sentence
+                        next_verse_structure = verse_structures
+                        result_score = score
         print("------------ESCOLHIDO----------------")
         print("Quantidade de versos:", str(count))
         # TODO: ``result_score`` may never be assigned
         print(result_score)
         print()
 
-        self.evaluation.add(result_score)
+        # self.evaluation.add(result_score)
         # TODO: ``next_s`` and ``next_verse`` may never be assigned
-        return next_s, next_verse
+        return next_verse, next_verse_structure, result_score
