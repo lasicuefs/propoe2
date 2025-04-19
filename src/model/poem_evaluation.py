@@ -7,9 +7,10 @@ class Evaluation:
         self.stress_score = 0
         self.rhyme_structure_score = 0
         self.score_result = 0
+        self.intern_rhyme_score = 0
+
         self.count = 0
         self.count_rhyme = 0
-        self.intern_rhyme_score = 0
 
     def poem_scores(self, scores:list):
         for score in scores:

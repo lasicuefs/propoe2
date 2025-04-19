@@ -1,19 +1,21 @@
 from src.model.verse_structure import VerseStructure
-from src.model.utils import consonant_removal
-
 
 class Score:
-    def __init__(self, verse) -> None:
-        # TODO: What is ``verse``'s type?
-        # TODO: Are all those scores integers or floats?
-
-        self.verse = verse  # Scanned Verse
+    def __init__(self):
         self.consonant_rhyme_score = 0
         self.accent_score = 0
         self.stress_score = 0
         self.rhyme_structure_score = 0
         self.score_result = 0
         self.rhyme_intern_score = 0
+
+class VerseScore:
+    def __init__(self, verse) -> None:
+        # TODO: What is ``verse``'s type?
+        # TODO: Are all those scores integers or floats?
+
+        self.verse = verse  # Scanned Verse
+        self.score = Score()
         self.rhyme_verse: bool = False
         self.debug_repr: dict[str, str] = {
             "Rima Consoante": "",
@@ -28,79 +30,50 @@ class Score:
         output = "Verso: " + self.verse + "\n Scores:"
         if self.debug_repr["Rima Consoante"] == "":
             output = output + "\n - Rima Consoante: Sem verso que rima"
-
-            output = (
-                output
-                + "\n - Estrutura Ritmica: "
-                + str(round(self.rhyme_structure_score, 3))
-                + self.debug_repr["Estrutura Ritmica"]
-            )
-
-            output = (
-                output
-                + "\n - Silabas Tônicas: "
-                + str(round(self.stress_score, 3))
-                + self.debug_repr["Silabas Tonicas"]
-            )
-
-            output = output + "\n - Acento: Sem verso que rima"
-
-            output = (
-                output
-                + "\n - Rima Interna: "
-                + str(round(self.intern_rhyme_score, 3))
-                + self.debug_repr["Rima Interna"]
-            )
-
-            output = (
-                output
-                + "\n - Score Resultante: "
-                + str(round(self.score_result, 3))
-                + self.debug_repr["Resultado"]
-            )
-
         else:
             output = (
-                output
-                + "\n - Rima Consoante: "
-                + str(round(self.consonant_rhyme_score, 3))
-                + self.debug_repr["Rima Consoante"]
+                    output
+                    + "\n - Rima Consoante: "
+                    + str(round(self.score.consonant_rhyme_score, 3))
+                    + self.debug_repr["Rima Consoante"]
             )
 
+        output = (
+            output
+            + "\n - Estrutura Ritmica: "
+            + str(round(self.score.rhyme_structure_score, 3))
+            + self.debug_repr["Estrutura Ritmica"]
+        )
+
+        output = (
+            output
+            + "\n - Silabas Tônicas: "
+            + str(round(self.score.stress_score, 3))
+            + self.debug_repr["Silabas Tonicas"]
+        )
+        if self.debug_repr["Rima Consoante"] == "":
+            output = output + "\n - Acento: Sem verso que rima"
+        else:
             output = (
-                output
-                + "\n - Estrutura Ritmica: "
-                + str(round(self.rhyme_structure_score, 3))
-                + self.debug_repr["Estrutura Ritmica"]
+                    output
+                    + "\n - Acento: "
+                    + str(round(self.score.accent_score, 3))
+                    + self.debug_repr["Acento"]
             )
 
-            output = (
-                output
-                + "\n - Silabas Tônicas: "
-                + str(round(self.stress_score, 3))
-                + self.debug_repr["Silabas Tonicas"]
-            )
+        output = (
+            output
+            + "\n - Rima Interna: "
+            + str(round(self.score.rhyme_intern_score, 3))
+            + self.debug_repr["Rima Interna"]
+        )
 
-            output = (
-                output
-                + "\n - Acento: "
-                + str(round(self.accent_score, 3))
-                + self.debug_repr["Acento"]
-            )
-
-            output = (
-                output
-                + "\n - Rima Interna: "
-                + str(round(self.intern_rhyme_score, 3))
-                + self.debug_repr["Rima Interna"]
-            )
-
-            output = (
-                output
-                + "\n - Score Resultante: "
-                + str(round(self.score_result, 3))
-                + self.debug_repr["Resultado"]
-            )
+        output = (
+            output
+            + "\n - Score Resultante: "
+            + str(round(self.score.score_result, 3))
+            + self.debug_repr["Resultado"]
+        )
 
         return output
 
@@ -247,34 +220,34 @@ class Score:
             )
             return 0
 
-    def score(self, reference, possible_verse, rhyme_verse, weight) -> None:
+    def score_calculation(self, reference, possible_verse, rhyme_verse, weight) -> None:
         # TODO: what is ``reference``?
         # TODO: what is ``possible_verse``?
         # TODO: What is ``rhyme_verse``?
         # TODO: What is ``weight``? I only know that this is a dict[str, T].
-        self.rhyme_structure_score += (
+        self.score.rhyme_structure_score += (
             self.same_stress_pos(reference, possible_verse) / 2
         )
 
         # TODO: Attribute declared outside __init__.
         #   Should it be an instance attribute or local variable?
-        self.intern_rhyme_score = self.intern_rhyme(possible_verse)
+        self.score.intern_rhyme_score = self.intern_rhyme(possible_verse)
         s = self.same_stress_syllable(reference, possible_verse)
         ps = self.same_pos_stress_syllable(reference, possible_verse)
-        self.stress_score += (s + ps) / 2
+        self.score.stress_score += (s + ps) / 2
         self.rhyme_verse = rhyme_verse
         if rhyme_verse:
-            self.accent_score = self.same_accent(possible_verse, rhyme_verse)
-            self.consonant_rhyme_score = self.consonant_rhyme(
+            self.score.accent_score = self.same_accent(possible_verse, rhyme_verse)
+            self.score.consonant_rhyme_score = self.consonant_rhyme(
                 possible_verse, rhyme_verse
             )
 
-        self.score_result = (
-            self.rhyme_structure_score * weight["Estrutura ritmica"]
-            + self.stress_score * weight["Posicao tonica"]
-            + self.accent_score * weight["Acentuacao"]
-            + self.consonant_rhyme_score * weight["Rima toante & consoante"]
-            + self.intern_rhyme_score * weight["Rima interna"]
+        self.score.score_result = (
+            self.score.rhyme_structure_score * weight["Estrutura ritmica"]
+            + self.score.stress_score * weight["Posicao tonica"]
+            + self.score.accent_score * weight["Acentuacao"]
+            + self.score.consonant_rhyme_score * weight["Rima toante & consoante"]
+            + self.score.intern_rhyme_score * weight["Rima interna"]
         )
 
         max_score = (
@@ -284,12 +257,66 @@ class Score:
         )
         self.debug_repr["Resultado"] = ""
         self.debug_repr["Resultado"] += "\nSoma dos critérios: " + str(
-            round(self.score_result, 2)
+            round(self.score.score_result, 2)
         )
         if rhyme_verse:
             max_score += weight["Rima toante & consoante"] + weight["Acentuacao"]
             self.debug_repr["Resultado"] += "\nScore máximo: " + str(max_score)
-            self.score_result = self.score_result / max_score
+            self.score.score_result = self.score.score_result / max_score
         else:
             self.debug_repr["Resultado"] += "\nScore máximo: " + str(max_score)
-            self.score_result = self.score_result / max_score
+            self.score.score_result = self.score.score_result / max_score
+
+class PoemScore:
+
+    def __init__(self, verseScoreList:list):
+        self.score = Score()
+        self.extractPoemScoreFromVerseScore(verseScoreList)
+
+    def extractPoemScoreFromVerseScore(self, verseScoreList:list):
+        verse_rhyme_num = 0
+        count_verses = 0
+        for verseScore in verseScoreList:
+            if verseScore:
+                self.score.consonant_rhyme_score += verseScore.score.consonant_rhyme_score
+                self.score.accent_score += verseScore.score.accent_score
+                self.score.stress_score += verseScore.score.stress_score
+                self.score.rhyme_structure_score += verseScore.score.rhyme_structure_score
+                self.score.score_result += verseScore.score.score_result
+                self.score.rhyme_intern_score += verseScore.score.intern_rhyme_score
+                if verseScore.rhyme_verse:
+                    verse_rhyme_num += 1
+                count_verses+=1
+
+        self.calculatePoemScore(count_verses, verse_rhyme_num)
+
+    def calculatePoemScore(self, verses_num, verse_rhyme_num):
+        if self.score.consonant_rhyme_score != 0:
+            self.score.consonant_rhyme_score = round(self.score.consonant_rhyme_score / verse_rhyme_num, 3)
+        if self.score.accent_score != 0:
+            self.score.accent_score = round(self.score.accent_score / verse_rhyme_num, 3)
+        if self.score.stress_score != 0:
+            self.score.stress_score = round(self.score.stress_score / verses_num, 3)
+        if self.score.rhyme_structure_score != 0:
+            self.score.rhyme_structure_score = round(self.score.rhyme_structure_score / verses_num, 3)
+        if self.score.rhyme_intern_score != 0:
+            self.score.rhyme_intern_score = round(self.score.rhyme_intern_score / verses_num, 3)
+        if self.score.score_result != 0:
+            self.score.score_result = round(self.score.score_result / verses_num, 3)
+
+    def __repr__(self) -> str:
+        return (
+            "Resultado:"
+            + "\n - Estrutura Ritmica: "
+            + str(self.score.rhyme_structure_score)
+            + "\n - Silabas Tônicas: "
+            + str(self.score.stress_score)
+            + "\n - Acento: "
+            + str(self.score.accent_score)
+            + "\n - Rima Interna: "
+            + str(self.score.rhyme_intern_score)
+            + "\n - Rima Toante & Consoante: "
+            + str(self.score.consonant_rhyme_score)
+            + "\n Score Resultante: "
+            + str(self.score.score_result)
+        )

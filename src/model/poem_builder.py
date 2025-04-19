@@ -3,7 +3,7 @@ import random
 
 from src.model.poem import Poem
 from src.model.rhyme import Rhyme
-from src.model.score import Score
+from src.model.score import *
 from src.model.poem_evaluation import Evaluation
 from src.model.utils import remove_end_ponctuation
 import sys
@@ -46,8 +46,7 @@ class PoemBuilder:
         self.last_rhyme = {}
         self.poem_sentences = {}
         self.poem_scores = {}
-        self.poem: str = ""
-        self.evaluation: Evaluation = Evaluation()
+        self.poem: Poem
         random.seed(self._seed)
 
         self.orig_stdout = sys.stdout
@@ -56,7 +55,7 @@ class PoemBuilder:
 
     def result(self) -> None:
         print(self.poem)
-        print(self.evaluation)
+        print(self.poem.poem_score)
 
     def save(self, path) -> None:
         """Save poem in txt file."""
@@ -67,25 +66,29 @@ class PoemBuilder:
     def build(self) -> None:
         """Build poem. Get best sentences and add it in the string self.poem."""
         sentences = self.get_poem_sentences()
-        poem = self.buil_poem_result(sentences)
-        self.poem = poem.__repr__()
+        self.poem = self.buil_poem_result(sentences)
         sys.stdout = self.orig_stdout
         self.f.close()
 
     def buil_poem_result(self, sentences):
         verses = []
         verses_score = []
-        verse_structure = []
+        verses_score_list = []
+        scanned_verses = []
 
         for letter in self.rhyme:
             if letter != " ":
                 s = sentences[letter].pop(0)
                 verses.append(remove_end_ponctuation(s.sentence).capitalize())
-                verse_structure.append(s.verse_structures[0].scanned_sentence)
-                verses_score.append(self.poem_scores[letter].pop(0))
+                scanned_verses.append(s.verse_structures[0].scanned_sentence)
+                poem_score = self.poem_scores[letter].pop(0)
+                verses_score_list.append(poem_score)
+                if poem_score:
+                    verses_score.append(poem_score.score)
+                else:
+                    verses_score.append(None)
 
-        self.evaluation.poem_scores(verses_score)
-        return Poem(verses=verses, verses_score=verses_score, verse_structure=verse_structure, poem_score=self.evaluation, poem_structure=self.rhyme)
+        return Poem(verses=verses, verses_score=verses_score, scanned_verses=scanned_verses, poem_score=PoemScore(verses_score_list), poem_structure=self.rhyme)
 
     def random_sentence(self, letter):
         sentence_metric_list = self.sentences[letter].metrics[
@@ -189,19 +192,19 @@ class PoemBuilder:
         for sentence in candidate_sentences:
             if sentence.not_in(self.poem_sentences[letter]):
                 verse_structures = sentence.verse_structures[0]
-                score = Score(verse_structures.scanned_sentence)
+                verse_score = VerseScore(verse_structures.scanned_sentence)
                 count += 1
                 print("------------------")
                 for verse in verses:
-                    score.score(verse, verse_structures, last_rhyme, self.score_weight)
+                    verse_score.score_calculation(verse, verse_structures, last_rhyme, self.score_weight)
 
-                    print(score)
+                    print(verse_score)
                     print()
-                    if score.score_result > max_score:
-                        max_score = score.score_result
+                    if verse_score.score.score_result > max_score:
+                        max_score = verse_score.score.score_result
                         next_verse = sentence
                         next_verse_structure = verse_structures
-                        result_score = score
+                        result_score = verse_score
         print("------------ESCOLHIDO----------------")
         print("Quantidade de versos:", str(count))
         # TODO: ``result_score`` may never be assigned

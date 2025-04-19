@@ -5,7 +5,7 @@ import random
 from src.model.filter import Filter
 from src.model.mives import Mives
 from src.model.poem_builder import PoemBuilder
-from src.model.poem_evaluation import Evaluation
+from src.model.score import PoemScore
 from src.model.rhyme import Rhyme
 
 __all__ = ["Weights", "Prosody", "Propoe"]
@@ -156,12 +156,12 @@ class Poem:
     @property
     def content(self) -> str:
         """Final generated Poem"""
-        return self._builder.poem
+        return self._builder.poem.__repr__()
 
     @property
-    def evaluation(self) -> Evaluation:
+    def evaluation(self) -> PoemScore:
         """Final evaluation scores of the Poem"""
-        return self._builder.evaluation
+        return self._builder.poem.poem_score
 
 
 

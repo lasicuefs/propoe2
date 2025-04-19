@@ -1,7 +1,8 @@
 from typing import Protocol
 from pydantic import BaseModel
 
-from src.model.poem_evaluation import Evaluation as DomainEvaluation
+from src.model.poem import Poem
+from src.model.score import PoemScore as DomainEvaluation
 from src.web.schemas._util import to_kebab
 
 __all__ = ["Poem"]
@@ -11,10 +12,7 @@ class IsPoem(Protocol):
     """Protocol to avoid import from domain"""
 
     @property
-    def content(self) -> str: ...
-
-    @property
-    def evaluation(self) -> DomainEvaluation: ...
+    def poem(self) -> Poem: ...
 
 
 class Evaluation(BaseModel):
@@ -30,12 +28,12 @@ class Evaluation(BaseModel):
     @staticmethod
     def from_domain(model: DomainEvaluation) -> "Evaluation":
         return Evaluation(
-            accentuation=model.accent_score,
-            internal_rhyme=model.intern_rhyme_score,
-            rhythmic_structure=model.rhyme_structure_score,
-            tonic_position=model.stress_score,
-            vocal_harmony=model.consonant_rhyme_score,
-            score=model.score_result,
+            accentuation=model.score.accent_score,
+            internal_rhyme=model.score.rhyme_intern_score,
+            rhythmic_structure=model.score.rhyme_structure_score,
+            tonic_position=model.score.stress_score,
+            vocal_harmony=model.score.consonant_rhyme_score,
+            score=model.score.score_result,
         )
 
     class Config:

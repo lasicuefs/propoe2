@@ -1,4 +1,4 @@
-from src.model.score import Score
+from src.model.score import *
 from dataclasses import dataclass
 
 @dataclass
@@ -6,8 +6,8 @@ class Poem:
     poem_structure: str
     verses: list[str]
     verses_score: list[Score]
-    verse_structure: list
-    poem_score: object
+    scanned_verses: list
+    poem_score: PoemScore
 
     def __repr__(self):
         index = 0
