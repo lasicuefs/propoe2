@@ -39,14 +39,14 @@ async def poem(entry: PoemForms) -> Poem:
         """
         return f"logs/poems/{time_id}.log" if settings.in_dev else "poem.txt"
 
-    result = Poem.from_domain(
-        propoe.Propoe(
+    poem = propoe.Propoe(
             filename=file(),
             mives_file="xml/sentencas.xml",
             prosody=entry.prosody.as_domain(),
             evaluation_weights=entry.weights.as_domain(),
         ).poem
-    ).with_id(time_id)
+
+    result = Poem.from_domain(poem).with_id(time_id)
 
     await propoe_event.route_requested(
         "poem", f"Poem '{entry.prosody.pattern}' requested!"

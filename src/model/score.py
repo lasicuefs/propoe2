@@ -277,7 +277,7 @@ class PoemScore:
         verse_rhyme_num = 0
         count_verses = 0
         for verseScore in verseScoreList:
-            if verseScore:
+            if verseScore != None:
                 self.score.consonant_rhyme_score += verseScore.score.consonant_rhyme_score
                 self.score.accent_score += verseScore.score.accent_score
                 self.score.stress_score += verseScore.score.stress_score

@@ -86,9 +86,9 @@ class PoemBuilder:
                 if poem_score:
                     verses_score.append(poem_score.score)
                 else:
-                    verses_score.append(None)
+                    verses_score.append(Score())
 
-        return Poem(verses=verses, verses_score=verses_score, scanned_verses=scanned_verses, poem_score=PoemScore(verses_score_list), poem_structure=self.rhyme)
+        return Poem(verses=verses, verses_score=verses_score, scanned_verses=scanned_verses, poem_score=PoemScore(verses_score_list).score, poem_structure=self.rhyme)
 
     def random_sentence(self, letter):
         sentence_metric_list = self.sentences[letter].metrics[

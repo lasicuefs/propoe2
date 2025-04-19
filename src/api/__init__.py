@@ -3,6 +3,7 @@ from functools import lru_cache
 import random
 
 from src.model.filter import Filter
+from src.model.score import Score
 from src.model.mives import Mives
 from src.model.poem_builder import PoemBuilder
 from src.model.score import PoemScore
@@ -154,15 +155,27 @@ class Poem:
         self._builder.build()
 
     @property
-    def content(self) -> str:
+    def verses(self) -> list[str]:
         """Final generated Poem"""
-        return self._builder.poem.__repr__()
+        return self._builder.poem.verses
 
     @property
-    def evaluation(self) -> PoemScore:
-        """Final evaluation scores of the Poem"""
+    def scanned_verses(self) -> list[str]:
+        """Final generated Poem"""
+        return self._builder.poem.scanned_verses
+
+    @property
+    def poem_structure(self) -> str:
+        """Final generated Poem"""
+        return self._builder.poem.poem_structure
+
+    @property
+    def poem_score(self) -> Score:
         return self._builder.poem.poem_score
 
+    @property
+    def verses_score(self) -> list[Score]:
+        return self._builder.poem.verses_score
 
 
 @dataclass(frozen=True, kw_only=True)

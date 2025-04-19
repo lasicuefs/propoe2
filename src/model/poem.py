@@ -7,7 +7,7 @@ class Poem:
     verses: list[str]
     verses_score: list[Score]
     scanned_verses: list
-    poem_score: PoemScore
+    poem_score: Score
 
     def __repr__(self):
         index = 0
