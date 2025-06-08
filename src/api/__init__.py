@@ -45,6 +45,8 @@ class Weights:
     tonic_position: float = 1
     internal_rhyme: float = 1
     rhythmic_structure: float = 1
+    semantic_similarity: float = 1
+    metaphor: float = 1
 
     @property
     @lru_cache
@@ -62,6 +64,9 @@ class Weights:
             "Posicao tonica": self.tonic_position,
             "Rima interna": self.internal_rhyme,
             "Estrutura ritmica": self.rhythmic_structure,
+            "Similaridade Semântica": self.semantic_similarity,
+            "Metafora": self.metaphor,
+
         }
 
 

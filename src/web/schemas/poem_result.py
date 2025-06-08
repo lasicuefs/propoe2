@@ -32,6 +32,7 @@ class Score(BaseModel):
     tonic_position: float
     internal_rhyme: float
     rhythmic_structure: float
+    semantic_similarity:float
     score: float
 
     @staticmethod
@@ -42,6 +43,7 @@ class Score(BaseModel):
             rhythmic_structure=model.rhyme_structure_score,
             tonic_position=model.stress_score,
             vocal_harmony=model.consonant_rhyme_score,
+            semantic_similarity=model.semantic_similarity,
             score=model.score_result,
         )
 

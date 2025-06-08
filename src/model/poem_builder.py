@@ -3,8 +3,9 @@ import random
 
 from src.model.poem import Poem
 from src.model.rhyme import Rhyme
-from src.model.score import *
+from src.model.score import VerseScore, Score, PoemScore
 from src.model.poem_evaluation import Evaluation
+from src.model.semantic.embeddings import word2vec_skip_s1000
 from src.model.utils import remove_end_ponctuation
 import sys
 
@@ -47,6 +48,7 @@ class PoemBuilder:
         self.poem_sentences = {}
         self.poem_scores = {}
         self.poem: Poem
+        self.before_verse : str
         random.seed(self._seed)
 
         self.orig_stdout = sys.stdout
@@ -148,12 +150,14 @@ class PoemBuilder:
             [current_verse_structures, ref_verse_structures],
             letter,
             verse_rhyme)
+        self.before_verse = current_verse
         self.add_new_verse(letter,current_verse_structures, current_verse, verse_score)
         return current_verse_structures
 
     def start_new_strophe(self, letter):
         current_verse = self.random_sentence(letter)
         current_verse_structures = self.random_verse_structures(current_verse)
+        self.before_verse = current_verse
         self.add_new_verse(letter, current_verse_structures, current_verse, None)
         print(current_verse_structures.scanned_sentence + "\n")
         return current_verse_structures
@@ -174,12 +178,9 @@ class PoemBuilder:
         """Return best Sentence object given a score.
 
         Parameters:
-          sentences: List of Sentence objects chosen for the current poem.
           verses: List with only the first Verse object of strophe and the current Verse object.
           letter: Which rhyme pattern it is. EX: "A", "B" or "C".
           last_rhyme: Verse object of the last Sentence that rhymes.
-          metric_count: Index from self.metrics that shows with metric does
-            this Sentence object needs.
 
         Return:
           next_s: Chosen Sentence object
@@ -192,11 +193,11 @@ class PoemBuilder:
         for sentence in candidate_sentences:
             if sentence.not_in(self.poem_sentences[letter]):
                 verse_structures = sentence.verse_structures[0]
-                verse_score = VerseScore(verse_structures.scanned_sentence)
+                verse_score = VerseScore(verse_structures.scanned_sentence, word2vec_skip_s1000)
                 count += 1
                 print("------------------")
                 for verse in verses:
-                    verse_score.score_calculation(verse, verse_structures, last_rhyme, self.score_weight)
+                    verse_score.score_calculation(verse, verse_structures, last_rhyme, self.score_weight, self.before_verse)
 
                     print(verse_score)
                     print()

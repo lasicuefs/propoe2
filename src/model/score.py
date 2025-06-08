@@ -1,4 +1,6 @@
+from src.model.semantic.semanticSimilarity import SemanticSimilarity
 from src.model.verse_structure import VerseStructure
+
 
 class Score:
     def __init__(self):
@@ -8,12 +10,14 @@ class Score:
         self.rhyme_structure_score = 0
         self.score_result = 0
         self.rhyme_intern_score = 0
+        self.semantic_similarity = 0
 
 class VerseScore:
-    def __init__(self, verse) -> None:
+    def __init__(self, verse, model) -> None:
         # TODO: What is ``verse``'s type?
         # TODO: Are all those scores integers or floats?
-
+        self.semanticSimilarity = SemanticSimilarity()
+        self.model = model
         self.verse = verse  # Scanned Verse
         self.score = Score()
         self.rhyme_verse: bool = False
@@ -220,22 +224,31 @@ class VerseScore:
             )
             return 0
 
-    def score_calculation(self, reference, possible_verse, rhyme_verse, weight) -> None:
-        # TODO: what is ``reference``?
-        # TODO: what is ``possible_verse``?
-        # TODO: What is ``rhyme_verse``?
-        # TODO: What is ``weight``? I only know that this is a dict[str, T].
+    def score_calculation(self, reference, possible_verse, rhyme_verse, weight, before) -> None:
+        """Calculates the score.
+
+                Parameters:
+                  reference: Possible new verse.
+                  possible_verse: Structure of new possible verse.
+                  rhyme_verse: Last verse that have the same rhyme.
+                  weight: Weight of each parameter of score.
+                  before: Last verse choosed.
+                """
         self.score.rhyme_structure_score += (
             self.same_stress_pos(reference, possible_verse) / 2
         )
 
-        # TODO: Attribute declared outside __init__.
-        #   Should it be an instance attribute or local variable?
         self.score.intern_rhyme_score = self.intern_rhyme(possible_verse)
         s = self.same_stress_syllable(reference, possible_verse)
         ps = self.same_pos_stress_syllable(reference, possible_verse)
         self.score.stress_score += (s + ps) / 2
         self.rhyme_verse = rhyme_verse
+        if self.score.semantic_similarity == 0:
+            self.score.semantic_similarity = self.semanticSimilarity.cossineSimilarity(reference.sentence, before.sentence, self.model)
+        else:
+            self.score.semantic_similarity += self.semanticSimilarity.cossineSimilarity(reference.sentence,before.sentence, self.model)
+            self.score.semantic_similarity = self.score.semantic_similarity/2
+
         if rhyme_verse:
             self.score.accent_score = self.same_accent(possible_verse, rhyme_verse)
             self.score.consonant_rhyme_score = self.consonant_rhyme(
@@ -248,12 +261,14 @@ class VerseScore:
             + self.score.accent_score * weight["Acentuacao"]
             + self.score.consonant_rhyme_score * weight["Rima toante & consoante"]
             + self.score.intern_rhyme_score * weight["Rima interna"]
+            + self.score.semantic_similarity * weight["Similaridade Semântica"]
         )
 
         max_score = (
             weight["Estrutura ritmica"]
             + weight["Posicao tonica"]
             + weight["Rima interna"]
+            + 1
         )
         self.debug_repr["Resultado"] = ""
         self.debug_repr["Resultado"] += "\nSoma dos critérios: " + str(
@@ -284,6 +299,7 @@ class PoemScore:
                 self.score.rhyme_structure_score += verseScore.score.rhyme_structure_score
                 self.score.score_result += verseScore.score.score_result
                 self.score.rhyme_intern_score += verseScore.score.intern_rhyme_score
+                self.score.semantic_similarity += verseScore.score.semantic_similarity
                 if verseScore.rhyme_verse:
                     verse_rhyme_num += 1
                 count_verses+=1
@@ -301,6 +317,8 @@ class PoemScore:
             self.score.rhyme_structure_score = round(self.score.rhyme_structure_score / verses_num, 3)
         if self.score.rhyme_intern_score != 0:
             self.score.rhyme_intern_score = round(self.score.rhyme_intern_score / verses_num, 3)
+        if self.score.semantic_similarity != 0:
+            self.score.semantic_similarity = round(self.score.semantic_similarity / verses_num, 3)
         if self.score.score_result != 0:
             self.score.score_result = round(self.score.score_result / verses_num, 3)
 

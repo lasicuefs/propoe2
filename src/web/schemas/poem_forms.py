@@ -92,6 +92,8 @@ class Weights(BaseModel):
     tonic_position: float = Field(default=1, ge=0, le=1)
     internal_rhyme: float = Field(default=1, ge=0, le=1)
     rhythmic_structure: float = Field(default=1, ge=0, le=1)
+    semantic_similarity: float = Field(default=1, ge=0, le=1)
+    metaphor: float = Field(default=1, ge=0, le=1)
 
     def as_domain(self) -> domain.Weights:
         """Converts the Schema to Domain's model"""
@@ -102,6 +104,8 @@ class Weights(BaseModel):
             rhythmic_structure=self.rhythmic_structure,
             tonic_position=self.tonic_position,
             vocal_harmony=self.vocal_harmony,
+            semantic_similarity = self.semantic_similarity,
+            metaphor = self.metaphor
         )
 
     class Config:
