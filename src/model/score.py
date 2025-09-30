@@ -1,4 +1,6 @@
+from src.model.semantic.metaphor import Metaphor
 from src.model.semantic.semanticSimilarity import SemanticSimilarity
+from src.model.sentence import Sentence
 from src.model.verse_structure import VerseStructure
 
 
@@ -7,26 +9,29 @@ class Score:
         self.consonant_rhyme_score = 0
         self.accent_score = 0
         self.stress_score = 0
+        self.rhyme_verse: bool = False
         self.rhyme_structure_score = 0
         self.score_result = 0
         self.rhyme_intern_score = 0
         self.semantic_similarity = 0
+        self.metaphor = 0
 
 class VerseScore:
     def __init__(self, verse, model) -> None:
         # TODO: What is ``verse``'s type?
         # TODO: Are all those scores integers or floats?
         self.semanticSimilarity = SemanticSimilarity()
+        self.metaphor = Metaphor()
         self.model = model
         self.verse = verse  # Scanned Verse
         self.score = Score()
-        self.rhyme_verse: bool = False
         self.debug_repr: dict[str, str] = {
             "Rima Consoante": "",
             "Estrutura Ritmica": "",
             "Silabas Tonicas": "",
             "Acento": "",
             "Rima Interna": "",
+            "Similaridade Semantica": "",
             "Resultado": "",
         }
 
@@ -70,6 +75,18 @@ class VerseScore:
             + "\n - Rima Interna: "
             + str(round(self.score.rhyme_intern_score, 3))
             + self.debug_repr["Rima Interna"]
+        )
+
+        output = (
+                output
+                + "\n - Similaridade Semântica: "
+                + str(round(self.score.semantic_similarity, 3))
+                + self.debug_repr["Similaridade Semantica"]
+        )
+        output = (
+                output
+                + "\n - Metáfora: "
+                + str(round(self.score.metaphor, 3))
         )
 
         output = (
@@ -224,36 +241,36 @@ class VerseScore:
             )
             return 0
 
-    def score_calculation(self, reference, possible_verse, rhyme_verse, weight, before) -> None:
+    def score_calculation(self, ref_verse, possible_verse, rhyme_verse, weight, last_verse:Sentence) -> None:
         """Calculates the score.
 
                 Parameters:
-                  reference: Possible new verse.
+                  ref_verse: First strophe verse.
+                  last_verse: Last verser choosed
                   possible_verse: Structure of new possible verse.
                   rhyme_verse: Last verse that have the same rhyme.
                   weight: Weight of each parameter of score.
-                  before: Last verse choosed.
                 """
-        self.score.rhyme_structure_score += (
-            self.same_stress_pos(reference, possible_verse) / 2
-        )
-
+        self.score.rhyme_structure_score = (self.same_stress_pos(ref_verse, possible_verse) + self.same_stress_pos(last_verse.verse_structures[0], possible_verse))/2
         self.score.intern_rhyme_score = self.intern_rhyme(possible_verse)
-        s = self.same_stress_syllable(reference, possible_verse)
-        ps = self.same_pos_stress_syllable(reference, possible_verse)
-        self.score.stress_score += (s + ps) / 2
+        s = self.same_stress_syllable(ref_verse, possible_verse) + self.same_stress_syllable(last_verse.verse_structures[0], possible_verse)
+        ps = self.same_pos_stress_syllable(ref_verse, possible_verse) + self.same_pos_stress_syllable(last_verse.verse_structures[0], possible_verse)
+        self.score.stress_score = (s + ps) / 2
         self.rhyme_verse = rhyme_verse
-        if self.score.semantic_similarity == 0:
-            self.score.semantic_similarity = self.semanticSimilarity.cossineSimilarity(reference.sentence, before.sentence, self.model)
-        else:
-            self.score.semantic_similarity += self.semanticSimilarity.cossineSimilarity(reference.sentence,before.sentence, self.model)
-            self.score.semantic_similarity = self.score.semantic_similarity/2
+        self.score.semantic_similarity = (self.semanticSimilarity.cossineSimilarity(possible_verse.sentence, last_verse.sentence, self.model)
+        + self.semanticSimilarity.cossineSimilarity(possible_verse.sentence, ref_verse.sentence, self.model))/2
+
+        self.debug_repr["Similaridade Semantica"] += (
+                "\nVerso de referência: "
+                + f"{ref_verse.sentence}"
+                + "\nSentenca Anterior: "
+                + f"{last_verse.sentence}"
+        )
+        self.score.metaphor = self.metaphor.metaphor_degree(possible_verse.sentence)
 
         if rhyme_verse:
             self.score.accent_score = self.same_accent(possible_verse, rhyme_verse)
-            self.score.consonant_rhyme_score = self.consonant_rhyme(
-                possible_verse, rhyme_verse
-            )
+            self.score.consonant_rhyme_score = self.consonant_rhyme(possible_verse, rhyme_verse)
 
         self.score.score_result = (
             self.score.rhyme_structure_score * weight["Estrutura ritmica"]
@@ -262,13 +279,15 @@ class VerseScore:
             + self.score.consonant_rhyme_score * weight["Rima toante & consoante"]
             + self.score.intern_rhyme_score * weight["Rima interna"]
             + self.score.semantic_similarity * weight["Similaridade Semântica"]
+            + self.score.metaphor * weight["Metafora"]
         )
 
         max_score = (
             weight["Estrutura ritmica"]
             + weight["Posicao tonica"]
             + weight["Rima interna"]
-            + 1
+            + weight["Similaridade Semântica"]
+            + weight["Metafora"]
         )
         self.debug_repr["Resultado"] = ""
         self.debug_repr["Resultado"] += "\nSoma dos critérios: " + str(
@@ -277,10 +296,10 @@ class VerseScore:
         if rhyme_verse:
             max_score += weight["Rima toante & consoante"] + weight["Acentuacao"]
             self.debug_repr["Resultado"] += "\nScore máximo: " + str(max_score)
-            self.score.score_result = self.score.score_result / max_score
         else:
             self.debug_repr["Resultado"] += "\nScore máximo: " + str(max_score)
-            self.score.score_result = self.score.score_result / max_score
+        self.score.score_result = self.score.score_result / max_score
+
 
 class PoemScore:
 
@@ -300,6 +319,7 @@ class PoemScore:
                 self.score.score_result += verseScore.score.score_result
                 self.score.rhyme_intern_score += verseScore.score.intern_rhyme_score
                 self.score.semantic_similarity += verseScore.score.semantic_similarity
+                self.score.metaphor += verseScore.score.metaphor
                 if verseScore.rhyme_verse:
                     verse_rhyme_num += 1
                 count_verses+=1
@@ -319,6 +339,8 @@ class PoemScore:
             self.score.rhyme_intern_score = round(self.score.rhyme_intern_score / verses_num, 3)
         if self.score.semantic_similarity != 0:
             self.score.semantic_similarity = round(self.score.semantic_similarity / verses_num, 3)
+        if self.score.metaphor != 0:
+            self.score.metaphor = round(self.score.metaphor / verses_num, 3)
         if self.score.score_result != 0:
             self.score.score_result = round(self.score.score_result / verses_num, 3)
 
@@ -335,6 +357,10 @@ class PoemScore:
             + str(self.score.rhyme_intern_score)
             + "\n - Rima Toante & Consoante: "
             + str(self.score.consonant_rhyme_score)
+            + "\n - Similaridade Semântica "
+            + str(self.score.semantic_similarity)
+            + "\n - Metáfora: "
+            + str(self.score.metaphor)
             + "\n Score Resultante: "
             + str(self.score.score_result)
         )

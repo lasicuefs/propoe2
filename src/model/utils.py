@@ -5,6 +5,7 @@ import string
 def sentence_preprocess(sentence: str) -> str:
     """Lower case sentence string and remove all pontuation and numbers"""
     sentence = sentence.lower()
+    print(sentence)
     sentence = re.sub(r"[^\w\sZáàâãéèêíïóôõöúçñ]", "", sentence)
     return sentence.strip()
 

@@ -98,10 +98,12 @@ class PoemBuilder:
         ]
         sentence_index = random.randrange(len(sentence_metric_list))
         sentence = sentence_metric_list[sentence_index]
-        if sentence.not_in(self.poem_sentences[letter]):
-            return sentence
-        else:
-            return self.random_sentence(letter)
+
+        while not sentence.not_in(self.poem_sentences[letter]):
+            sentence_index = random.randrange(len(sentence_metric_list))
+            sentence = sentence_metric_list[sentence_index]
+
+        return sentence
 
     def random_verse_structures(self, sentence):
         number = random.randrange(len(sentence.verse_structures))
@@ -121,7 +123,6 @@ class PoemBuilder:
         self.last_rhyme = {}         # Dict that maps letters from rhyme pattern to its last Rhyme object
         self.metric_count = 0         # Index from self.metrics that shows with metric does this Sentence object needs.
         new_strophe = True
-        current_verse_structures = None
         ref_verse_structures = None
 
         # Iterate through every letter from rhyme pattern, one by one, in order.
@@ -129,11 +130,10 @@ class PoemBuilder:
             if letter == " ":
                 new_strophe = True
             elif new_strophe:
-                current_verse_structures = self.start_new_strophe(letter)
-                ref_verse_structures = current_verse_structures
+                ref_verse_structures = self.start_new_strophe(letter)
                 new_strophe = False
             else:
-                current_verse_structures = self.new_verse_by_score(current_verse_structures, letter, ref_verse_structures)
+                self.new_verse_by_score(letter, ref_verse_structures)
 
         return self.poem_sentences
 
@@ -144,10 +144,10 @@ class PoemBuilder:
             return self.last_rhyme[letter]
         return None
 
-    def new_verse_by_score(self, current_verse_structures, letter, ref_verse_structures):
+    def new_verse_by_score(self, letter, ref_verse_structures):
         verse_rhyme = self.reference_verse_rhyme(letter)
         current_verse, current_verse_structures, verse_score = self.find_sentence(
-            [current_verse_structures, ref_verse_structures],
+            ref_verse_structures,
             letter,
             verse_rhyme)
         self.before_verse = current_verse
@@ -171,7 +171,7 @@ class PoemBuilder:
     # TODO: define missing types
     def find_sentence(
         self,
-        verses: list,
+        ref_verse,
         letter: str,
         last_rhyme,
     ):
@@ -196,16 +196,14 @@ class PoemBuilder:
                 verse_score = VerseScore(verse_structures.scanned_sentence, word2vec_skip_s1000)
                 count += 1
                 print("------------------")
-                for verse in verses:
-                    verse_score.score_calculation(verse, verse_structures, last_rhyme, self.score_weight, self.before_verse)
-
-                    print(verse_score)
-                    print()
-                    if verse_score.score.score_result > max_score:
-                        max_score = verse_score.score.score_result
-                        next_verse = sentence
-                        next_verse_structure = verse_structures
-                        result_score = verse_score
+                verse_score.score_calculation(ref_verse, verse_structures, last_rhyme, self.score_weight, self.before_verse)
+                print(verse_score)
+                print()
+                if verse_score.score.score_result > max_score:
+                    max_score = verse_score.score.score_result
+                    next_verse = sentence
+                    next_verse_structure = verse_structures
+                    result_score = verse_score
         print("------------ESCOLHIDO----------------")
         print("Quantidade de versos:", str(count))
         # TODO: ``result_score`` may never be assigned

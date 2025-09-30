@@ -33,6 +33,7 @@ class Score(BaseModel):
     internal_rhyme: float
     rhythmic_structure: float
     semantic_similarity:float
+    metaphor:float
     score: float
 
     @staticmethod
@@ -44,6 +45,7 @@ class Score(BaseModel):
             tonic_position=model.stress_score,
             vocal_harmony=model.consonant_rhyme_score,
             semantic_similarity=model.semantic_similarity,
+            metaphor = model.metaphor,
             score=model.score_result,
         )
 
@@ -78,5 +80,3 @@ class Poem(BaseModel):
     def with_id(self, id: str) -> "Poem":
         self.id = id
         return self
-
-

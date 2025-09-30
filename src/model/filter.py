@@ -47,6 +47,8 @@ class Filter:
         #   Consider using .keys() or .items()
         for letter in rhymes:
             sentences[letter] = self.random_rhyme(rhymes[letter])
+        # sentences['A'] = rhymes['A'][1]
+        # sentences['B'] = rhymes['B'][15]
         return sentences
 
     def random_rhyme(self, rhymes):
