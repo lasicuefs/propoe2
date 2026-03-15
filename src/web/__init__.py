@@ -5,6 +5,7 @@ See http://127.0.0.1:8000/docs#/ for more information.
 
 from datetime import datetime
 from fastapi import FastAPI
+import os
 
 from src import api as propoe
 from src.web.logging import PropoesEvent
@@ -37,16 +38,18 @@ async def poem(entry: PoemForms) -> Poem:
         Unfortunately, this is not possible since
         the request runs endless for some unknown reason...
         """
+        os.makedirs("logs/poems/", exist_ok=True)
         return f"logs/poems/{time_id}.log" if settings.in_dev else "poem.txt"
 
-    result = Poem.from_domain(
-        propoe.Propoe(
+    poem = propoe.Propoe(
             filename=file(),
             mives_file="xml/sentencas.xml",
             prosody=entry.prosody.as_domain(),
             evaluation_weights=entry.weights.as_domain(),
+            seed=8
         ).poem
-    ).with_id(time_id)
+
+    result = Poem.from_domain(poem).with_id(time_id)
 
     await propoe_event.route_requested(
         "poem", f"Poem '{entry.prosody.pattern}' requested!"

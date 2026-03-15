@@ -23,7 +23,7 @@ poetry shell
 Executando o servidor
 
 ```sh
-fastapi dev src/web
+poetry run fastapi dev src/web
 ```
 
 ## Código

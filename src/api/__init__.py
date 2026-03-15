@@ -3,9 +3,10 @@ from functools import lru_cache
 import random
 
 from src.model.filter import Filter
+from src.model.score import Score
 from src.model.mives import Mives
 from src.model.poem_builder import PoemBuilder
-from src.model.poem_evaluation import Evaluation
+from src.model.score import PoemScore
 from src.model.rhyme import Rhyme
 
 __all__ = ["Weights", "Prosody", "Propoe"]
@@ -44,6 +45,8 @@ class Weights:
     tonic_position: float = 1
     internal_rhyme: float = 1
     rhythmic_structure: float = 1
+    semantic_similarity: float = 1
+    metaphor: float = 1
 
     @property
     @lru_cache
@@ -61,6 +64,9 @@ class Weights:
             "Posicao tonica": self.tonic_position,
             "Rima interna": self.internal_rhyme,
             "Estrutura ritmica": self.rhythmic_structure,
+            "Similaridade Semântica": self.semantic_similarity,
+            "Metafora": self.metaphor,
+
         }
 
 
@@ -154,15 +160,27 @@ class Poem:
         self._builder.build()
 
     @property
-    def content(self) -> str:
+    def verses(self) -> list[str]:
         """Final generated Poem"""
-        return self._builder.poem
+        return self._builder.poem.verses
 
     @property
-    def evaluation(self) -> Evaluation:
-        """Final evaluation scores of the Poem"""
-        return self._builder.evaluation
+    def scanned_verses(self) -> list[str]:
+        """Final generated Poem"""
+        return self._builder.poem.scanned_verses
 
+    @property
+    def poem_structure(self) -> str:
+        """Final generated Poem"""
+        return self._builder.poem.poem_structure
+
+    @property
+    def poem_score(self) -> Score:
+        return self._builder.poem.poem_score
+
+    @property
+    def verses_score(self) -> list[Score]:
+        return self._builder.poem.verses_score
 
 
 @dataclass(frozen=True, kw_only=True)
